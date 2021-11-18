@@ -40,6 +40,7 @@ For a comprehennsive description of the datasets in use please refer to followin
 
 
 ## Project Methodology
+The following methods at a high-level will be applied to achieve the Database and Analytics Programming Project.
 
 <p align="center">
   <img src="https://github.com/polinaprinii/DAP-Project/blob/main/Vaccine_Analysis_by_Country/Misc/Methodology.jpg" />
