@@ -34,7 +34,7 @@ The additonal datasets aims to provide the following analysis:
 	* Most popular vaccine worldwide.
 	* Most popular vaccine by country.
 
-
+*What question is the dataset under analyses answering?* The chosen dataset is looking to answer the "What is the uptake of the Covid-19 vaccine?".
 ### Data Dictionary
 For a comprehennsive description of the datasets in use please refer to following [README.md File](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md)
 
