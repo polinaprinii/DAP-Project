@@ -41,4 +41,7 @@ For a comprehennsive description of the datasets in use please refer to followin
 
 ## Project Methodology
 
-![alt text](https://github.com/polinaprinii/DAP-Project/blob/main/Vaccine_Analysis_by_Country/Misc/Methodology.jpg)
+<p align="center">
+  <img src="https://github.com/polinaprinii/DAP-Project/blob/main/Vaccine_Analysis_by_Country/Misc/Methodology.jpg" />
+</p>
+
