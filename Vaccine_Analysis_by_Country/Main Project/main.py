@@ -1,16 +1,13 @@
-# This is a sample Python script.
+# Importing the pandas package to work with csv files and later convert them to JSON.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pandas as pd
 
+pd. set_option('display.max_rows', 500)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Next we move to creating variables which will hold our three dataset.
+# Using the read_csv() function we can directly specify a path to the csv file in the git repository using the "raw" view.
 
+# Calling our first dataset "vaccinatios.csv"
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+df_1 = pd.read_csv('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv')
+print(df_1)
