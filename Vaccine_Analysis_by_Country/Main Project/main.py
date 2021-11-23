@@ -4,6 +4,7 @@ from urllib.error import URLError
 
 # Importing the pandas package to work with csv files and later convert them to JSON.
 import pandas as pd
+import os
 
 # Next we move to creating variables which will hold our three dataset.
 # Using the read_csv() function we can directly specify a path to the csv file in the git repository using the "raw" view.
@@ -56,16 +57,38 @@ if not dataPopulated: # Code jumps to pulling the file from local in the case th
 
 
 # Creating function to convert from CSV to JSON, function applies to all 3 CSV datasets.
+# Additionally, including an if and else clause to ensure the file is replaced each time the code is executed along with updating the file if updated in Git.
+
 def convertCsvToJson(file1, file2, file3):
-    #
+
+    
+    filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_1.json'
+    filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_2.json'
+    filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_3.json'
+
     try:
-        with open('D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_1.json', 'w') as f:
+        if os.path.exists(filePath_1):
+            os.remove(filePath_1)
+        else:
+            print('File df_1 does not exist, creating it.')
+
+        with open(filePath_1, 'w') as f:
             f.write(file1.to_json(orient='records', indent=2))
 
-        with open('D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_2.json', 'w') as f:
+        if os.path.exists(filePath_2):
+            os.remove(filePath_2)
+        else:
+            print('File df_2 does not exist, creating it.')
+
+        with open(filePath_2, 'w') as f:
             f.write(file2.to_json(orient='records', indent=2))
 
-        with open('D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_3.json', 'w') as f:
+        if os.path.exists(filePath_3):
+            os.remove(filePath_3)
+        else:
+            print('File df_3 does not exist, creating it.')
+
+        with open(filePath_3, 'w') as f:
             f.write(file3.to_json(orient='records', indent=2))
 
     except Exception as error2:
