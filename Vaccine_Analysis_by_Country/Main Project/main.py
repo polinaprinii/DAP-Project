@@ -61,19 +61,19 @@ if not dataPopulated: # Code jumps to pulling the file from local in the case th
 
 def convertCsvToJson(file1, file2, file3):
 
-    
+    # Storing the 3 filepaths in variables for easier use, stored in the "Main Project" folder of the main Git repo.
     filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_1.json'
     filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_2.json'
     filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_3.json'
 
     try:
-        if os.path.exists(filePath_1):
+        if os.path.exists(filePath_1):      # Checks if the file exists and removes it.
             os.remove(filePath_1)
-        else:
+        else:                               # Prints a friendly error message
             print('File df_1 does not exist, creating it.')
 
-        with open(filePath_1, 'w') as f:
-            f.write(file1.to_json(orient='records', indent=2))
+        with open(filePath_1, 'w') as f:    # Creating the JSON file.
+            f.write(file1.to_json(orient='records', indent=2))      # Writing to JSON file and displaying in indent format.
 
         if os.path.exists(filePath_2):
             os.remove(filePath_2)
@@ -91,8 +91,13 @@ def convertCsvToJson(file1, file2, file3):
         with open(filePath_3, 'w') as f:
             f.write(file3.to_json(orient='records', indent=2))
 
-    except Exception as error2:
-        print('There seems to be an error when converting from CSV to JSON, please see below:', '\n',
+    except OSError as error2:
+        print('Oh no there seems to be an error with the files, see below:', '\n',
               error2)
 
+    except Exception as error3:
+        print('There seems to be an error when converting from CSV to JSON, please see below:', '\n',
+              error3)
+
+# Executing the function.
 convertCsvToJson(df_1, df_2, df_3)
