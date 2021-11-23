@@ -4,6 +4,8 @@ from urllib.error import URLError
 
 # Importing the pandas package to work with csv files and later convert them to JSON.
 import pandas as pd
+
+# Importing OS for interacting with the operating system.
 import os
 
 # Next we move to creating variables which will hold our three dataset.
