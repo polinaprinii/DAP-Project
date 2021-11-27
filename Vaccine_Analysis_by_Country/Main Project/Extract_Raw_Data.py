@@ -1,5 +1,4 @@
 # Importing the necessary URL errors for us to except a no internet connection situation.
-import json
 from urllib.error import URLError
 
 # Importing the pandas package to work with csv files and later convert them to JSON.
@@ -11,31 +10,33 @@ import os
 # Next we move to creating variables which will hold our three dataset.
 # Using the read_csv() function we can directly specify a path to the csv file in the git repository using the "raw" view.
 
-#Specify variaable to hold our raw URL from Git.
-vac_url = 'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv'                               # Vaccinations dataset.
-man_url = 'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations-by-manufacturer.csv'               # Vaccinations by manufacturer dataset.
-age_url = 'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations-by-age-group.csv'                  # Vaccinations by age groups dataset.
+# Specify variaable to hold our raw URL from Git.
+vac_url = 'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv'  # Vaccinations dataset.
+man_url = 'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations-by-manufacturer.csv'  # Vaccinations by manufacturer dataset.
+age_url = 'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations-by-age-group.csv'  # Vaccinations by age groups dataset.
 
 # Calling our first dataset "vaccinations.csv"
 # Adding exception handling to cover cases such as wrong url specified, no internet/network is down, as well as adding an if clasue in the case the git repository gets shut down.
 
-dataPopulated = False # A variable to check if we will be pulling from the web or locally, intially set to false as web is the desired outcome.
+dataPopulated = False  # A variable to check if we will be pulling from the web or locally, intially set to false as web is the desired outcome.
 
+#df_1 ... df_3 read csv files from git.
 try:
-    df_1 = pd.read_csv(vac_url)     # reading the raw vaccinations.csv file from git.
-    df_2 = pd.read_csv(man_url)     # reading the raw vaccinations.csv file from git.
-    df_3 = pd.read_csv(age_url)  # reading the raw vaccinations.csv file from git.
-    if df_1.size and df_2.size and df_3.size > 0:   # Checking if our dataframes are not empty
-        dataPopulated = True # Setting the variable to true which completes our code as successful.
+    df_1 = pd.read_csv(vac_url)
+    df_2 = pd.read_csv(man_url)
+    df_3 = pd.read_csv(age_url)
+    if df_1.size and df_2.size and df_3.size > 0:  # Checking if our dataframes are not empty
+        dataPopulated = True  # Setting the variable to true which completes our code as successful.
         print('Getting data from Git repo successful', '\n')
-        print('Vaccinations data columns are:', '\n',  df_1.columns.values, '\n', '\n',
+        print('Vaccinations data columns are:', '\n', df_1.columns.values, '\n', '\n',
               'Vaccinations by manufacturers data columns are:', '\n', df_2.columns.values, '\n', '\n',
-              'Vaccinations by age data columns are:', '\n', df_3.columns.values, '\n')  # prints the columns names for all 3 datasets
+              'Vaccinations by age data columns are:', '\n', df_3.columns.values,
+              '\n')  # prints the columns names for all 3 datasets
         print('Vaccinations data contains:', len(df_1), 'rows.', '\n', '\n',
               'Vaccinations by manufacturer data contains:', len(df_2), 'rows.', '\n', '\n',
               'Vaccinations by age data contains:', len(df_3), 'rows.', '\n')  # count rows in all 3 data frames
 
-# The above prints at the same time confirms that the read was successful.
+# The above prints & at the same time confirms that the read was successful.
 
 except URLError:
     print('Oh uh! seems your network is down')
@@ -44,10 +45,10 @@ except URLError:
 except Exception as error1:
     print('There seems to be an error:', error1)
 
-if not dataPopulated: # Code jumps to pulling the file from local in the case theres no internet connection.
+if not dataPopulated:  # Code jumps to pulling the file from local in the case theres no internet connection.
     df_1 = pd.read_csv(r'C:\Users\Rober\Documents\Datasets\vaccinations.csv')
-    df_2 = pd.read_csv(r'C:\Users\Rober\Documents\Datasets\vaccinations-by-manufacturer.csv')  # reading the raw vaccinations.csv file from git.
-    df_3 = pd.read_csv(r'C:\Users\Rober\Documents\Datasets\vaccinations-by-age-group.csv')  # reading the raw vaccinations.csv file from git.
+    df_2 = pd.read_csv(r'C:\Users\Rober\Documents\Datasets\vaccinations-by-manufacturer.csv')
+    df_3 = pd.read_csv(r'C:\Users\Rober\Documents\Datasets\vaccinations-by-age-group.csv')
     print('Getting data from Local Machine as there is no Internet connection', '\n')
     print('Vaccinations data columns are:', '\n', df_1.columns.values, '\n', '\n',
           'Vaccinations by manufacturers data columns are:', '\n', df_2.columns.values, '\n', '\n',
@@ -58,40 +59,32 @@ if not dataPopulated: # Code jumps to pulling the file from local in the case th
           '\n')  # count rows in all 3 data frames
 
 
-# Creating function to convert from CSV to JSON, function applies to all 3 CSV datasets.
-# Additionally, including an if and else clause to ensure the file is replaced each time the code is executed along with updating the file if updated in Git.
-
+# Create function to convert from CSV to JSON, function applies to all 3 CSV datasets.
 def convertCsvToJson(file1, file2, file3):
-
-    # Storing the 3 filepaths in variables for easier use, stored in the "Main Project" folder of the main Git repo.
+    # Storing the 3 file-paths in variables.
     filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_1.json'
     filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_2.json'
     filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_3.json'
 
+
+    filePaths = [filePath_1, filePath_2, filePath_3]    # List of paths to all JSON  files.
+    files = [file1, file2, file3]                       # List of csv files.
+
     try:
-        if os.path.exists(filePath_1):      # Checks if the file exists and removes it.
-            os.remove(filePath_1)
-        else:                               # Prints a friendly error message
-            print('File df_1 does not exist, creating it.')
+        """
+        Loop through filePaths and enumerate them to give them an index. Enumerate gives index top items in list.
+        Check if every file paths exists, True = remove file, else prints message and creates file.
+        Create file by using the index of filePaths item to write to file. 
+        """
 
-        with open(filePath_1, 'w') as f:    # Creating the JSON file.
-            f.write(file1.to_json(orient='records', indent=2))      # Writing to JSON file and displaying in indent format.
+        for index, filePath in enumerate(filePaths):
+            if os.path.exists(filePath):
+                os.remove(filePath)
+            else:
+                print('File', filePath, 'does not exist, creating it.')
 
-        if os.path.exists(filePath_2):
-            os.remove(filePath_2)
-        else:
-            print('File df_2 does not exist, creating it.')
-
-        with open(filePath_2, 'w') as f:
-            f.write(file2.to_json(orient='records', indent=2))
-
-        if os.path.exists(filePath_3):
-            os.remove(filePath_3)
-        else:
-            print('File df_3 does not exist, creating it.')
-
-        with open(filePath_3, 'w') as f:
-            f.write(file3.to_json(orient='records', indent=2))
+            with open(filePath, 'w') as f:
+                f.write(files[index].to_json(orient='records', indent=2))
 
     except OSError as error2:
         print('Oh no there seems to be an error with the files, see below:', '\n',
