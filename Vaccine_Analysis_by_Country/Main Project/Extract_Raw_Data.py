@@ -68,6 +68,7 @@ def convertCsvToJson(file1, file2, file3):
 
 
     filePaths = [filePath_1, filePath_2, filePath_3]    # List of paths to all JSON  files.
+
     files = [file1, file2, file3]                       # List of csv files.
 
     try:
