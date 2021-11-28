@@ -64,5 +64,5 @@ def populate_collections(collections, filePaths):
 
     except pymongo.errors.WriteError as Error3:
         print('There seems to be an error when writing the data', Error3)
-        
+
 populate_collections(collections, filePaths)
