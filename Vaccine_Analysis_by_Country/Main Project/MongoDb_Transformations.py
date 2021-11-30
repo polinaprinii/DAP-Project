@@ -39,15 +39,44 @@ except pymongo.errors.PyMongoError as error:
 # Print a value from collection as validation.
 print(list(db.Countries.find({'Country': "Poland"})), '\n')
 
+# Check if collection exists
+print(my_db.list_collection_names(), '\n')
+
 # Creating collection which will be a combination of all three datasets (df_1, df_2 and df_3).
 try:
-    if db.TotalVaccinationsWorldwide.count() > 0:
-        db.TotalVaccinationsWorldwide.drop()
+    if db.Total_Vaccinations_Worldwide.count() > 0:
+        db.Total_Vaccinations_Worldwide.drop()
 
-    db.create_collection('TotalVaccinationsWorldwide')
+    db.create_collection('Total_Vaccinations_Worldwide')
 
 except pymongo.errors.PyMongoError as pyerror2:
     print('Oh no an error: ', pyerror2)
 
-# Check if collection exists
-print(my_db.list_collection_names())
+# Populating the Total_Vaccinations_Worldwide
+try:
+    # A for loop to populate Total_Vaccinations_Worldwide collection using the data from df_1 collection.
+    total_vac_data = db.df_1.aggregate([
+        {"$match": {
+            "date": "2021-11-24"
+        }},
+        {"$group": {
+            "_id": "$location",
+            "Iso_Code": {"$first": "$iso_code"},
+            "Total_Vaccinations_Administered": {"$first": "$total_vaccinations"},
+            "Total_Boosters_Administered": {"$first": "$total_boosters"},
+            "Number_of_People_Fully_Vaccinated": {"$first": "$people_fully_vaccinated"},
+        }}])
+
+    for data in total_vac_data:
+        db.Total_Vaccinations_Worldwide.insert_one(
+            {
+                'Country': data['_id'],
+                'ISO_Code': data['Iso_Code'],
+                'Total_Vaccinations_Administered': data['Total_Vaccinations_Administered'],
+                'Total_Boosters_Administered': data['Total_Boosters_Administered'],
+                'Number_of_People_Fully_Vaccinated': data['Number_of_People_Fully_Vaccinated']
+            }
+        )
+
+except pymongo.errors.PyMongoError as error:
+    print('There was an error populating the Countries table:', error)
