@@ -18,8 +18,9 @@ try:
     db.create_collection('Countries')
 
 except pymongo.errors.PyMongoError as pyerror:
-    print('One no an error: ', pyerror)
+    print('Oh no an error: ', pyerror)
 
+# Populating the Countries collection.
 try:
     # A for loop to populate Countries collection using the data from df_1 collection.
     country_name = db.df_1.aggregate([{"$group": {"_id": {'location': "$location", 'iso_code': "$iso_code"}}}])
@@ -38,6 +39,15 @@ except pymongo.errors.PyMongoError as error:
 # Print a value from collection as validation.
 print(list(db.Countries.find({'Country': "Poland"})), '\n')
 
+# Creating collection which will be a combination of all three datasets (df_1, df_2 and df_3).
+try:
+    if db.TotalVaccinationsWorldwide.count() > 0:
+        db.TotalVaccinationsWorldwide.drop()
+
+    db.create_collection('TotalVaccinationsWorldwide')
+
+except pymongo.errors.PyMongoError as pyerror2:
+    print('Oh no an error: ', pyerror2)
+
 # Check if collection exists
 print(my_db.list_collection_names())
-

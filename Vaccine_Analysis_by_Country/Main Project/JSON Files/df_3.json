@@ -73,14 +73,14 @@
     "location":"Austria",
     "date":"2021-01-15",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":1.29,
+    "people_vaccinated_per_hundred":1.3,
     "people_fully_vaccinated_per_hundred":0.01
   },
   {
     "location":"Austria",
     "date":"2021-01-15",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":6.06,
+    "people_vaccinated_per_hundred":6.07,
     "people_fully_vaccinated_per_hundred":0.02
   },
   {
@@ -136,7 +136,7 @@
     "location":"Austria",
     "date":"2021-01-29",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":2.47,
+    "people_vaccinated_per_hundred":2.48,
     "people_fully_vaccinated_per_hundred":0.24
   },
   {
@@ -249,7 +249,7 @@
     "date":"2021-02-12",
     "age_group":"80+",
     "people_vaccinated_per_hundred":15.86,
-    "people_fully_vaccinated_per_hundred":10.31
+    "people_fully_vaccinated_per_hundred":10.32
   },
   {
     "location":"Austria",
@@ -263,7 +263,7 @@
     "date":"2021-02-19",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":3.72,
-    "people_fully_vaccinated_per_hundred":2.36
+    "people_fully_vaccinated_per_hundred":2.37
   },
   {
     "location":"Austria",
@@ -291,7 +291,7 @@
     "date":"2021-02-19",
     "age_group":"80+",
     "people_vaccinated_per_hundred":20.17,
-    "people_fully_vaccinated_per_hundred":13.4
+    "people_fully_vaccinated_per_hundred":13.41
   },
   {
     "location":"Austria",
@@ -311,7 +311,7 @@
     "location":"Austria",
     "date":"2021-02-26",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":6.45,
+    "people_vaccinated_per_hundred":6.46,
     "people_fully_vaccinated_per_hundred":3.77
   },
   {
@@ -333,7 +333,7 @@
     "date":"2021-02-26",
     "age_group":"80+",
     "people_vaccinated_per_hundred":27.8,
-    "people_fully_vaccinated_per_hundred":14.08
+    "people_fully_vaccinated_per_hundred":14.09
   },
   {
     "location":"Austria",
@@ -346,7 +346,7 @@
     "location":"Austria",
     "date":"2021-03-05",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":5.88,
+    "people_vaccinated_per_hundred":5.89,
     "people_fully_vaccinated_per_hundred":2.77
   },
   {
@@ -375,7 +375,7 @@
     "date":"2021-03-05",
     "age_group":"80+",
     "people_vaccinated_per_hundred":43.85,
-    "people_fully_vaccinated_per_hundred":15.01
+    "people_fully_vaccinated_per_hundred":15.02
   },
   {
     "location":"Austria",
@@ -389,14 +389,14 @@
     "date":"2021-03-12",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":7.93,
-    "people_fully_vaccinated_per_hundred":2.89
+    "people_fully_vaccinated_per_hundred":2.9
   },
   {
     "location":"Austria",
     "date":"2021-03-12",
     "age_group":"50-59",
     "people_vaccinated_per_hundred":10.43,
-    "people_fully_vaccinated_per_hundred":4.17
+    "people_fully_vaccinated_per_hundred":4.18
   },
   {
     "location":"Austria",
@@ -416,8 +416,8 @@
     "location":"Austria",
     "date":"2021-03-12",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":57.47,
-    "people_fully_vaccinated_per_hundred":19.18
+    "people_vaccinated_per_hundred":57.48,
+    "people_fully_vaccinated_per_hundred":19.19
   },
   {
     "location":"Austria",
@@ -444,7 +444,7 @@
     "location":"Austria",
     "date":"2021-03-19",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":11.01,
+    "people_vaccinated_per_hundred":11.02,
     "people_fully_vaccinated_per_hundred":3.11
   },
   {
@@ -501,7 +501,7 @@
     "date":"2021-03-26",
     "age_group":"80+",
     "people_vaccinated_per_hundred":71.87,
-    "people_fully_vaccinated_per_hundred":42.28
+    "people_fully_vaccinated_per_hundred":42.29
   },
   {
     "location":"Austria",
@@ -514,7 +514,7 @@
     "location":"Austria",
     "date":"2021-04-02",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":11.06,
+    "people_vaccinated_per_hundred":11.07,
     "people_fully_vaccinated_per_hundred":3.31
   },
   {
@@ -535,7 +535,7 @@
     "location":"Austria",
     "date":"2021-04-02",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":26.98,
+    "people_vaccinated_per_hundred":26.99,
     "people_fully_vaccinated_per_hundred":5.54
   },
   {
@@ -577,7 +577,7 @@
     "location":"Austria",
     "date":"2021-04-09",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":40.5,
+    "people_vaccinated_per_hundred":40.51,
     "people_fully_vaccinated_per_hundred":9.09
   },
   {
@@ -585,7 +585,7 @@
     "date":"2021-04-09",
     "age_group":"80+",
     "people_vaccinated_per_hundred":84.16,
-    "people_fully_vaccinated_per_hundred":62.68
+    "people_fully_vaccinated_per_hundred":62.69
   },
   {
     "location":"Austria",
@@ -612,8 +612,8 @@
     "location":"Austria",
     "date":"2021-04-16",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":27.77,
-    "people_fully_vaccinated_per_hundred":7.65
+    "people_vaccinated_per_hundred":27.78,
+    "people_fully_vaccinated_per_hundred":7.66
   },
   {
     "location":"Austria",
@@ -627,7 +627,7 @@
     "date":"2021-04-16",
     "age_group":"80+",
     "people_vaccinated_per_hundred":88.22,
-    "people_fully_vaccinated_per_hundred":66.86
+    "people_fully_vaccinated_per_hundred":66.87
   },
   {
     "location":"Austria",
@@ -640,14 +640,14 @@
     "location":"Austria",
     "date":"2021-04-23",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":14.49,
+    "people_vaccinated_per_hundred":14.5,
     "people_fully_vaccinated_per_hundred":4.94
   },
   {
     "location":"Austria",
     "date":"2021-04-23",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":22.33,
+    "people_vaccinated_per_hundred":22.34,
     "people_fully_vaccinated_per_hundred":7.37
   },
   {
@@ -662,14 +662,14 @@
     "date":"2021-04-23",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":63.84,
-    "people_fully_vaccinated_per_hundred":15.54
+    "people_fully_vaccinated_per_hundred":15.55
   },
   {
     "location":"Austria",
     "date":"2021-04-23",
     "age_group":"80+",
     "people_vaccinated_per_hundred":90.19,
-    "people_fully_vaccinated_per_hundred":71.15
+    "people_fully_vaccinated_per_hundred":71.16
   },
   {
     "location":"Austria",
@@ -689,36 +689,36 @@
     "location":"Austria",
     "date":"2021-04-30",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":27.12,
+    "people_vaccinated_per_hundred":27.13,
     "people_fully_vaccinated_per_hundred":7.83
   },
   {
     "location":"Austria",
     "date":"2021-04-30",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":49.04,
-    "people_fully_vaccinated_per_hundred":9.38
+    "people_vaccinated_per_hundred":49.05,
+    "people_fully_vaccinated_per_hundred":9.39
   },
   {
     "location":"Austria",
     "date":"2021-04-30",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":68.04,
-    "people_fully_vaccinated_per_hundred":19.88
+    "people_vaccinated_per_hundred":68.05,
+    "people_fully_vaccinated_per_hundred":19.89
   },
   {
     "location":"Austria",
     "date":"2021-04-30",
     "age_group":"80+",
     "people_vaccinated_per_hundred":91.45,
-    "people_fully_vaccinated_per_hundred":72.54
+    "people_fully_vaccinated_per_hundred":72.55
   },
   {
     "location":"Austria",
     "date":"2021-05-07",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":11.73,
-    "people_fully_vaccinated_per_hundred":3.58
+    "people_fully_vaccinated_per_hundred":3.59
   },
   {
     "location":"Austria",
@@ -731,21 +731,21 @@
     "location":"Austria",
     "date":"2021-05-07",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":34.23,
+    "people_vaccinated_per_hundred":34.24,
     "people_fully_vaccinated_per_hundred":8.84
   },
   {
     "location":"Austria",
     "date":"2021-05-07",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":57.79,
+    "people_vaccinated_per_hundred":57.8,
     "people_fully_vaccinated_per_hundred":11.58
   },
   {
     "location":"Austria",
     "date":"2021-05-07",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":71.6,
+    "people_vaccinated_per_hundred":71.61,
     "people_fully_vaccinated_per_hundred":26.47
   },
   {
@@ -753,13 +753,13 @@
     "date":"2021-05-07",
     "age_group":"80+",
     "people_vaccinated_per_hundred":92.95,
-    "people_fully_vaccinated_per_hundred":74.65
+    "people_fully_vaccinated_per_hundred":74.66
   },
   {
     "location":"Austria",
     "date":"2021-05-14",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":14.04,
+    "people_vaccinated_per_hundred":14.05,
     "people_fully_vaccinated_per_hundred":4.31
   },
   {
@@ -780,22 +780,22 @@
     "location":"Austria",
     "date":"2021-05-14",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":64.23,
+    "people_vaccinated_per_hundred":64.24,
     "people_fully_vaccinated_per_hundred":13.83
   },
   {
     "location":"Austria",
     "date":"2021-05-14",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":73.58,
+    "people_vaccinated_per_hundred":73.59,
     "people_fully_vaccinated_per_hundred":30.52
   },
   {
     "location":"Austria",
     "date":"2021-05-14",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":93.93,
-    "people_fully_vaccinated_per_hundred":75.94
+    "people_vaccinated_per_hundred":93.94,
+    "people_fully_vaccinated_per_hundred":75.95
   },
   {
     "location":"Austria",
@@ -809,20 +809,20 @@
     "date":"2021-05-21",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":28.14,
-    "people_fully_vaccinated_per_hundred":8.48
+    "people_fully_vaccinated_per_hundred":8.49
   },
   {
     "location":"Austria",
     "date":"2021-05-21",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":49.29,
+    "people_vaccinated_per_hundred":49.3,
     "people_fully_vaccinated_per_hundred":12.38
   },
   {
     "location":"Austria",
     "date":"2021-05-21",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":70.83,
+    "people_vaccinated_per_hundred":70.84,
     "people_fully_vaccinated_per_hundred":17.88
   },
   {
@@ -830,14 +830,14 @@
     "date":"2021-05-21",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":75.57,
-    "people_fully_vaccinated_per_hundred":36.4
+    "people_fully_vaccinated_per_hundred":36.41
   },
   {
     "location":"Austria",
     "date":"2021-05-21",
     "age_group":"80+",
     "people_vaccinated_per_hundred":95.04,
-    "people_fully_vaccinated_per_hundred":80.01
+    "people_fully_vaccinated_per_hundred":80.02
   },
   {
     "location":"Austria",
@@ -850,36 +850,36 @@
     "location":"Austria",
     "date":"2021-05-28",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":32.38,
+    "people_vaccinated_per_hundred":32.39,
     "people_fully_vaccinated_per_hundred":10.76
   },
   {
     "location":"Austria",
     "date":"2021-05-28",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":53.74,
-    "people_fully_vaccinated_per_hundred":15.87
+    "people_vaccinated_per_hundred":53.75,
+    "people_fully_vaccinated_per_hundred":15.88
   },
   {
     "location":"Austria",
     "date":"2021-05-28",
     "age_group":"60-69",
     "people_vaccinated_per_hundred":74.01,
-    "people_fully_vaccinated_per_hundred":23.38
+    "people_fully_vaccinated_per_hundred":23.39
   },
   {
     "location":"Austria",
     "date":"2021-05-28",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":76.6,
-    "people_fully_vaccinated_per_hundred":42.98
+    "people_vaccinated_per_hundred":76.61,
+    "people_fully_vaccinated_per_hundred":42.99
   },
   {
     "location":"Austria",
     "date":"2021-05-28",
     "age_group":"80+",
     "people_vaccinated_per_hundred":95.69,
-    "people_fully_vaccinated_per_hundred":82.61
+    "people_fully_vaccinated_per_hundred":82.62
   },
   {
     "location":"Austria",
@@ -893,77 +893,77 @@
     "date":"2021-06-04",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":37.89,
-    "people_fully_vaccinated_per_hundred":13.36
+    "people_fully_vaccinated_per_hundred":13.37
   },
   {
     "location":"Austria",
     "date":"2021-06-04",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":58.86,
+    "people_vaccinated_per_hundred":58.87,
     "people_fully_vaccinated_per_hundred":20.07
   },
   {
     "location":"Austria",
     "date":"2021-06-04",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":76.48,
-    "people_fully_vaccinated_per_hundred":31.31
+    "people_vaccinated_per_hundred":76.49,
+    "people_fully_vaccinated_per_hundred":31.32
   },
   {
     "location":"Austria",
     "date":"2021-06-04",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":77.54,
-    "people_fully_vaccinated_per_hundred":49.91
+    "people_vaccinated_per_hundred":77.55,
+    "people_fully_vaccinated_per_hundred":49.92
   },
   {
     "location":"Austria",
     "date":"2021-06-04",
     "age_group":"80+",
     "people_vaccinated_per_hundred":96.33,
-    "people_fully_vaccinated_per_hundred":84.11
+    "people_fully_vaccinated_per_hundred":84.12
   },
   {
     "location":"Austria",
     "date":"2021-06-11",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":29.4,
-    "people_fully_vaccinated_per_hundred":10.13
+    "people_fully_vaccinated_per_hundred":10.14
   },
   {
     "location":"Austria",
     "date":"2021-06-11",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":43.06,
-    "people_fully_vaccinated_per_hundred":16.63
+    "people_vaccinated_per_hundred":43.07,
+    "people_fully_vaccinated_per_hundred":16.64
   },
   {
     "location":"Austria",
     "date":"2021-06-11",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":63.68,
-    "people_fully_vaccinated_per_hundred":26.34
+    "people_vaccinated_per_hundred":63.69,
+    "people_fully_vaccinated_per_hundred":26.35
   },
   {
     "location":"Austria",
     "date":"2021-06-11",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":77.98,
-    "people_fully_vaccinated_per_hundred":42.31
+    "people_vaccinated_per_hundred":77.99,
+    "people_fully_vaccinated_per_hundred":42.32
   },
   {
     "location":"Austria",
     "date":"2021-06-11",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":78.28,
-    "people_fully_vaccinated_per_hundred":54.58
+    "people_fully_vaccinated_per_hundred":54.59
   },
   {
     "location":"Austria",
     "date":"2021-06-11",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":96.86,
-    "people_fully_vaccinated_per_hundred":86.61
+    "people_vaccinated_per_hundred":96.87,
+    "people_fully_vaccinated_per_hundred":86.62
   },
   {
     "location":"Austria",
@@ -976,28 +976,28 @@
     "location":"Austria",
     "date":"2021-06-18",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":47.7,
+    "people_vaccinated_per_hundred":47.71,
     "people_fully_vaccinated_per_hundred":20.15
   },
   {
     "location":"Austria",
     "date":"2021-06-18",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":66.56,
-    "people_fully_vaccinated_per_hundred":33.13
+    "people_vaccinated_per_hundred":66.57,
+    "people_fully_vaccinated_per_hundred":33.14
   },
   {
     "location":"Austria",
     "date":"2021-06-18",
     "age_group":"60-69",
     "people_vaccinated_per_hundred":79.35,
-    "people_fully_vaccinated_per_hundred":51.33
+    "people_fully_vaccinated_per_hundred":51.34
   },
   {
     "location":"Austria",
     "date":"2021-06-18",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":79.01,
+    "people_vaccinated_per_hundred":79.02,
     "people_fully_vaccinated_per_hundred":59.09
   },
   {
@@ -1005,7 +1005,7 @@
     "date":"2021-06-18",
     "age_group":"80+",
     "people_vaccinated_per_hundred":97.43,
-    "people_fully_vaccinated_per_hundred":88.81
+    "people_fully_vaccinated_per_hundred":88.82
   },
   {
     "location":"Austria",
@@ -1018,36 +1018,36 @@
     "location":"Austria",
     "date":"2021-06-25",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":51.67,
-    "people_fully_vaccinated_per_hundred":24.52
+    "people_vaccinated_per_hundred":51.68,
+    "people_fully_vaccinated_per_hundred":24.53
   },
   {
     "location":"Austria",
     "date":"2021-06-25",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":68.08,
-    "people_fully_vaccinated_per_hundred":42.34
+    "people_vaccinated_per_hundred":68.09,
+    "people_fully_vaccinated_per_hundred":42.35
   },
   {
     "location":"Austria",
     "date":"2021-06-25",
     "age_group":"60-69",
     "people_vaccinated_per_hundred":80.28,
-    "people_fully_vaccinated_per_hundred":58.34
+    "people_fully_vaccinated_per_hundred":58.35
   },
   {
     "location":"Austria",
     "date":"2021-06-25",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":79.56,
-    "people_fully_vaccinated_per_hundred":65.16
+    "people_vaccinated_per_hundred":79.57,
+    "people_fully_vaccinated_per_hundred":65.17
   },
   {
     "location":"Austria",
     "date":"2021-06-25",
     "age_group":"80+",
     "people_vaccinated_per_hundred":97.86,
-    "people_fully_vaccinated_per_hundred":90.86
+    "people_fully_vaccinated_per_hundred":90.87
   },
   {
     "location":"Austria",
@@ -1060,120 +1060,120 @@
     "location":"Austria",
     "date":"2021-07-02",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":55.03,
-    "people_fully_vaccinated_per_hundred":30.16
+    "people_vaccinated_per_hundred":55.04,
+    "people_fully_vaccinated_per_hundred":30.17
   },
   {
     "location":"Austria",
     "date":"2021-07-02",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":69.55,
-    "people_fully_vaccinated_per_hundred":49.58
+    "people_vaccinated_per_hundred":69.56,
+    "people_fully_vaccinated_per_hundred":49.59
   },
   {
     "location":"Austria",
     "date":"2021-07-02",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":81.21,
-    "people_fully_vaccinated_per_hundred":66.13
+    "people_vaccinated_per_hundred":81.22,
+    "people_fully_vaccinated_per_hundred":66.14
   },
   {
     "location":"Austria",
     "date":"2021-07-02",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":80.14,
-    "people_fully_vaccinated_per_hundred":71.77
+    "people_vaccinated_per_hundred":80.15,
+    "people_fully_vaccinated_per_hundred":71.78
   },
   {
     "location":"Austria",
     "date":"2021-07-02",
     "age_group":"80+",
     "people_vaccinated_per_hundred":98.31,
-    "people_fully_vaccinated_per_hundred":92.39
+    "people_fully_vaccinated_per_hundred":92.41
   },
   {
     "location":"Austria",
     "date":"2021-07-09",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":48.21,
-    "people_fully_vaccinated_per_hundred":24.82
+    "people_fully_vaccinated_per_hundred":24.83
   },
   {
     "location":"Austria",
     "date":"2021-07-09",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":57.36,
-    "people_fully_vaccinated_per_hundred":35.98
+    "people_vaccinated_per_hundred":57.37,
+    "people_fully_vaccinated_per_hundred":35.99
   },
   {
     "location":"Austria",
     "date":"2021-07-09",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":70.68,
-    "people_fully_vaccinated_per_hundred":55.01
+    "people_vaccinated_per_hundred":70.69,
+    "people_fully_vaccinated_per_hundred":55.02
   },
   {
     "location":"Austria",
     "date":"2021-07-09",
     "age_group":"60-69",
     "people_vaccinated_per_hundred":82.02,
-    "people_fully_vaccinated_per_hundred":70.82
+    "people_fully_vaccinated_per_hundred":70.83
   },
   {
     "location":"Austria",
     "date":"2021-07-09",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":80.61,
-    "people_fully_vaccinated_per_hundred":74.84
+    "people_vaccinated_per_hundred":80.62,
+    "people_fully_vaccinated_per_hundred":74.85
   },
   {
     "location":"Austria",
     "date":"2021-07-09",
     "age_group":"80+",
     "people_vaccinated_per_hundred":98.67,
-    "people_fully_vaccinated_per_hundred":93.43
+    "people_fully_vaccinated_per_hundred":93.44
   },
   {
     "location":"Austria",
     "date":"2021-07-16",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":50.62,
+    "people_vaccinated_per_hundred":50.63,
     "people_fully_vaccinated_per_hundred":29.67
   },
   {
     "location":"Austria",
     "date":"2021-07-16",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":58.8,
-    "people_fully_vaccinated_per_hundred":41.5
+    "people_vaccinated_per_hundred":58.81,
+    "people_fully_vaccinated_per_hundred":41.51
   },
   {
     "location":"Austria",
     "date":"2021-07-16",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":71.65,
-    "people_fully_vaccinated_per_hundred":59.79
+    "people_vaccinated_per_hundred":71.66,
+    "people_fully_vaccinated_per_hundred":59.8
   },
   {
     "location":"Austria",
     "date":"2021-07-16",
     "age_group":"60-69",
     "people_vaccinated_per_hundred":82.75,
-    "people_fully_vaccinated_per_hundred":74.69
+    "people_fully_vaccinated_per_hundred":74.71
   },
   {
     "location":"Austria",
     "date":"2021-07-16",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":81.07,
-    "people_fully_vaccinated_per_hundred":76.39
+    "people_vaccinated_per_hundred":81.08,
+    "people_fully_vaccinated_per_hundred":76.41
   },
   {
     "location":"Austria",
     "date":"2021-07-16",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":99.03,
-    "people_fully_vaccinated_per_hundred":94.27
+    "people_vaccinated_per_hundred":99.04,
+    "people_fully_vaccinated_per_hundred":94.29
   },
   {
     "location":"Austria",
@@ -1186,792 +1186,792 @@
     "location":"Austria",
     "date":"2021-07-23",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":60.12,
-    "people_fully_vaccinated_per_hundred":46.34
+    "people_vaccinated_per_hundred":60.13,
+    "people_fully_vaccinated_per_hundred":46.35
   },
   {
     "location":"Austria",
     "date":"2021-07-23",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":72.52,
-    "people_fully_vaccinated_per_hundred":64.25
+    "people_vaccinated_per_hundred":72.53,
+    "people_fully_vaccinated_per_hundred":64.26
   },
   {
     "location":"Austria",
     "date":"2021-07-23",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":83.4,
-    "people_fully_vaccinated_per_hundred":76.97
+    "people_vaccinated_per_hundred":83.41,
+    "people_fully_vaccinated_per_hundred":76.98
   },
   {
     "location":"Austria",
     "date":"2021-07-23",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":81.51,
-    "people_fully_vaccinated_per_hundred":77.4
+    "people_fully_vaccinated_per_hundred":77.41
   },
   {
     "location":"Austria",
     "date":"2021-07-23",
     "age_group":"80+",
     "people_vaccinated_per_hundred":99.4,
-    "people_fully_vaccinated_per_hundred":94.98
+    "people_fully_vaccinated_per_hundred":94.99
   },
   {
     "location":"Austria",
     "date":"2021-07-30",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":53.86,
+    "people_vaccinated_per_hundred":53.87,
     "people_fully_vaccinated_per_hundred":40.38
   },
   {
     "location":"Austria",
     "date":"2021-07-30",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":60.88,
-    "people_fully_vaccinated_per_hundred":50.76
+    "people_vaccinated_per_hundred":60.89,
+    "people_fully_vaccinated_per_hundred":50.77
   },
   {
     "location":"Austria",
     "date":"2021-07-30",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":73.04,
-    "people_fully_vaccinated_per_hundred":66.86
+    "people_vaccinated_per_hundred":73.05,
+    "people_fully_vaccinated_per_hundred":66.87
   },
   {
     "location":"Austria",
     "date":"2021-07-30",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":83.83,
-    "people_fully_vaccinated_per_hundred":78.88
+    "people_vaccinated_per_hundred":83.84,
+    "people_fully_vaccinated_per_hundred":78.89
   },
   {
     "location":"Austria",
     "date":"2021-07-30",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":81.8,
-    "people_fully_vaccinated_per_hundred":78.25
+    "people_fully_vaccinated_per_hundred":78.26
   },
   {
     "location":"Austria",
     "date":"2021-07-30",
     "age_group":"80+",
     "people_vaccinated_per_hundred":99.67,
-    "people_fully_vaccinated_per_hundred":95.59
+    "people_fully_vaccinated_per_hundred":95.6
   },
   {
     "location":"Austria",
     "date":"2021-08-06",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":54.97,
+    "people_vaccinated_per_hundred":54.98,
     "people_fully_vaccinated_per_hundred":44.6
   },
   {
     "location":"Austria",
     "date":"2021-08-06",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":61.63,
-    "people_fully_vaccinated_per_hundred":54.63
+    "people_vaccinated_per_hundred":61.64,
+    "people_fully_vaccinated_per_hundred":54.64
   },
   {
     "location":"Austria",
     "date":"2021-08-06",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":73.59,
-    "people_fully_vaccinated_per_hundred":68.75
+    "people_vaccinated_per_hundred":73.6,
+    "people_fully_vaccinated_per_hundred":68.76
   },
   {
     "location":"Austria",
     "date":"2021-08-06",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":84.27,
-    "people_fully_vaccinated_per_hundred":80.31
+    "people_vaccinated_per_hundred":84.28,
+    "people_fully_vaccinated_per_hundred":80.32
   },
   {
     "location":"Austria",
     "date":"2021-08-06",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":82.1,
-    "people_fully_vaccinated_per_hundred":79.0
+    "people_vaccinated_per_hundred":82.11,
+    "people_fully_vaccinated_per_hundred":79.01
   },
   {
     "location":"Austria",
     "date":"2021-08-06",
     "age_group":"80+",
     "people_vaccinated_per_hundred":99.93,
-    "people_fully_vaccinated_per_hundred":96.13
+    "people_fully_vaccinated_per_hundred":96.14
   },
   {
     "location":"Austria",
     "date":"2021-08-13",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":55.7,
-    "people_fully_vaccinated_per_hundred":47.94
+    "people_fully_vaccinated_per_hundred":47.95
   },
   {
     "location":"Austria",
     "date":"2021-08-13",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":62.14,
-    "people_fully_vaccinated_per_hundred":57.06
+    "people_vaccinated_per_hundred":62.15,
+    "people_fully_vaccinated_per_hundred":57.07
   },
   {
     "location":"Austria",
     "date":"2021-08-13",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":73.97,
-    "people_fully_vaccinated_per_hundred":69.98
+    "people_vaccinated_per_hundred":73.98,
+    "people_fully_vaccinated_per_hundred":69.99
   },
   {
     "location":"Austria",
     "date":"2021-08-13",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":84.57,
-    "people_fully_vaccinated_per_hundred":81.24
+    "people_vaccinated_per_hundred":84.58,
+    "people_fully_vaccinated_per_hundred":81.25
   },
   {
     "location":"Austria",
     "date":"2021-08-13",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":82.31,
-    "people_fully_vaccinated_per_hundred":79.59
+    "people_fully_vaccinated_per_hundred":79.6
   },
   {
     "location":"Austria",
     "date":"2021-08-13",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":100.11,
-    "people_fully_vaccinated_per_hundred":96.6
+    "people_vaccinated_per_hundred":100.12,
+    "people_fully_vaccinated_per_hundred":96.61
   },
   {
     "location":"Austria",
     "date":"2021-08-20",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":56.53,
+    "people_vaccinated_per_hundred":56.54,
     "people_fully_vaccinated_per_hundred":51.34
   },
   {
     "location":"Austria",
     "date":"2021-08-20",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":62.77,
-    "people_fully_vaccinated_per_hundred":58.69
+    "people_vaccinated_per_hundred":62.78,
+    "people_fully_vaccinated_per_hundred":58.7
   },
   {
     "location":"Austria",
     "date":"2021-08-20",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":74.41,
-    "people_fully_vaccinated_per_hundred":70.98
+    "people_vaccinated_per_hundred":74.42,
+    "people_fully_vaccinated_per_hundred":70.99
   },
   {
     "location":"Austria",
     "date":"2021-08-20",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":84.92,
-    "people_fully_vaccinated_per_hundred":82.0
+    "people_vaccinated_per_hundred":84.93,
+    "people_fully_vaccinated_per_hundred":82.01
   },
   {
     "location":"Austria",
     "date":"2021-08-20",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":82.54,
-    "people_fully_vaccinated_per_hundred":80.07
+    "people_vaccinated_per_hundred":82.55,
+    "people_fully_vaccinated_per_hundred":80.08
   },
   {
     "location":"Austria",
     "date":"2021-08-20",
     "age_group":"80+",
     "people_vaccinated_per_hundred":100.35,
-    "people_fully_vaccinated_per_hundred":96.96
+    "people_fully_vaccinated_per_hundred":96.97
   },
   {
     "location":"Austria",
     "date":"2021-08-27",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":57.43,
-    "people_fully_vaccinated_per_hundred":52.71
+    "people_vaccinated_per_hundred":57.44,
+    "people_fully_vaccinated_per_hundred":52.72
   },
   {
     "location":"Austria",
     "date":"2021-08-27",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":63.4,
-    "people_fully_vaccinated_per_hundred":59.6
+    "people_vaccinated_per_hundred":63.41,
+    "people_fully_vaccinated_per_hundred":59.61
   },
   {
     "location":"Austria",
     "date":"2021-08-27",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":74.87,
-    "people_fully_vaccinated_per_hundred":71.56
+    "people_vaccinated_per_hundred":74.88,
+    "people_fully_vaccinated_per_hundred":71.57
   },
   {
     "location":"Austria",
     "date":"2021-08-27",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":85.27,
-    "people_fully_vaccinated_per_hundred":82.46
+    "people_vaccinated_per_hundred":85.28,
+    "people_fully_vaccinated_per_hundred":82.47
   },
   {
     "location":"Austria",
     "date":"2021-08-27",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":82.78,
-    "people_fully_vaccinated_per_hundred":80.38
+    "people_vaccinated_per_hundred":82.79,
+    "people_fully_vaccinated_per_hundred":80.39
   },
   {
     "location":"Austria",
     "date":"2021-08-27",
     "age_group":"80+",
     "people_vaccinated_per_hundred":100.58,
-    "people_fully_vaccinated_per_hundred":97.21
+    "people_fully_vaccinated_per_hundred":97.22
   },
   {
     "location":"Austria",
     "date":"2021-09-03",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":58.39,
-    "people_fully_vaccinated_per_hundred":53.75
+    "people_fully_vaccinated_per_hundred":53.76
   },
   {
     "location":"Austria",
     "date":"2021-09-03",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":64.07,
-    "people_fully_vaccinated_per_hundred":60.32
+    "people_vaccinated_per_hundred":64.08,
+    "people_fully_vaccinated_per_hundred":60.33
   },
   {
     "location":"Austria",
     "date":"2021-09-03",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":75.31,
-    "people_fully_vaccinated_per_hundred":72.04
+    "people_vaccinated_per_hundred":75.32,
+    "people_fully_vaccinated_per_hundred":72.06
   },
   {
     "location":"Austria",
     "date":"2021-09-03",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":85.61,
-    "people_fully_vaccinated_per_hundred":82.85
+    "people_vaccinated_per_hundred":85.62,
+    "people_fully_vaccinated_per_hundred":82.86
   },
   {
     "location":"Austria",
     "date":"2021-09-03",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":83.01,
-    "people_fully_vaccinated_per_hundred":80.63
+    "people_vaccinated_per_hundred":83.02,
+    "people_fully_vaccinated_per_hundred":80.64
   },
   {
     "location":"Austria",
     "date":"2021-09-03",
     "age_group":"80+",
     "people_vaccinated_per_hundred":100.8,
-    "people_fully_vaccinated_per_hundred":97.45
+    "people_fully_vaccinated_per_hundred":97.46
   },
   {
     "location":"Austria",
     "date":"2021-09-10",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":59.45,
-    "people_fully_vaccinated_per_hundred":54.67
+    "people_vaccinated_per_hundred":59.46,
+    "people_fully_vaccinated_per_hundred":54.68
   },
   {
     "location":"Austria",
     "date":"2021-09-10",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":64.83,
-    "people_fully_vaccinated_per_hundred":60.99
+    "people_vaccinated_per_hundred":64.85,
+    "people_fully_vaccinated_per_hundred":61.0
   },
   {
     "location":"Austria",
     "date":"2021-09-10",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":75.79,
-    "people_fully_vaccinated_per_hundred":72.48
+    "people_vaccinated_per_hundred":75.8,
+    "people_fully_vaccinated_per_hundred":72.49
   },
   {
     "location":"Austria",
     "date":"2021-09-10",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":85.96,
-    "people_fully_vaccinated_per_hundred":83.18
+    "people_vaccinated_per_hundred":85.97,
+    "people_fully_vaccinated_per_hundred":83.19
   },
   {
     "location":"Austria",
     "date":"2021-09-10",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":83.25,
-    "people_fully_vaccinated_per_hundred":80.86
+    "people_fully_vaccinated_per_hundred":80.87
   },
   {
     "location":"Austria",
     "date":"2021-09-10",
     "age_group":"80+",
     "people_vaccinated_per_hundred":101.04,
-    "people_fully_vaccinated_per_hundred":97.68
+    "people_fully_vaccinated_per_hundred":97.69
   },
   {
     "location":"Austria",
     "date":"2021-09-17",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":60.62,
-    "people_fully_vaccinated_per_hundred":55.61
+    "people_vaccinated_per_hundred":60.63,
+    "people_fully_vaccinated_per_hundred":55.62
   },
   {
     "location":"Austria",
     "date":"2021-09-17",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":65.68,
-    "people_fully_vaccinated_per_hundred":61.67
+    "people_vaccinated_per_hundred":65.69,
+    "people_fully_vaccinated_per_hundred":61.68
   },
   {
     "location":"Austria",
     "date":"2021-09-17",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":76.32,
-    "people_fully_vaccinated_per_hundred":72.9
+    "people_vaccinated_per_hundred":76.33,
+    "people_fully_vaccinated_per_hundred":72.91
   },
   {
     "location":"Austria",
     "date":"2021-09-17",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.34,
-    "people_fully_vaccinated_per_hundred":83.51
+    "people_vaccinated_per_hundred":86.35,
+    "people_fully_vaccinated_per_hundred":83.52
   },
   {
     "location":"Austria",
     "date":"2021-09-17",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":83.5,
-    "people_fully_vaccinated_per_hundred":81.08
+    "people_vaccinated_per_hundred":83.51,
+    "people_fully_vaccinated_per_hundred":81.09
   },
   {
     "location":"Austria",
     "date":"2021-09-17",
     "age_group":"80+",
     "people_vaccinated_per_hundred":101.32,
-    "people_fully_vaccinated_per_hundred":97.91
+    "people_fully_vaccinated_per_hundred":97.92
   },
   {
     "location":"Austria",
     "date":"2021-09-24",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":61.74,
-    "people_fully_vaccinated_per_hundred":56.56
+    "people_fully_vaccinated_per_hundred":56.57
   },
   {
     "location":"Austria",
     "date":"2021-09-24",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":66.48,
-    "people_fully_vaccinated_per_hundred":62.34
+    "people_vaccinated_per_hundred":66.49,
+    "people_fully_vaccinated_per_hundred":62.35
   },
   {
     "location":"Austria",
     "date":"2021-09-24",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":76.82,
-    "people_fully_vaccinated_per_hundred":73.34
+    "people_vaccinated_per_hundred":76.83,
+    "people_fully_vaccinated_per_hundred":73.36
   },
   {
     "location":"Austria",
     "date":"2021-09-24",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.69,
-    "people_fully_vaccinated_per_hundred":83.83
+    "people_vaccinated_per_hundred":86.7,
+    "people_fully_vaccinated_per_hundred":83.84
   },
   {
     "location":"Austria",
     "date":"2021-09-24",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":83.74,
-    "people_fully_vaccinated_per_hundred":81.31
+    "people_vaccinated_per_hundred":83.75,
+    "people_fully_vaccinated_per_hundred":81.32
   },
   {
     "location":"Austria",
     "date":"2021-09-24",
     "age_group":"80+",
     "people_vaccinated_per_hundred":101.61,
-    "people_fully_vaccinated_per_hundred":98.14
+    "people_fully_vaccinated_per_hundred":98.15
   },
   {
     "location":"Austria",
     "date":"2021-10-01",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":62.64,
-    "people_fully_vaccinated_per_hundred":57.43
+    "people_vaccinated_per_hundred":62.65,
+    "people_fully_vaccinated_per_hundred":57.44
   },
   {
     "location":"Austria",
     "date":"2021-10-01",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":67.09,
-    "people_fully_vaccinated_per_hundred":62.93
+    "people_vaccinated_per_hundred":67.11,
+    "people_fully_vaccinated_per_hundred":62.94
   },
   {
     "location":"Austria",
     "date":"2021-10-01",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":77.2,
-    "people_fully_vaccinated_per_hundred":73.7
+    "people_vaccinated_per_hundred":77.21,
+    "people_fully_vaccinated_per_hundred":73.71
   },
   {
     "location":"Austria",
     "date":"2021-10-01",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.96,
-    "people_fully_vaccinated_per_hundred":84.1
+    "people_vaccinated_per_hundred":86.97,
+    "people_fully_vaccinated_per_hundred":84.11
   },
   {
     "location":"Austria",
     "date":"2021-10-01",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":83.93,
-    "people_fully_vaccinated_per_hundred":81.49
+    "people_vaccinated_per_hundred":83.94,
+    "people_fully_vaccinated_per_hundred":81.5
   },
   {
     "location":"Austria",
     "date":"2021-10-01",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":101.83,
-    "people_fully_vaccinated_per_hundred":98.34
+    "people_vaccinated_per_hundred":101.84,
+    "people_fully_vaccinated_per_hundred":98.36
   },
   {
     "location":"Austria",
     "date":"2021-10-08",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":63.39,
-    "people_fully_vaccinated_per_hundred":58.29
+    "people_vaccinated_per_hundred":63.4,
+    "people_fully_vaccinated_per_hundred":58.3
   },
   {
     "location":"Austria",
     "date":"2021-10-08",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":67.58,
-    "people_fully_vaccinated_per_hundred":63.52
+    "people_vaccinated_per_hundred":67.59,
+    "people_fully_vaccinated_per_hundred":63.53
   },
   {
     "location":"Austria",
     "date":"2021-10-08",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":77.49,
-    "people_fully_vaccinated_per_hundred":74.07
+    "people_vaccinated_per_hundred":77.5,
+    "people_fully_vaccinated_per_hundred":74.08
   },
   {
     "location":"Austria",
     "date":"2021-10-08",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":87.17,
-    "people_fully_vaccinated_per_hundred":84.38
+    "people_vaccinated_per_hundred":87.18,
+    "people_fully_vaccinated_per_hundred":84.4
   },
   {
     "location":"Austria",
     "date":"2021-10-08",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.08,
-    "people_fully_vaccinated_per_hundred":81.72
+    "people_vaccinated_per_hundred":84.09,
+    "people_fully_vaccinated_per_hundred":81.73
   },
   {
     "location":"Austria",
     "date":"2021-10-08",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":102.06,
-    "people_fully_vaccinated_per_hundred":98.62
+    "people_vaccinated_per_hundred":102.07,
+    "people_fully_vaccinated_per_hundred":98.63
   },
   {
     "location":"Austria",
     "date":"2021-10-15",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":63.97,
-    "people_fully_vaccinated_per_hundred":59.09
+    "people_vaccinated_per_hundred":63.98,
+    "people_fully_vaccinated_per_hundred":59.1
   },
   {
     "location":"Austria",
     "date":"2021-10-15",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":67.99,
-    "people_fully_vaccinated_per_hundred":64.08
+    "people_vaccinated_per_hundred":68.0,
+    "people_fully_vaccinated_per_hundred":64.09
   },
   {
     "location":"Austria",
     "date":"2021-10-15",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":77.73,
-    "people_fully_vaccinated_per_hundred":74.41
+    "people_vaccinated_per_hundred":77.74,
+    "people_fully_vaccinated_per_hundred":74.42
   },
   {
     "location":"Austria",
     "date":"2021-10-15",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":87.35,
-    "people_fully_vaccinated_per_hundred":84.65
+    "people_vaccinated_per_hundred":87.36,
+    "people_fully_vaccinated_per_hundred":84.66
   },
   {
     "location":"Austria",
     "date":"2021-10-15",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":84.2,
-    "people_fully_vaccinated_per_hundred":81.92
+    "people_fully_vaccinated_per_hundred":81.94
   },
   {
     "location":"Austria",
     "date":"2021-10-15",
     "age_group":"80+",
     "people_vaccinated_per_hundred":102.24,
-    "people_fully_vaccinated_per_hundred":98.86
+    "people_fully_vaccinated_per_hundred":98.87
   },
   {
     "location":"Austria",
     "date":"2021-10-22",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":64.68,
-    "people_fully_vaccinated_per_hundred":59.83
+    "people_vaccinated_per_hundred":64.7,
+    "people_fully_vaccinated_per_hundred":59.84
   },
   {
     "location":"Austria",
     "date":"2021-10-22",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":68.55,
-    "people_fully_vaccinated_per_hundred":64.62
+    "people_vaccinated_per_hundred":68.56,
+    "people_fully_vaccinated_per_hundred":64.63
   },
   {
     "location":"Austria",
     "date":"2021-10-22",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":78.06,
-    "people_fully_vaccinated_per_hundred":74.73
+    "people_vaccinated_per_hundred":78.07,
+    "people_fully_vaccinated_per_hundred":74.74
   },
   {
     "location":"Austria",
     "date":"2021-10-22",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":87.53,
-    "people_fully_vaccinated_per_hundred":84.89
+    "people_vaccinated_per_hundred":87.54,
+    "people_fully_vaccinated_per_hundred":84.9
   },
   {
     "location":"Austria",
     "date":"2021-10-22",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.31,
-    "people_fully_vaccinated_per_hundred":82.11
+    "people_vaccinated_per_hundred":84.32,
+    "people_fully_vaccinated_per_hundred":82.12
   },
   {
     "location":"Austria",
     "date":"2021-10-22",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":102.39,
-    "people_fully_vaccinated_per_hundred":99.08
+    "people_vaccinated_per_hundred":102.4,
+    "people_fully_vaccinated_per_hundred":99.09
   },
   {
     "location":"Austria",
     "date":"2021-10-29",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":65.74,
-    "people_fully_vaccinated_per_hundred":60.52
+    "people_vaccinated_per_hundred":65.76,
+    "people_fully_vaccinated_per_hundred":60.53
   },
   {
     "location":"Austria",
     "date":"2021-10-29",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":69.43,
-    "people_fully_vaccinated_per_hundred":65.1
+    "people_vaccinated_per_hundred":69.45,
+    "people_fully_vaccinated_per_hundred":65.11
   },
   {
     "location":"Austria",
     "date":"2021-10-29",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":78.55,
-    "people_fully_vaccinated_per_hundred":75.02
+    "people_vaccinated_per_hundred":78.57,
+    "people_fully_vaccinated_per_hundred":75.03
   },
   {
     "location":"Austria",
     "date":"2021-10-29",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":87.75,
-    "people_fully_vaccinated_per_hundred":85.08
+    "people_vaccinated_per_hundred":87.76,
+    "people_fully_vaccinated_per_hundred":85.09
   },
   {
     "location":"Austria",
     "date":"2021-10-29",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":84.43,
-    "people_fully_vaccinated_per_hundred":82.24
+    "people_fully_vaccinated_per_hundred":82.25
   },
   {
     "location":"Austria",
     "date":"2021-10-29",
     "age_group":"80+",
     "people_vaccinated_per_hundred":102.52,
-    "people_fully_vaccinated_per_hundred":99.25
+    "people_fully_vaccinated_per_hundred":99.26
   },
   {
     "location":"Austria",
     "date":"2021-11-05",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":67.36,
-    "people_fully_vaccinated_per_hundred":61.21
+    "people_vaccinated_per_hundred":67.38,
+    "people_fully_vaccinated_per_hundred":61.22
   },
   {
     "location":"Austria",
     "date":"2021-11-05",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":70.73,
-    "people_fully_vaccinated_per_hundred":65.63
+    "people_vaccinated_per_hundred":70.75,
+    "people_fully_vaccinated_per_hundred":65.65
   },
   {
     "location":"Austria",
     "date":"2021-11-05",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":79.29,
-    "people_fully_vaccinated_per_hundred":75.35
+    "people_vaccinated_per_hundred":79.3,
+    "people_fully_vaccinated_per_hundred":75.36
   },
   {
     "location":"Austria",
     "date":"2021-11-05",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":88.07,
-    "people_fully_vaccinated_per_hundred":85.31
+    "people_vaccinated_per_hundred":88.08,
+    "people_fully_vaccinated_per_hundred":85.32
   },
   {
     "location":"Austria",
     "date":"2021-11-05",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.58,
-    "people_fully_vaccinated_per_hundred":82.4
+    "people_vaccinated_per_hundred":84.59,
+    "people_fully_vaccinated_per_hundred":82.41
   },
   {
     "location":"Austria",
     "date":"2021-11-05",
     "age_group":"80+",
     "people_vaccinated_per_hundred":102.68,
-    "people_fully_vaccinated_per_hundred":99.45
+    "people_fully_vaccinated_per_hundred":99.46
   },
   {
     "location":"Austria",
     "date":"2021-11-12",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":70.2,
-    "people_fully_vaccinated_per_hundred":62.08
+    "people_vaccinated_per_hundred":70.22,
+    "people_fully_vaccinated_per_hundred":62.09
   },
   {
     "location":"Austria",
     "date":"2021-11-12",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":72.85,
-    "people_fully_vaccinated_per_hundred":66.29
+    "people_vaccinated_per_hundred":72.87,
+    "people_fully_vaccinated_per_hundred":66.31
   },
   {
     "location":"Austria",
     "date":"2021-11-12",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":80.53,
-    "people_fully_vaccinated_per_hundred":75.81
+    "people_vaccinated_per_hundred":80.54,
+    "people_fully_vaccinated_per_hundred":75.83
   },
   {
     "location":"Austria",
     "date":"2021-11-12",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":88.77,
-    "people_fully_vaccinated_per_hundred":85.65
+    "people_vaccinated_per_hundred":88.78,
+    "people_fully_vaccinated_per_hundred":85.66
   },
   {
     "location":"Austria",
     "date":"2021-11-12",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":84.97,
-    "people_fully_vaccinated_per_hundred":82.64
+    "people_fully_vaccinated_per_hundred":82.65
   },
   {
     "location":"Austria",
     "date":"2021-11-12",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":103.01,
-    "people_fully_vaccinated_per_hundred":99.7
+    "people_vaccinated_per_hundred":103.02,
+    "people_fully_vaccinated_per_hundred":99.71
   },
   {
     "location":"Austria",
     "date":"2021-11-19",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":72.16,
-    "people_fully_vaccinated_per_hundred":63.06
+    "people_vaccinated_per_hundred":72.19,
+    "people_fully_vaccinated_per_hundred":63.08
   },
   {
     "location":"Austria",
     "date":"2021-11-19",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":74.46,
-    "people_fully_vaccinated_per_hundred":67.11
+    "people_vaccinated_per_hundred":74.48,
+    "people_fully_vaccinated_per_hundred":67.12
   },
   {
     "location":"Austria",
     "date":"2021-11-19",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":81.49,
-    "people_fully_vaccinated_per_hundred":76.37
+    "people_vaccinated_per_hundred":81.51,
+    "people_fully_vaccinated_per_hundred":76.39
   },
   {
     "location":"Austria",
     "date":"2021-11-19",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":89.48,
-    "people_fully_vaccinated_per_hundred":86.01
+    "people_vaccinated_per_hundred":89.49,
+    "people_fully_vaccinated_per_hundred":86.03
   },
   {
     "location":"Austria",
     "date":"2021-11-19",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.38,
-    "people_fully_vaccinated_per_hundred":82.91
+    "people_vaccinated_per_hundred":85.39,
+    "people_fully_vaccinated_per_hundred":82.93
   },
   {
     "location":"Austria",
     "date":"2021-11-19",
     "age_group":"80+",
     "people_vaccinated_per_hundred":103.43,
-    "people_fully_vaccinated_per_hundred":99.96
+    "people_fully_vaccinated_per_hundred":99.97
   },
   {
     "location":"Austria",
     "date":"2021-11-26",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":72.72,
-    "people_fully_vaccinated_per_hundred":63.64
+    "people_vaccinated_per_hundred":73.09,
+    "people_fully_vaccinated_per_hundred":64.19
   },
   {
     "location":"Austria",
     "date":"2021-11-26",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":74.99,
-    "people_fully_vaccinated_per_hundred":67.62
+    "people_vaccinated_per_hundred":75.34,
+    "people_fully_vaccinated_per_hundred":68.09
   },
   {
     "location":"Austria",
     "date":"2021-11-26",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":81.87,
-    "people_fully_vaccinated_per_hundred":76.73
+    "people_vaccinated_per_hundred":82.11,
+    "people_fully_vaccinated_per_hundred":77.04
   },
   {
     "location":"Austria",
     "date":"2021-11-26",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":89.84,
-    "people_fully_vaccinated_per_hundred":86.25
+    "people_vaccinated_per_hundred":90.04,
+    "people_fully_vaccinated_per_hundred":86.41
   },
   {
     "location":"Austria",
     "date":"2021-11-26",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.65,
-    "people_fully_vaccinated_per_hundred":83.09
+    "people_vaccinated_per_hundred":85.78,
+    "people_fully_vaccinated_per_hundred":83.18
   },
   {
     "location":"Austria",
     "date":"2021-11-26",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":103.75,
-    "people_fully_vaccinated_per_hundred":100.14
+    "people_vaccinated_per_hundred":103.89,
+    "people_fully_vaccinated_per_hundred":100.23
   },
   {
     "location":"Belgium",
@@ -23922,7 +23922,7 @@
     "location":"Ireland",
     "date":"2021-01-15",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":3.14,
+    "people_vaccinated_per_hundred":3.15,
     "people_fully_vaccinated_per_hundred":0.0
   },
   {
@@ -24070,7 +24070,7 @@
     "date":"2021-02-05",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":2.3,
-    "people_fully_vaccinated_per_hundred":0.71
+    "people_fully_vaccinated_per_hundred":0.72
   },
   {
     "location":"Ireland",
@@ -24146,7 +24146,7 @@
     "location":"Ireland",
     "date":"2021-02-19",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":5.08,
+    "people_vaccinated_per_hundred":5.09,
     "people_fully_vaccinated_per_hundred":3.12
   },
   {
@@ -24230,21 +24230,21 @@
     "location":"Ireland",
     "date":"2021-03-05",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":7.14,
+    "people_vaccinated_per_hundred":7.15,
     "people_fully_vaccinated_per_hundred":3.62
   },
   {
     "location":"Ireland",
     "date":"2021-03-05",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":7.21,
+    "people_vaccinated_per_hundred":7.22,
     "people_fully_vaccinated_per_hundred":2.19
   },
   {
     "location":"Ireland",
     "date":"2021-03-05",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":66.98,
+    "people_vaccinated_per_hundred":66.99,
     "people_fully_vaccinated_per_hundred":9.85
   },
   {
@@ -24322,7 +24322,7 @@
     "date":"2021-03-19",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":15.9,
-    "people_fully_vaccinated_per_hundred":2.93
+    "people_fully_vaccinated_per_hundred":2.94
   },
   {
     "location":"Ireland",
@@ -24356,7 +24356,7 @@
     "location":"Ireland",
     "date":"2021-03-26",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":10.51,
+    "people_vaccinated_per_hundred":10.52,
     "people_fully_vaccinated_per_hundred":4.36
   },
   {
@@ -24370,7 +24370,7 @@
     "location":"Ireland",
     "date":"2021-03-26",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":104.07,
+    "people_vaccinated_per_hundred":104.08,
     "people_fully_vaccinated_per_hundred":42.51
   },
   {
@@ -24391,7 +24391,7 @@
     "location":"Ireland",
     "date":"2021-04-02",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":14.5,
+    "people_vaccinated_per_hundred":14.51,
     "people_fully_vaccinated_per_hundred":6.12
   },
   {
@@ -24420,7 +24420,7 @@
     "date":"2021-04-09",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":7.17,
-    "people_fully_vaccinated_per_hundred":2.09
+    "people_fully_vaccinated_per_hundred":2.1
   },
   {
     "location":"Ireland",
@@ -24433,21 +24433,21 @@
     "location":"Ireland",
     "date":"2021-04-09",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":15.9,
+    "people_vaccinated_per_hundred":15.91,
     "people_fully_vaccinated_per_hundred":6.18
   },
   {
     "location":"Ireland",
     "date":"2021-04-09",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":14.77,
+    "people_vaccinated_per_hundred":14.78,
     "people_fully_vaccinated_per_hundred":4.73
   },
   {
     "location":"Ireland",
     "date":"2021-04-09",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":58.47,
+    "people_vaccinated_per_hundred":58.48,
     "people_fully_vaccinated_per_hundred":9.67
   },
   {
@@ -24475,7 +24475,7 @@
     "location":"Ireland",
     "date":"2021-04-16",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":16.74,
+    "people_vaccinated_per_hundred":16.75,
     "people_fully_vaccinated_per_hundred":6.24
   },
   {
@@ -24489,14 +24489,14 @@
     "location":"Ireland",
     "date":"2021-04-16",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.31,
-    "people_fully_vaccinated_per_hundred":15.52
+    "people_vaccinated_per_hundred":84.32,
+    "people_fully_vaccinated_per_hundred":15.53
   },
   {
     "location":"Ireland",
     "date":"2021-04-16",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":107.9,
+    "people_vaccinated_per_hundred":107.91,
     "people_fully_vaccinated_per_hundred":98.13
   },
   {
@@ -24517,28 +24517,28 @@
     "location":"Ireland",
     "date":"2021-04-23",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":19.15,
+    "people_vaccinated_per_hundred":19.16,
     "people_fully_vaccinated_per_hundred":6.36
   },
   {
     "location":"Ireland",
     "date":"2021-04-23",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":30.3,
+    "people_vaccinated_per_hundred":30.27,
     "people_fully_vaccinated_per_hundred":5.11
   },
   {
     "location":"Ireland",
     "date":"2021-04-23",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":101.1,
+    "people_vaccinated_per_hundred":101.17,
     "people_fully_vaccinated_per_hundred":27.93
   },
   {
     "location":"Ireland",
     "date":"2021-04-23",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":108.29,
+    "people_vaccinated_per_hundred":108.3,
     "people_fully_vaccinated_per_hundred":102.25
   },
   {
@@ -24559,29 +24559,29 @@
     "location":"Ireland",
     "date":"2021-04-30",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":23.98,
+    "people_vaccinated_per_hundred":23.99,
     "people_fully_vaccinated_per_hundred":6.43
   },
   {
     "location":"Ireland",
     "date":"2021-04-30",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":48.61,
+    "people_vaccinated_per_hundred":48.54,
     "people_fully_vaccinated_per_hundred":5.35
   },
   {
     "location":"Ireland",
     "date":"2021-04-30",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":104.54,
-    "people_fully_vaccinated_per_hundred":41.74
+    "people_vaccinated_per_hundred":104.67,
+    "people_fully_vaccinated_per_hundred":41.75
   },
   {
     "location":"Ireland",
     "date":"2021-04-30",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":108.61,
-    "people_fully_vaccinated_per_hundred":104.81
+    "people_vaccinated_per_hundred":108.62,
+    "people_fully_vaccinated_per_hundred":104.82
   },
   {
     "location":"Ireland",
@@ -24602,21 +24602,21 @@
     "date":"2021-05-07",
     "age_group":"50-59",
     "people_vaccinated_per_hundred":28.57,
-    "people_fully_vaccinated_per_hundred":6.67
+    "people_fully_vaccinated_per_hundred":6.68
   },
   {
     "location":"Ireland",
     "date":"2021-05-07",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":75.28,
+    "people_vaccinated_per_hundred":75.21,
     "people_fully_vaccinated_per_hundred":6.08
   },
   {
     "location":"Ireland",
     "date":"2021-05-07",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":105.36,
-    "people_fully_vaccinated_per_hundred":57.27
+    "people_vaccinated_per_hundred":105.49,
+    "people_fully_vaccinated_per_hundred":57.28
   },
   {
     "location":"Ireland",
@@ -24650,15 +24650,15 @@
     "location":"Ireland",
     "date":"2021-05-14",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":90.88,
+    "people_vaccinated_per_hundred":90.81,
     "people_fully_vaccinated_per_hundred":8.5
   },
   {
     "location":"Ireland",
     "date":"2021-05-14",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":105.89,
-    "people_fully_vaccinated_per_hundred":83.08
+    "people_vaccinated_per_hundred":106.03,
+    "people_fully_vaccinated_per_hundred":83.09
   },
   {
     "location":"Ireland",
@@ -24672,7 +24672,7 @@
     "date":"2021-05-21",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":11.69,
-    "people_fully_vaccinated_per_hundred":2.92
+    "people_fully_vaccinated_per_hundred":2.93
   },
   {
     "location":"Ireland",
@@ -24692,15 +24692,15 @@
     "location":"Ireland",
     "date":"2021-05-21",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":94.4,
-    "people_fully_vaccinated_per_hundred":11.59
+    "people_vaccinated_per_hundred":94.34,
+    "people_fully_vaccinated_per_hundred":11.58
   },
   {
     "location":"Ireland",
     "date":"2021-05-21",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.18,
-    "people_fully_vaccinated_per_hundred":96.51
+    "people_vaccinated_per_hundred":106.32,
+    "people_fully_vaccinated_per_hundred":96.52
   },
   {
     "location":"Ireland",
@@ -24727,36 +24727,36 @@
     "location":"Ireland",
     "date":"2021-05-28",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":87.42,
+    "people_vaccinated_per_hundred":87.43,
     "people_fully_vaccinated_per_hundred":25.47
   },
   {
     "location":"Ireland",
     "date":"2021-05-28",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":96.21,
+    "people_vaccinated_per_hundred":96.14,
     "people_fully_vaccinated_per_hundred":14.5
   },
   {
     "location":"Ireland",
     "date":"2021-05-28",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.41,
-    "people_fully_vaccinated_per_hundred":99.24
+    "people_vaccinated_per_hundred":106.55,
+    "people_fully_vaccinated_per_hundred":99.25
   },
   {
     "location":"Ireland",
     "date":"2021-05-28",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.06,
-    "people_fully_vaccinated_per_hundred":107.06
+    "people_fully_vaccinated_per_hundred":107.07
   },
   {
     "location":"Ireland",
     "date":"2021-06-04",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":14.65,
-    "people_fully_vaccinated_per_hundred":6.43
+    "people_fully_vaccinated_per_hundred":6.44
   },
   {
     "location":"Ireland",
@@ -24769,28 +24769,28 @@
     "location":"Ireland",
     "date":"2021-06-04",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":91.69,
+    "people_vaccinated_per_hundred":91.7,
     "people_fully_vaccinated_per_hundred":32.99
   },
   {
     "location":"Ireland",
     "date":"2021-06-04",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":97.26,
+    "people_vaccinated_per_hundred":97.19,
     "people_fully_vaccinated_per_hundred":17.19
   },
   {
     "location":"Ireland",
     "date":"2021-06-04",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.58,
-    "people_fully_vaccinated_per_hundred":99.99
+    "people_vaccinated_per_hundred":106.71,
+    "people_fully_vaccinated_per_hundred":100.01
   },
   {
     "location":"Ireland",
     "date":"2021-06-04",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.12,
+    "people_vaccinated_per_hundred":109.13,
     "people_fully_vaccinated_per_hundred":107.26
   },
   {
@@ -24798,7 +24798,7 @@
     "date":"2021-06-11",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":15.91,
-    "people_fully_vaccinated_per_hundred":7.72
+    "people_fully_vaccinated_per_hundred":7.73
   },
   {
     "location":"Ireland",
@@ -24811,29 +24811,29 @@
     "location":"Ireland",
     "date":"2021-06-11",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":93.12,
+    "people_vaccinated_per_hundred":93.13,
     "people_fully_vaccinated_per_hundred":46.36
   },
   {
     "location":"Ireland",
     "date":"2021-06-11",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":97.75,
-    "people_fully_vaccinated_per_hundred":20.53
+    "people_vaccinated_per_hundred":97.68,
+    "people_fully_vaccinated_per_hundred":20.54
   },
   {
     "location":"Ireland",
     "date":"2021-06-11",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.68,
-    "people_fully_vaccinated_per_hundred":100.58
+    "people_vaccinated_per_hundred":106.81,
+    "people_fully_vaccinated_per_hundred":100.59
   },
   {
     "location":"Ireland",
     "date":"2021-06-11",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.16,
-    "people_fully_vaccinated_per_hundred":107.38
+    "people_fully_vaccinated_per_hundred":107.39
   },
   {
     "location":"Ireland",
@@ -24853,29 +24853,29 @@
     "location":"Ireland",
     "date":"2021-06-18",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":93.81,
+    "people_vaccinated_per_hundred":93.82,
     "people_fully_vaccinated_per_hundred":69.6
   },
   {
     "location":"Ireland",
     "date":"2021-06-18",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":98.14,
-    "people_fully_vaccinated_per_hundred":30.22
+    "people_vaccinated_per_hundred":98.07,
+    "people_fully_vaccinated_per_hundred":30.21
   },
   {
     "location":"Ireland",
     "date":"2021-06-18",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.78,
-    "people_fully_vaccinated_per_hundred":102.76
+    "people_vaccinated_per_hundred":106.92,
+    "people_fully_vaccinated_per_hundred":102.8
   },
   {
     "location":"Ireland",
     "date":"2021-06-18",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.2,
-    "people_fully_vaccinated_per_hundred":107.51
+    "people_fully_vaccinated_per_hundred":107.52
   },
   {
     "location":"Ireland",
@@ -24895,29 +24895,29 @@
     "location":"Ireland",
     "date":"2021-06-25",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":94.49,
-    "people_fully_vaccinated_per_hundred":83.46
+    "people_vaccinated_per_hundred":94.5,
+    "people_fully_vaccinated_per_hundred":83.47
   },
   {
     "location":"Ireland",
     "date":"2021-06-25",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":98.65,
-    "people_fully_vaccinated_per_hundred":47.82
+    "people_vaccinated_per_hundred":98.58,
+    "people_fully_vaccinated_per_hundred":47.76
   },
   {
     "location":"Ireland",
     "date":"2021-06-25",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.9,
-    "people_fully_vaccinated_per_hundred":105.06
+    "people_vaccinated_per_hundred":107.03,
+    "people_fully_vaccinated_per_hundred":105.18
   },
   {
     "location":"Ireland",
     "date":"2021-06-25",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.23,
-    "people_fully_vaccinated_per_hundred":107.63
+    "people_vaccinated_per_hundred":109.24,
+    "people_fully_vaccinated_per_hundred":107.64
   },
   {
     "location":"Ireland",
@@ -24937,29 +24937,29 @@
     "location":"Ireland",
     "date":"2021-07-02",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":95.01,
-    "people_fully_vaccinated_per_hundred":87.91
+    "people_vaccinated_per_hundred":95.02,
+    "people_fully_vaccinated_per_hundred":87.92
   },
   {
     "location":"Ireland",
     "date":"2021-07-02",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":99.03,
-    "people_fully_vaccinated_per_hundred":67.67
+    "people_vaccinated_per_hundred":98.96,
+    "people_fully_vaccinated_per_hundred":67.6
   },
   {
     "location":"Ireland",
     "date":"2021-07-02",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":106.98,
-    "people_fully_vaccinated_per_hundred":105.79
+    "people_vaccinated_per_hundred":107.12,
+    "people_fully_vaccinated_per_hundred":105.92
   },
   {
     "location":"Ireland",
     "date":"2021-07-02",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.27,
-    "people_fully_vaccinated_per_hundred":107.73
+    "people_fully_vaccinated_per_hundred":107.74
   },
   {
     "location":"Ireland",
@@ -24979,29 +24979,29 @@
     "location":"Ireland",
     "date":"2021-07-09",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":95.5,
-    "people_fully_vaccinated_per_hundred":91.44
+    "people_vaccinated_per_hundred":95.51,
+    "people_fully_vaccinated_per_hundred":91.45
   },
   {
     "location":"Ireland",
     "date":"2021-07-09",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":99.41,
-    "people_fully_vaccinated_per_hundred":87.69
+    "people_vaccinated_per_hundred":99.34,
+    "people_fully_vaccinated_per_hundred":87.63
   },
   {
     "location":"Ireland",
     "date":"2021-07-09",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.06,
-    "people_fully_vaccinated_per_hundred":106.19
+    "people_vaccinated_per_hundred":107.19,
+    "people_fully_vaccinated_per_hundred":106.33
   },
   {
     "location":"Ireland",
     "date":"2021-07-09",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.31,
-    "people_fully_vaccinated_per_hundred":107.79
+    "people_fully_vaccinated_per_hundred":107.8
   },
   {
     "location":"Ireland",
@@ -25015,35 +25015,35 @@
     "date":"2021-07-16",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":70.8,
-    "people_fully_vaccinated_per_hundred":47.13
+    "people_fully_vaccinated_per_hundred":47.12
   },
   {
     "location":"Ireland",
     "date":"2021-07-16",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":95.9,
-    "people_fully_vaccinated_per_hundred":93.75
+    "people_vaccinated_per_hundred":95.91,
+    "people_fully_vaccinated_per_hundred":93.76
   },
   {
     "location":"Ireland",
     "date":"2021-07-16",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":99.68,
-    "people_fully_vaccinated_per_hundred":97.15
+    "people_vaccinated_per_hundred":99.61,
+    "people_fully_vaccinated_per_hundred":97.08
   },
   {
     "location":"Ireland",
     "date":"2021-07-16",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.12,
-    "people_fully_vaccinated_per_hundred":106.39
+    "people_vaccinated_per_hundred":107.26,
+    "people_fully_vaccinated_per_hundred":106.53
   },
   {
     "location":"Ireland",
     "date":"2021-07-16",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.34,
-    "people_fully_vaccinated_per_hundred":107.85
+    "people_vaccinated_per_hundred":109.35,
+    "people_fully_vaccinated_per_hundred":107.86
   },
   {
     "location":"Ireland",
@@ -25063,22 +25063,22 @@
     "location":"Ireland",
     "date":"2021-07-23",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":96.26,
-    "people_fully_vaccinated_per_hundred":94.46
+    "people_vaccinated_per_hundred":96.27,
+    "people_fully_vaccinated_per_hundred":94.47
   },
   {
     "location":"Ireland",
     "date":"2021-07-23",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":99.9,
-    "people_fully_vaccinated_per_hundred":97.86
+    "people_vaccinated_per_hundred":99.83,
+    "people_fully_vaccinated_per_hundred":97.79
   },
   {
     "location":"Ireland",
     "date":"2021-07-23",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.17,
-    "people_fully_vaccinated_per_hundred":106.49
+    "people_vaccinated_per_hundred":107.31,
+    "people_fully_vaccinated_per_hundred":106.63
   },
   {
     "location":"Ireland",
@@ -25092,7 +25092,7 @@
     "date":"2021-07-30",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":66.53,
-    "people_fully_vaccinated_per_hundred":37.29
+    "people_fully_vaccinated_per_hundred":37.28
   },
   {
     "location":"Ireland",
@@ -25105,22 +25105,22 @@
     "location":"Ireland",
     "date":"2021-07-30",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":96.57,
-    "people_fully_vaccinated_per_hundred":94.95
+    "people_vaccinated_per_hundred":96.58,
+    "people_fully_vaccinated_per_hundred":94.96
   },
   {
     "location":"Ireland",
     "date":"2021-07-30",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.11,
-    "people_fully_vaccinated_per_hundred":98.49
+    "people_vaccinated_per_hundred":100.04,
+    "people_fully_vaccinated_per_hundred":98.42
   },
   {
     "location":"Ireland",
     "date":"2021-07-30",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.21,
-    "people_fully_vaccinated_per_hundred":106.59
+    "people_vaccinated_per_hundred":107.35,
+    "people_fully_vaccinated_per_hundred":106.73
   },
   {
     "location":"Ireland",
@@ -25140,42 +25140,42 @@
     "location":"Ireland",
     "date":"2021-08-06",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":83.62,
+    "people_vaccinated_per_hundred":83.61,
     "people_fully_vaccinated_per_hundred":68.01
   },
   {
     "location":"Ireland",
     "date":"2021-08-06",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":96.85,
-    "people_fully_vaccinated_per_hundred":95.42
+    "people_vaccinated_per_hundred":96.86,
+    "people_fully_vaccinated_per_hundred":95.43
   },
   {
     "location":"Ireland",
     "date":"2021-08-06",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.29,
-    "people_fully_vaccinated_per_hundred":98.9
+    "people_vaccinated_per_hundred":100.22,
+    "people_fully_vaccinated_per_hundred":98.83
   },
   {
     "location":"Ireland",
     "date":"2021-08-06",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.26,
-    "people_fully_vaccinated_per_hundred":106.68
+    "people_vaccinated_per_hundred":107.4,
+    "people_fully_vaccinated_per_hundred":106.82
   },
   {
     "location":"Ireland",
     "date":"2021-08-06",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.43,
+    "people_vaccinated_per_hundred":109.44,
     "people_fully_vaccinated_per_hundred":107.98
   },
   {
     "location":"Ireland",
     "date":"2021-08-13",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":76.72,
+    "people_vaccinated_per_hundred":76.73,
     "people_fully_vaccinated_per_hundred":45.34
   },
   {
@@ -25189,28 +25189,28 @@
     "location":"Ireland",
     "date":"2021-08-13",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.02,
-    "people_fully_vaccinated_per_hundred":95.78
+    "people_vaccinated_per_hundred":97.03,
+    "people_fully_vaccinated_per_hundred":95.79
   },
   {
     "location":"Ireland",
     "date":"2021-08-13",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.39,
-    "people_fully_vaccinated_per_hundred":99.16
+    "people_vaccinated_per_hundred":100.32,
+    "people_fully_vaccinated_per_hundred":99.09
   },
   {
     "location":"Ireland",
     "date":"2021-08-13",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.29,
-    "people_fully_vaccinated_per_hundred":106.75
+    "people_vaccinated_per_hundred":107.43,
+    "people_fully_vaccinated_per_hundred":106.88
   },
   {
     "location":"Ireland",
     "date":"2021-08-13",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.45,
+    "people_vaccinated_per_hundred":109.46,
     "people_fully_vaccinated_per_hundred":108.02
   },
   {
@@ -25231,22 +25231,22 @@
     "location":"Ireland",
     "date":"2021-08-20",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.19,
-    "people_fully_vaccinated_per_hundred":96.07
+    "people_vaccinated_per_hundred":97.2,
+    "people_fully_vaccinated_per_hundred":96.08
   },
   {
     "location":"Ireland",
     "date":"2021-08-20",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.51,
-    "people_fully_vaccinated_per_hundred":99.41
+    "people_vaccinated_per_hundred":100.44,
+    "people_fully_vaccinated_per_hundred":99.34
   },
   {
     "location":"Ireland",
     "date":"2021-08-20",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.33,
-    "people_fully_vaccinated_per_hundred":106.81
+    "people_vaccinated_per_hundred":107.46,
+    "people_fully_vaccinated_per_hundred":106.94
   },
   {
     "location":"Ireland",
@@ -25273,35 +25273,35 @@
     "location":"Ireland",
     "date":"2021-08-27",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.36,
-    "people_fully_vaccinated_per_hundred":96.39
+    "people_vaccinated_per_hundred":97.37,
+    "people_fully_vaccinated_per_hundred":96.4
   },
   {
     "location":"Ireland",
     "date":"2021-08-27",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.62,
-    "people_fully_vaccinated_per_hundred":99.65
+    "people_vaccinated_per_hundred":100.55,
+    "people_fully_vaccinated_per_hundred":99.58
   },
   {
     "location":"Ireland",
     "date":"2021-08-27",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.36,
-    "people_fully_vaccinated_per_hundred":106.87
+    "people_vaccinated_per_hundred":107.5,
+    "people_fully_vaccinated_per_hundred":107.01
   },
   {
     "location":"Ireland",
     "date":"2021-08-27",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.51,
-    "people_fully_vaccinated_per_hundred":108.11
+    "people_fully_vaccinated_per_hundred":108.12
   },
   {
     "location":"Ireland",
     "date":"2021-09-03",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":81.06,
+    "people_vaccinated_per_hundred":81.07,
     "people_fully_vaccinated_per_hundred":74.02
   },
   {
@@ -25315,35 +25315,35 @@
     "location":"Ireland",
     "date":"2021-09-03",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.48,
-    "people_fully_vaccinated_per_hundred":96.6
+    "people_vaccinated_per_hundred":97.49,
+    "people_fully_vaccinated_per_hundred":96.61
   },
   {
     "location":"Ireland",
     "date":"2021-09-03",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.69,
-    "people_fully_vaccinated_per_hundred":99.79
+    "people_vaccinated_per_hundred":100.62,
+    "people_fully_vaccinated_per_hundred":99.73
   },
   {
     "location":"Ireland",
     "date":"2021-09-03",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.39,
-    "people_fully_vaccinated_per_hundred":106.92
+    "people_vaccinated_per_hundred":107.52,
+    "people_fully_vaccinated_per_hundred":107.06
   },
   {
     "location":"Ireland",
     "date":"2021-09-03",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.52,
+    "people_vaccinated_per_hundred":109.53,
     "people_fully_vaccinated_per_hundred":108.15
   },
   {
     "location":"Ireland",
     "date":"2021-09-10",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":81.82,
+    "people_vaccinated_per_hundred":81.83,
     "people_fully_vaccinated_per_hundred":76.22
   },
   {
@@ -25357,36 +25357,36 @@
     "location":"Ireland",
     "date":"2021-09-10",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.57,
-    "people_fully_vaccinated_per_hundred":96.77
+    "people_vaccinated_per_hundred":97.58,
+    "people_fully_vaccinated_per_hundred":96.78
   },
   {
     "location":"Ireland",
     "date":"2021-09-10",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.75,
-    "people_fully_vaccinated_per_hundred":99.93
+    "people_vaccinated_per_hundred":100.68,
+    "people_fully_vaccinated_per_hundred":99.86
   },
   {
     "location":"Ireland",
     "date":"2021-09-10",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.41,
-    "people_fully_vaccinated_per_hundred":106.96
+    "people_vaccinated_per_hundred":107.55,
+    "people_fully_vaccinated_per_hundred":107.09
   },
   {
     "location":"Ireland",
     "date":"2021-09-10",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.54,
-    "people_fully_vaccinated_per_hundred":108.17
+    "people_vaccinated_per_hundred":109.55,
+    "people_fully_vaccinated_per_hundred":108.18
   },
   {
     "location":"Ireland",
     "date":"2021-09-17",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":82.42,
-    "people_fully_vaccinated_per_hundred":77.99
+    "people_vaccinated_per_hundred":82.43,
+    "people_fully_vaccinated_per_hundred":78.0
   },
   {
     "location":"Ireland",
@@ -25399,22 +25399,22 @@
     "location":"Ireland",
     "date":"2021-09-17",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.63,
-    "people_fully_vaccinated_per_hundred":96.92
+    "people_vaccinated_per_hundred":97.64,
+    "people_fully_vaccinated_per_hundred":96.93
   },
   {
     "location":"Ireland",
     "date":"2021-09-17",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.79,
-    "people_fully_vaccinated_per_hundred":100.06
+    "people_vaccinated_per_hundred":100.72,
+    "people_fully_vaccinated_per_hundred":99.99
   },
   {
     "location":"Ireland",
     "date":"2021-09-17",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.43,
-    "people_fully_vaccinated_per_hundred":106.99
+    "people_vaccinated_per_hundred":107.56,
+    "people_fully_vaccinated_per_hundred":107.13
   },
   {
     "location":"Ireland",
@@ -25427,7 +25427,7 @@
     "location":"Ireland",
     "date":"2021-09-24",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":82.85,
+    "people_vaccinated_per_hundred":82.86,
     "people_fully_vaccinated_per_hundred":79.27
   },
   {
@@ -25441,22 +25441,22 @@
     "location":"Ireland",
     "date":"2021-09-24",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.7,
-    "people_fully_vaccinated_per_hundred":97.06
+    "people_vaccinated_per_hundred":97.71,
+    "people_fully_vaccinated_per_hundred":97.07
   },
   {
     "location":"Ireland",
     "date":"2021-09-24",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.83,
-    "people_fully_vaccinated_per_hundred":100.15
+    "people_vaccinated_per_hundred":100.76,
+    "people_fully_vaccinated_per_hundred":100.08
   },
   {
     "location":"Ireland",
     "date":"2021-09-24",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.44,
-    "people_fully_vaccinated_per_hundred":107.03
+    "people_vaccinated_per_hundred":107.57,
+    "people_fully_vaccinated_per_hundred":107.16
   },
   {
     "location":"Ireland",
@@ -25469,8 +25469,8 @@
     "location":"Ireland",
     "date":"2021-10-01",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":83.34,
-    "people_fully_vaccinated_per_hundred":80.29
+    "people_vaccinated_per_hundred":83.35,
+    "people_fully_vaccinated_per_hundred":80.3
   },
   {
     "location":"Ireland",
@@ -25483,36 +25483,36 @@
     "location":"Ireland",
     "date":"2021-10-01",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.75,
-    "people_fully_vaccinated_per_hundred":97.17
+    "people_vaccinated_per_hundred":97.76,
+    "people_fully_vaccinated_per_hundred":97.18
   },
   {
     "location":"Ireland",
     "date":"2021-10-01",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.86,
-    "people_fully_vaccinated_per_hundred":100.22
+    "people_vaccinated_per_hundred":100.79,
+    "people_fully_vaccinated_per_hundred":100.15
   },
   {
     "location":"Ireland",
     "date":"2021-10-01",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.45,
-    "people_fully_vaccinated_per_hundred":107.06
+    "people_vaccinated_per_hundred":107.59,
+    "people_fully_vaccinated_per_hundred":107.19
   },
   {
     "location":"Ireland",
     "date":"2021-10-01",
     "age_group":"80+",
     "people_vaccinated_per_hundred":109.63,
-    "people_fully_vaccinated_per_hundred":108.26
+    "people_fully_vaccinated_per_hundred":108.27
   },
   {
     "location":"Ireland",
     "date":"2021-10-08",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":83.57,
-    "people_fully_vaccinated_per_hundred":80.93
+    "people_vaccinated_per_hundred":83.58,
+    "people_fully_vaccinated_per_hundred":80.94
   },
   {
     "location":"Ireland",
@@ -25525,28 +25525,28 @@
     "location":"Ireland",
     "date":"2021-10-08",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.8,
-    "people_fully_vaccinated_per_hundred":97.24
+    "people_vaccinated_per_hundred":97.81,
+    "people_fully_vaccinated_per_hundred":97.25
   },
   {
     "location":"Ireland",
     "date":"2021-10-08",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.88,
-    "people_fully_vaccinated_per_hundred":100.27
+    "people_vaccinated_per_hundred":100.81,
+    "people_fully_vaccinated_per_hundred":100.2
   },
   {
     "location":"Ireland",
     "date":"2021-10-08",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.47,
-    "people_fully_vaccinated_per_hundred":107.08
+    "people_vaccinated_per_hundred":107.61,
+    "people_fully_vaccinated_per_hundred":107.21
   },
   {
     "location":"Ireland",
     "date":"2021-10-08",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.78,
+    "people_vaccinated_per_hundred":109.79,
     "people_fully_vaccinated_per_hundred":108.36
   },
   {
@@ -25567,22 +25567,22 @@
     "location":"Ireland",
     "date":"2021-10-15",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.84,
-    "people_fully_vaccinated_per_hundred":97.3
+    "people_vaccinated_per_hundred":97.85,
+    "people_fully_vaccinated_per_hundred":97.31
   },
   {
     "location":"Ireland",
     "date":"2021-10-15",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.91,
-    "people_fully_vaccinated_per_hundred":100.32
+    "people_vaccinated_per_hundred":100.84,
+    "people_fully_vaccinated_per_hundred":100.25
   },
   {
     "location":"Ireland",
     "date":"2021-10-15",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.49,
-    "people_fully_vaccinated_per_hundred":107.09
+    "people_vaccinated_per_hundred":107.62,
+    "people_fully_vaccinated_per_hundred":107.23
   },
   {
     "location":"Ireland",
@@ -25595,7 +25595,7 @@
     "location":"Ireland",
     "date":"2021-10-22",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":84.25,
+    "people_vaccinated_per_hundred":84.26,
     "people_fully_vaccinated_per_hundred":81.98
   },
   {
@@ -25609,36 +25609,36 @@
     "location":"Ireland",
     "date":"2021-10-22",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":97.93,
-    "people_fully_vaccinated_per_hundred":97.37
+    "people_vaccinated_per_hundred":97.94,
+    "people_fully_vaccinated_per_hundred":97.38
   },
   {
     "location":"Ireland",
     "date":"2021-10-22",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":100.96,
-    "people_fully_vaccinated_per_hundred":100.36
+    "people_vaccinated_per_hundred":100.9,
+    "people_fully_vaccinated_per_hundred":100.29
   },
   {
     "location":"Ireland",
     "date":"2021-10-22",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.51,
-    "people_fully_vaccinated_per_hundred":107.11
+    "people_vaccinated_per_hundred":107.64,
+    "people_fully_vaccinated_per_hundred":107.25
   },
   {
     "location":"Ireland",
     "date":"2021-10-22",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.95,
-    "people_fully_vaccinated_per_hundred":108.41
+    "people_vaccinated_per_hundred":109.96,
+    "people_fully_vaccinated_per_hundred":108.42
   },
   {
     "location":"Ireland",
     "date":"2021-10-29",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":84.71,
-    "people_fully_vaccinated_per_hundred":82.31
+    "people_vaccinated_per_hundred":84.72,
+    "people_fully_vaccinated_per_hundred":82.32
   },
   {
     "location":"Ireland",
@@ -25651,35 +25651,35 @@
     "location":"Ireland",
     "date":"2021-10-29",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":98.01,
-    "people_fully_vaccinated_per_hundred":97.42
+    "people_vaccinated_per_hundred":98.02,
+    "people_fully_vaccinated_per_hundred":97.43
   },
   {
     "location":"Ireland",
     "date":"2021-10-29",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":101.02,
-    "people_fully_vaccinated_per_hundred":100.39
+    "people_vaccinated_per_hundred":100.95,
+    "people_fully_vaccinated_per_hundred":100.32
   },
   {
     "location":"Ireland",
     "date":"2021-10-29",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.53,
-    "people_fully_vaccinated_per_hundred":107.12
+    "people_vaccinated_per_hundred":107.66,
+    "people_fully_vaccinated_per_hundred":107.26
   },
   {
     "location":"Ireland",
     "date":"2021-10-29",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":109.99,
+    "people_vaccinated_per_hundred":110.0,
     "people_fully_vaccinated_per_hundred":108.42
   },
   {
     "location":"Ireland",
     "date":"2021-11-05",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":85.1,
+    "people_vaccinated_per_hundred":85.11,
     "people_fully_vaccinated_per_hundred":82.58
   },
   {
@@ -25693,29 +25693,29 @@
     "location":"Ireland",
     "date":"2021-11-05",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":98.08,
-    "people_fully_vaccinated_per_hundred":97.46
+    "people_vaccinated_per_hundred":98.09,
+    "people_fully_vaccinated_per_hundred":97.48
   },
   {
     "location":"Ireland",
     "date":"2021-11-05",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":101.06,
-    "people_fully_vaccinated_per_hundred":100.42
+    "people_vaccinated_per_hundred":100.99,
+    "people_fully_vaccinated_per_hundred":100.35
   },
   {
     "location":"Ireland",
     "date":"2021-11-05",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.55,
-    "people_fully_vaccinated_per_hundred":107.13
+    "people_vaccinated_per_hundred":107.69,
+    "people_fully_vaccinated_per_hundred":107.27
   },
   {
     "location":"Ireland",
     "date":"2021-11-05",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":110.02,
-    "people_fully_vaccinated_per_hundred":108.43
+    "people_vaccinated_per_hundred":110.03,
+    "people_fully_vaccinated_per_hundred":108.44
   },
   {
     "location":"Ireland",
@@ -25735,36 +25735,36 @@
     "location":"Ireland",
     "date":"2021-11-12",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":98.14,
-    "people_fully_vaccinated_per_hundred":97.52
+    "people_vaccinated_per_hundred":98.15,
+    "people_fully_vaccinated_per_hundred":97.53
   },
   {
     "location":"Ireland",
     "date":"2021-11-12",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":101.1,
-    "people_fully_vaccinated_per_hundred":100.45
+    "people_vaccinated_per_hundred":101.03,
+    "people_fully_vaccinated_per_hundred":100.38
   },
   {
     "location":"Ireland",
     "date":"2021-11-12",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.59,
-    "people_fully_vaccinated_per_hundred":107.14
+    "people_vaccinated_per_hundred":107.73,
+    "people_fully_vaccinated_per_hundred":107.28
   },
   {
     "location":"Ireland",
     "date":"2021-11-12",
     "age_group":"80+",
     "people_vaccinated_per_hundred":110.04,
-    "people_fully_vaccinated_per_hundred":108.44
+    "people_fully_vaccinated_per_hundred":108.45
   },
   {
     "location":"Ireland",
     "date":"2021-11-19",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":85.83,
-    "people_fully_vaccinated_per_hundred":83.35
+    "people_fully_vaccinated_per_hundred":83.36
   },
   {
     "location":"Ireland",
@@ -25777,71 +25777,71 @@
     "location":"Ireland",
     "date":"2021-11-19",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":98.22,
-    "people_fully_vaccinated_per_hundred":97.61
+    "people_vaccinated_per_hundred":98.23,
+    "people_fully_vaccinated_per_hundred":97.62
   },
   {
     "location":"Ireland",
     "date":"2021-11-19",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":101.15,
-    "people_fully_vaccinated_per_hundred":100.5
+    "people_vaccinated_per_hundred":101.08,
+    "people_fully_vaccinated_per_hundred":100.44
   },
   {
     "location":"Ireland",
     "date":"2021-11-19",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.64,
-    "people_fully_vaccinated_per_hundred":107.16
+    "people_vaccinated_per_hundred":107.77,
+    "people_fully_vaccinated_per_hundred":107.29
   },
   {
     "location":"Ireland",
     "date":"2021-11-19",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":110.05,
-    "people_fully_vaccinated_per_hundred":108.45
+    "people_vaccinated_per_hundred":110.06,
+    "people_fully_vaccinated_per_hundred":108.46
   },
   {
     "location":"Ireland",
     "date":"2021-11-26",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":85.99,
-    "people_fully_vaccinated_per_hundred":83.56
+    "people_vaccinated_per_hundred":86.03,
+    "people_fully_vaccinated_per_hundred":83.6
   },
   {
     "location":"Ireland",
     "date":"2021-11-26",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":88.96,
-    "people_fully_vaccinated_per_hundred":87.32
+    "people_vaccinated_per_hundred":88.98,
+    "people_fully_vaccinated_per_hundred":87.35
   },
   {
     "location":"Ireland",
     "date":"2021-11-26",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":98.25,
-    "people_fully_vaccinated_per_hundred":97.64
+    "people_vaccinated_per_hundred":98.27,
+    "people_fully_vaccinated_per_hundred":97.66
   },
   {
     "location":"Ireland",
     "date":"2021-11-26",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":101.18,
-    "people_fully_vaccinated_per_hundred":100.52
+    "people_vaccinated_per_hundred":101.12,
+    "people_fully_vaccinated_per_hundred":100.46
   },
   {
     "location":"Ireland",
     "date":"2021-11-26",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":107.65,
-    "people_fully_vaccinated_per_hundred":107.16
+    "people_vaccinated_per_hundred":107.79,
+    "people_fully_vaccinated_per_hundred":107.3
   },
   {
     "location":"Ireland",
     "date":"2021-11-26",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":110.06,
-    "people_fully_vaccinated_per_hundred":108.46
+    "people_vaccinated_per_hundred":110.07,
+    "people_fully_vaccinated_per_hundred":108.47
   },
   {
     "location":"Israel",
@@ -50169,6 +50169,76 @@
     "people_fully_vaccinated_per_hundred":100.0
   },
   {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"18-29",
+    "people_vaccinated_per_hundred":70.0,
+    "people_fully_vaccinated_per_hundred":65.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"30-39",
+    "people_vaccinated_per_hundred":77.0,
+    "people_fully_vaccinated_per_hundred":74.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"40-49",
+    "people_vaccinated_per_hundred":87.0,
+    "people_fully_vaccinated_per_hundred":85.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"50-54",
+    "people_vaccinated_per_hundred":92.0,
+    "people_fully_vaccinated_per_hundred":91.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"55-59",
+    "people_vaccinated_per_hundred":100.0,
+    "people_fully_vaccinated_per_hundred":99.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"60-64",
+    "people_vaccinated_per_hundred":100.0,
+    "people_fully_vaccinated_per_hundred":100.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"65-69",
+    "people_vaccinated_per_hundred":96.0,
+    "people_fully_vaccinated_per_hundred":95.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"70-74",
+    "people_vaccinated_per_hundred":99.0,
+    "people_fully_vaccinated_per_hundred":98.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"75-79",
+    "people_vaccinated_per_hundred":100.0,
+    "people_fully_vaccinated_per_hundred":100.0
+  },
+  {
+    "location":"Jersey",
+    "date":"2021-11-24",
+    "age_group":"80+",
+    "people_vaccinated_per_hundred":100.0,
+    "people_fully_vaccinated_per_hundred":100.0
+  },
+  {
     "location":"Latvia",
     "date":"2021-01-08",
     "age_group":"18-24",
@@ -63325,7 +63395,7 @@
     "location":"Peru",
     "date":"2021-03-21",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":8.18,
+    "people_vaccinated_per_hundred":8.19,
     "people_fully_vaccinated_per_hundred":0.01
   },
   {
@@ -63368,7 +63438,7 @@
     "date":"2021-03-28",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":1.77,
-    "people_fully_vaccinated_per_hundred":0.07
+    "people_fully_vaccinated_per_hundred":0.08
   },
   {
     "location":"Peru",
@@ -63410,7 +63480,7 @@
     "date":"2021-04-04",
     "age_group":"60-69",
     "people_vaccinated_per_hundred":2.47,
-    "people_fully_vaccinated_per_hundred":1.76
+    "people_fully_vaccinated_per_hundred":1.77
   },
   {
     "location":"Peru",
@@ -63423,7 +63493,7 @@
     "location":"Peru",
     "date":"2021-04-04",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":12.97,
+    "people_vaccinated_per_hundred":12.98,
     "people_fully_vaccinated_per_hundred":1.76
   },
   {
@@ -63445,7 +63515,7 @@
     "date":"2021-04-11",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":3.32,
-    "people_fully_vaccinated_per_hundred":2.39
+    "people_fully_vaccinated_per_hundred":2.4
   },
   {
     "location":"Peru",
@@ -63473,7 +63543,7 @@
     "date":"2021-04-11",
     "age_group":"80+",
     "people_vaccinated_per_hundred":13.24,
-    "people_fully_vaccinated_per_hundred":6.72
+    "people_fully_vaccinated_per_hundred":6.73
   },
   {
     "location":"Peru",
@@ -63487,21 +63557,21 @@
     "date":"2021-04-18",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":1.93,
-    "people_fully_vaccinated_per_hundred":1.35
+    "people_fully_vaccinated_per_hundred":1.36
   },
   {
     "location":"Peru",
     "date":"2021-04-18",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":3.36,
-    "people_fully_vaccinated_per_hundred":2.71
+    "people_fully_vaccinated_per_hundred":2.72
   },
   {
     "location":"Peru",
     "date":"2021-04-18",
     "age_group":"50-59",
     "people_vaccinated_per_hundred":2.94,
-    "people_fully_vaccinated_per_hundred":2.51
+    "people_fully_vaccinated_per_hundred":2.52
   },
   {
     "location":"Peru",
@@ -63522,7 +63592,7 @@
     "date":"2021-04-18",
     "age_group":"80+",
     "people_vaccinated_per_hundred":19.5,
-    "people_fully_vaccinated_per_hundred":11.33
+    "people_fully_vaccinated_per_hundred":11.34
   },
   {
     "location":"Peru",
@@ -63564,14 +63634,14 @@
     "date":"2021-04-25",
     "age_group":"70-79",
     "people_vaccinated_per_hundred":3.0,
-    "people_fully_vaccinated_per_hundred":1.76
+    "people_fully_vaccinated_per_hundred":1.77
   },
   {
     "location":"Peru",
     "date":"2021-04-25",
     "age_group":"80+",
     "people_vaccinated_per_hundred":29.93,
-    "people_fully_vaccinated_per_hundred":12.35
+    "people_fully_vaccinated_per_hundred":12.36
   },
   {
     "location":"Peru",
@@ -63592,7 +63662,7 @@
     "date":"2021-05-02",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":3.62,
-    "people_fully_vaccinated_per_hundred":3.16
+    "people_fully_vaccinated_per_hundred":3.17
   },
   {
     "location":"Peru",
@@ -63612,15 +63682,15 @@
     "location":"Peru",
     "date":"2021-05-02",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":13.2,
+    "people_vaccinated_per_hundred":13.21,
     "people_fully_vaccinated_per_hundred":1.87
   },
   {
     "location":"Peru",
     "date":"2021-05-02",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":46.96,
-    "people_fully_vaccinated_per_hundred":12.57
+    "people_vaccinated_per_hundred":46.97,
+    "people_fully_vaccinated_per_hundred":12.58
   },
   {
     "location":"Peru",
@@ -63661,15 +63731,15 @@
     "location":"Peru",
     "date":"2021-05-09",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":25.72,
+    "people_vaccinated_per_hundred":25.74,
     "people_fully_vaccinated_per_hundred":1.97
   },
   {
     "location":"Peru",
     "date":"2021-05-09",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":59.33,
-    "people_fully_vaccinated_per_hundred":17.67
+    "people_vaccinated_per_hundred":59.34,
+    "people_fully_vaccinated_per_hundred":17.68
   },
   {
     "location":"Peru",
@@ -63696,7 +63766,7 @@
     "location":"Peru",
     "date":"2021-05-16",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":3.27,
+    "people_vaccinated_per_hundred":3.28,
     "people_fully_vaccinated_per_hundred":3.01
   },
   {
@@ -63710,15 +63780,15 @@
     "location":"Peru",
     "date":"2021-05-16",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":46.78,
-    "people_fully_vaccinated_per_hundred":2.77
+    "people_vaccinated_per_hundred":46.8,
+    "people_fully_vaccinated_per_hundred":2.78
   },
   {
     "location":"Peru",
     "date":"2021-05-16",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":64.29,
-    "people_fully_vaccinated_per_hundred":27.88
+    "people_vaccinated_per_hundred":64.3,
+    "people_fully_vaccinated_per_hundred":27.91
   },
   {
     "location":"Peru",
@@ -63739,14 +63809,14 @@
     "date":"2021-05-23",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":3.93,
-    "people_fully_vaccinated_per_hundred":3.44
+    "people_fully_vaccinated_per_hundred":3.45
   },
   {
     "location":"Peru",
     "date":"2021-05-23",
     "age_group":"50-59",
     "people_vaccinated_per_hundred":3.45,
-    "people_fully_vaccinated_per_hundred":3.07
+    "people_fully_vaccinated_per_hundred":3.08
   },
   {
     "location":"Peru",
@@ -63759,15 +63829,15 @@
     "location":"Peru",
     "date":"2021-05-23",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":62.15,
-    "people_fully_vaccinated_per_hundred":9.14
+    "people_vaccinated_per_hundred":62.17,
+    "people_fully_vaccinated_per_hundred":9.17
   },
   {
     "location":"Peru",
     "date":"2021-05-23",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":68.07,
-    "people_fully_vaccinated_per_hundred":38.41
+    "people_vaccinated_per_hundred":68.09,
+    "people_fully_vaccinated_per_hundred":38.45
   },
   {
     "location":"Peru",
@@ -63801,22 +63871,22 @@
     "location":"Peru",
     "date":"2021-05-30",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":34.65,
-    "people_fully_vaccinated_per_hundred":3.3
+    "people_vaccinated_per_hundred":34.66,
+    "people_fully_vaccinated_per_hundred":3.31
   },
   {
     "location":"Peru",
     "date":"2021-05-30",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":66.58,
-    "people_fully_vaccinated_per_hundred":19.15
+    "people_vaccinated_per_hundred":66.6,
+    "people_fully_vaccinated_per_hundred":19.2
   },
   {
     "location":"Peru",
     "date":"2021-05-30",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":70.2,
-    "people_fully_vaccinated_per_hundred":50.28
+    "people_vaccinated_per_hundred":70.22,
+    "people_fully_vaccinated_per_hundred":50.32
   },
   {
     "location":"Peru",
@@ -63850,22 +63920,22 @@
     "location":"Peru",
     "date":"2021-06-06",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":45.32,
+    "people_vaccinated_per_hundred":45.33,
     "people_fully_vaccinated_per_hundred":3.84
   },
   {
     "location":"Peru",
     "date":"2021-06-06",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":68.14,
-    "people_fully_vaccinated_per_hundred":31.77
+    "people_vaccinated_per_hundred":68.16,
+    "people_fully_vaccinated_per_hundred":31.83
   },
   {
     "location":"Peru",
     "date":"2021-06-06",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":71.41,
-    "people_fully_vaccinated_per_hundred":53.35
+    "people_vaccinated_per_hundred":71.43,
+    "people_fully_vaccinated_per_hundred":53.4
   },
   {
     "location":"Peru",
@@ -63879,14 +63949,14 @@
     "date":"2021-06-13",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":2.85,
-    "people_fully_vaccinated_per_hundred":2.23
+    "people_fully_vaccinated_per_hundred":2.24
   },
   {
     "location":"Peru",
     "date":"2021-06-13",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":4.33,
-    "people_fully_vaccinated_per_hundred":3.68
+    "people_vaccinated_per_hundred":4.34,
+    "people_fully_vaccinated_per_hundred":3.69
   },
   {
     "location":"Peru",
@@ -63899,22 +63969,22 @@
     "location":"Peru",
     "date":"2021-06-13",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":62.4,
-    "people_fully_vaccinated_per_hundred":11.4
+    "people_vaccinated_per_hundred":62.41,
+    "people_fully_vaccinated_per_hundred":11.42
   },
   {
     "location":"Peru",
     "date":"2021-06-13",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":70.81,
-    "people_fully_vaccinated_per_hundred":55.0
+    "people_vaccinated_per_hundred":70.83,
+    "people_fully_vaccinated_per_hundred":55.08
   },
   {
     "location":"Peru",
     "date":"2021-06-13",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":73.63,
-    "people_fully_vaccinated_per_hundred":62.15
+    "people_vaccinated_per_hundred":73.65,
+    "people_fully_vaccinated_per_hundred":62.2
   },
   {
     "location":"Peru",
@@ -63935,7 +64005,7 @@
     "date":"2021-06-20",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":4.68,
-    "people_fully_vaccinated_per_hundred":3.89
+    "people_fully_vaccinated_per_hundred":3.9
   },
   {
     "location":"Peru",
@@ -63948,22 +64018,22 @@
     "location":"Peru",
     "date":"2021-06-20",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":67.54,
-    "people_fully_vaccinated_per_hundred":30.54
+    "people_vaccinated_per_hundred":67.55,
+    "people_fully_vaccinated_per_hundred":30.57
   },
   {
     "location":"Peru",
     "date":"2021-06-20",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":73.04,
-    "people_fully_vaccinated_per_hundred":62.4
+    "people_vaccinated_per_hundred":73.05,
+    "people_fully_vaccinated_per_hundred":62.48
   },
   {
     "location":"Peru",
     "date":"2021-06-20",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":75.57,
-    "people_fully_vaccinated_per_hundred":65.99
+    "people_vaccinated_per_hundred":75.59,
+    "people_fully_vaccinated_per_hundred":66.04
   },
   {
     "location":"Peru",
@@ -63984,7 +64054,7 @@
     "date":"2021-06-27",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":5.11,
-    "people_fully_vaccinated_per_hundred":4.07
+    "people_fully_vaccinated_per_hundred":4.08
   },
   {
     "location":"Peru",
@@ -63997,22 +64067,22 @@
     "location":"Peru",
     "date":"2021-06-27",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":69.97,
-    "people_fully_vaccinated_per_hundred":42.37
+    "people_vaccinated_per_hundred":69.98,
+    "people_fully_vaccinated_per_hundred":42.4
   },
   {
     "location":"Peru",
     "date":"2021-06-27",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":74.82,
-    "people_fully_vaccinated_per_hundred":64.64
+    "people_vaccinated_per_hundred":74.84,
+    "people_fully_vaccinated_per_hundred":64.72
   },
   {
     "location":"Peru",
     "date":"2021-06-27",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":77.36,
-    "people_fully_vaccinated_per_hundred":67.77
+    "people_vaccinated_per_hundred":77.38,
+    "people_fully_vaccinated_per_hundred":67.82
   },
   {
     "location":"Peru",
@@ -64025,7 +64095,7 @@
     "location":"Peru",
     "date":"2021-07-04",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":3.41,
+    "people_vaccinated_per_hundred":3.42,
     "people_fully_vaccinated_per_hundred":2.7
   },
   {
@@ -64039,29 +64109,29 @@
     "location":"Peru",
     "date":"2021-07-04",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":26.41,
+    "people_vaccinated_per_hundred":26.42,
     "people_fully_vaccinated_per_hundred":5.92
   },
   {
     "location":"Peru",
     "date":"2021-07-04",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":71.87,
-    "people_fully_vaccinated_per_hundred":57.57
+    "people_vaccinated_per_hundred":71.88,
+    "people_fully_vaccinated_per_hundred":57.61
   },
   {
     "location":"Peru",
     "date":"2021-07-04",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":76.19,
-    "people_fully_vaccinated_per_hundred":66.76
+    "people_vaccinated_per_hundred":76.21,
+    "people_fully_vaccinated_per_hundred":66.84
   },
   {
     "location":"Peru",
     "date":"2021-07-04",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":78.66,
-    "people_fully_vaccinated_per_hundred":69.47
+    "people_vaccinated_per_hundred":78.68,
+    "people_fully_vaccinated_per_hundred":69.52
   },
   {
     "location":"Peru",
@@ -64075,7 +64145,7 @@
     "date":"2021-07-11",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":3.67,
-    "people_fully_vaccinated_per_hundred":2.82
+    "people_fully_vaccinated_per_hundred":2.83
   },
   {
     "location":"Peru",
@@ -64088,29 +64158,29 @@
     "location":"Peru",
     "date":"2021-07-11",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":46.49,
-    "people_fully_vaccinated_per_hundred":7.23
+    "people_vaccinated_per_hundred":46.5,
+    "people_fully_vaccinated_per_hundred":7.24
   },
   {
     "location":"Peru",
     "date":"2021-07-11",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":74.33,
-    "people_fully_vaccinated_per_hundred":63.32
+    "people_vaccinated_per_hundred":74.34,
+    "people_fully_vaccinated_per_hundred":63.37
   },
   {
     "location":"Peru",
     "date":"2021-07-11",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":77.74,
-    "people_fully_vaccinated_per_hundred":68.88
+    "people_vaccinated_per_hundred":77.76,
+    "people_fully_vaccinated_per_hundred":68.96
   },
   {
     "location":"Peru",
     "date":"2021-07-11",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":80.05,
-    "people_fully_vaccinated_per_hundred":71.35
+    "people_vaccinated_per_hundred":80.06,
+    "people_fully_vaccinated_per_hundred":71.4
   },
   {
     "location":"Peru",
@@ -64130,36 +64200,36 @@
     "location":"Peru",
     "date":"2021-07-18",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":11.43,
-    "people_fully_vaccinated_per_hundred":4.84
+    "people_vaccinated_per_hundred":11.44,
+    "people_fully_vaccinated_per_hundred":4.85
   },
   {
     "location":"Peru",
     "date":"2021-07-18",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":59.64,
-    "people_fully_vaccinated_per_hundred":12.05
+    "people_vaccinated_per_hundred":59.66,
+    "people_fully_vaccinated_per_hundred":12.06
   },
   {
     "location":"Peru",
     "date":"2021-07-18",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":75.86,
-    "people_fully_vaccinated_per_hundred":66.24
+    "people_vaccinated_per_hundred":75.87,
+    "people_fully_vaccinated_per_hundred":66.29
   },
   {
     "location":"Peru",
     "date":"2021-07-18",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":78.7,
-    "people_fully_vaccinated_per_hundred":70.98
+    "people_vaccinated_per_hundred":78.72,
+    "people_fully_vaccinated_per_hundred":71.06
   },
   {
     "location":"Peru",
     "date":"2021-07-18",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":80.83,
-    "people_fully_vaccinated_per_hundred":73.39
+    "people_vaccinated_per_hundred":80.85,
+    "people_fully_vaccinated_per_hundred":73.44
   },
   {
     "location":"Peru",
@@ -64186,29 +64256,29 @@
     "location":"Peru",
     "date":"2021-07-25",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":64.96,
-    "people_fully_vaccinated_per_hundred":23.1
+    "people_vaccinated_per_hundred":64.98,
+    "people_fully_vaccinated_per_hundred":23.11
   },
   {
     "location":"Peru",
     "date":"2021-07-25",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":76.98,
-    "people_fully_vaccinated_per_hundred":68.12
+    "people_vaccinated_per_hundred":76.99,
+    "people_fully_vaccinated_per_hundred":68.17
   },
   {
     "location":"Peru",
     "date":"2021-07-25",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":79.38,
-    "people_fully_vaccinated_per_hundred":72.47
+    "people_vaccinated_per_hundred":79.4,
+    "people_fully_vaccinated_per_hundred":72.56
   },
   {
     "location":"Peru",
     "date":"2021-07-25",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":81.34,
-    "people_fully_vaccinated_per_hundred":74.78
+    "people_vaccinated_per_hundred":81.36,
+    "people_fully_vaccinated_per_hundred":74.84
   },
   {
     "location":"Peru",
@@ -64229,35 +64299,35 @@
     "date":"2021-08-01",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":19.29,
-    "people_fully_vaccinated_per_hundred":6.64
+    "people_fully_vaccinated_per_hundred":6.65
   },
   {
     "location":"Peru",
     "date":"2021-08-01",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":67.41,
-    "people_fully_vaccinated_per_hundred":39.88
+    "people_vaccinated_per_hundred":67.42,
+    "people_fully_vaccinated_per_hundred":39.89
   },
   {
     "location":"Peru",
     "date":"2021-08-01",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":77.63,
-    "people_fully_vaccinated_per_hundred":70.32
+    "people_vaccinated_per_hundred":77.64,
+    "people_fully_vaccinated_per_hundred":70.37
   },
   {
     "location":"Peru",
     "date":"2021-08-01",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":79.8,
-    "people_fully_vaccinated_per_hundred":73.96
+    "people_vaccinated_per_hundred":79.82,
+    "people_fully_vaccinated_per_hundred":74.04
   },
   {
     "location":"Peru",
     "date":"2021-08-01",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":81.67,
-    "people_fully_vaccinated_per_hundred":76.14
+    "people_vaccinated_per_hundred":81.68,
+    "people_fully_vaccinated_per_hundred":76.2
   },
   {
     "location":"Peru",
@@ -64278,35 +64348,35 @@
     "date":"2021-08-08",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":23.72,
-    "people_fully_vaccinated_per_hundred":9.97
+    "people_fully_vaccinated_per_hundred":9.98
   },
   {
     "location":"Peru",
     "date":"2021-08-08",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":70.08,
-    "people_fully_vaccinated_per_hundred":53.3
+    "people_vaccinated_per_hundred":70.09,
+    "people_fully_vaccinated_per_hundred":53.32
   },
   {
     "location":"Peru",
     "date":"2021-08-08",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":78.49,
-    "people_fully_vaccinated_per_hundred":72.29
+    "people_vaccinated_per_hundred":78.5,
+    "people_fully_vaccinated_per_hundred":72.34
   },
   {
     "location":"Peru",
     "date":"2021-08-08",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":80.39,
-    "people_fully_vaccinated_per_hundred":75.23
+    "people_vaccinated_per_hundred":80.41,
+    "people_fully_vaccinated_per_hundred":75.32
   },
   {
     "location":"Peru",
     "date":"2021-08-08",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":82.08,
-    "people_fully_vaccinated_per_hundred":77.22
+    "people_vaccinated_per_hundred":82.1,
+    "people_fully_vaccinated_per_hundred":77.27
   },
   {
     "location":"Peru",
@@ -64319,43 +64389,43 @@
     "location":"Peru",
     "date":"2021-08-15",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":5.68,
+    "people_vaccinated_per_hundred":5.69,
     "people_fully_vaccinated_per_hundred":3.92
   },
   {
     "location":"Peru",
     "date":"2021-08-15",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":26.9,
-    "people_fully_vaccinated_per_hundred":13.78
+    "people_vaccinated_per_hundred":26.91,
+    "people_fully_vaccinated_per_hundred":13.79
   },
   {
     "location":"Peru",
     "date":"2021-08-15",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":71.86,
-    "people_fully_vaccinated_per_hundred":58.35
+    "people_vaccinated_per_hundred":71.87,
+    "people_fully_vaccinated_per_hundred":58.37
   },
   {
     "location":"Peru",
     "date":"2021-08-15",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":79.24,
-    "people_fully_vaccinated_per_hundred":73.47
+    "people_vaccinated_per_hundred":79.25,
+    "people_fully_vaccinated_per_hundred":73.52
   },
   {
     "location":"Peru",
     "date":"2021-08-15",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":80.98,
-    "people_fully_vaccinated_per_hundred":75.99
+    "people_vaccinated_per_hundred":81.01,
+    "people_fully_vaccinated_per_hundred":76.08
   },
   {
     "location":"Peru",
     "date":"2021-08-15",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":82.51,
-    "people_fully_vaccinated_per_hundred":77.82
+    "people_vaccinated_per_hundred":82.52,
+    "people_fully_vaccinated_per_hundred":77.87
   },
   {
     "location":"Peru",
@@ -64369,42 +64439,42 @@
     "date":"2021-08-22",
     "age_group":"18-24",
     "people_vaccinated_per_hundred":5.96,
-    "people_fully_vaccinated_per_hundred":4.19
+    "people_fully_vaccinated_per_hundred":4.2
   },
   {
     "location":"Peru",
     "date":"2021-08-22",
     "age_group":"25-49",
     "people_vaccinated_per_hundred":29.77,
-    "people_fully_vaccinated_per_hundred":17.21
+    "people_fully_vaccinated_per_hundred":17.22
   },
   {
     "location":"Peru",
     "date":"2021-08-22",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":73.31,
-    "people_fully_vaccinated_per_hundred":62.34
+    "people_vaccinated_per_hundred":73.32,
+    "people_fully_vaccinated_per_hundred":62.37
   },
   {
     "location":"Peru",
     "date":"2021-08-22",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":80.01,
-    "people_fully_vaccinated_per_hundred":74.48
+    "people_vaccinated_per_hundred":80.02,
+    "people_fully_vaccinated_per_hundred":74.53
   },
   {
     "location":"Peru",
     "date":"2021-08-22",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":81.6,
-    "people_fully_vaccinated_per_hundred":76.66
+    "people_vaccinated_per_hundred":81.62,
+    "people_fully_vaccinated_per_hundred":76.74
   },
   {
     "location":"Peru",
     "date":"2021-08-22",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":82.94,
-    "people_fully_vaccinated_per_hundred":78.37
+    "people_vaccinated_per_hundred":82.95,
+    "people_fully_vaccinated_per_hundred":78.43
   },
   {
     "location":"Peru",
@@ -64417,43 +64487,43 @@
     "location":"Peru",
     "date":"2021-08-29",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":6.32,
-    "people_fully_vaccinated_per_hundred":4.55
+    "people_vaccinated_per_hundred":6.33,
+    "people_fully_vaccinated_per_hundred":4.56
   },
   {
     "location":"Peru",
     "date":"2021-08-29",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":34.09,
-    "people_fully_vaccinated_per_hundred":20.67
+    "people_vaccinated_per_hundred":34.1,
+    "people_fully_vaccinated_per_hundred":20.69
   },
   {
     "location":"Peru",
     "date":"2021-08-29",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":75.14,
-    "people_fully_vaccinated_per_hundred":65.74
+    "people_vaccinated_per_hundred":75.15,
+    "people_fully_vaccinated_per_hundred":65.76
   },
   {
     "location":"Peru",
     "date":"2021-08-29",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":80.93,
-    "people_fully_vaccinated_per_hundred":75.49
+    "people_vaccinated_per_hundred":80.94,
+    "people_fully_vaccinated_per_hundred":75.54
   },
   {
     "location":"Peru",
     "date":"2021-08-29",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":82.22,
-    "people_fully_vaccinated_per_hundred":77.38
+    "people_vaccinated_per_hundred":82.24,
+    "people_fully_vaccinated_per_hundred":77.47
   },
   {
     "location":"Peru",
     "date":"2021-08-29",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":83.41,
-    "people_fully_vaccinated_per_hundred":78.94
+    "people_vaccinated_per_hundred":83.43,
+    "people_fully_vaccinated_per_hundred":78.99
   },
   {
     "location":"Peru",
@@ -64466,43 +64536,43 @@
     "location":"Peru",
     "date":"2021-09-05",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":6.72,
+    "people_vaccinated_per_hundred":6.73,
     "people_fully_vaccinated_per_hundred":5.0
   },
   {
     "location":"Peru",
     "date":"2021-09-05",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":40.55,
-    "people_fully_vaccinated_per_hundred":24.32
+    "people_vaccinated_per_hundred":40.56,
+    "people_fully_vaccinated_per_hundred":24.33
   },
   {
     "location":"Peru",
     "date":"2021-09-05",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":76.94,
-    "people_fully_vaccinated_per_hundred":67.82
+    "people_vaccinated_per_hundred":76.95,
+    "people_fully_vaccinated_per_hundred":67.85
   },
   {
     "location":"Peru",
     "date":"2021-09-05",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":81.78,
-    "people_fully_vaccinated_per_hundred":76.24
+    "people_vaccinated_per_hundred":81.8,
+    "people_fully_vaccinated_per_hundred":76.29
   },
   {
     "location":"Peru",
     "date":"2021-09-05",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":82.76,
-    "people_fully_vaccinated_per_hundred":77.91
+    "people_vaccinated_per_hundred":82.78,
+    "people_fully_vaccinated_per_hundred":78.0
   },
   {
     "location":"Peru",
     "date":"2021-09-05",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":83.8,
-    "people_fully_vaccinated_per_hundred":79.32
+    "people_vaccinated_per_hundred":83.82,
+    "people_fully_vaccinated_per_hundred":79.38
   },
   {
     "location":"Peru",
@@ -64522,85 +64592,85 @@
     "location":"Peru",
     "date":"2021-09-12",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":54.5,
-    "people_fully_vaccinated_per_hundred":26.81
+    "people_vaccinated_per_hundred":54.52,
+    "people_fully_vaccinated_per_hundred":26.83
   },
   {
     "location":"Peru",
     "date":"2021-09-12",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":79.23,
-    "people_fully_vaccinated_per_hundred":69.51
+    "people_vaccinated_per_hundred":79.24,
+    "people_fully_vaccinated_per_hundred":69.54
   },
   {
     "location":"Peru",
     "date":"2021-09-12",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":83.07,
-    "people_fully_vaccinated_per_hundred":77.03
+    "people_vaccinated_per_hundred":83.08,
+    "people_fully_vaccinated_per_hundred":77.08
   },
   {
     "location":"Peru",
     "date":"2021-09-12",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":83.55,
-    "people_fully_vaccinated_per_hundred":78.49
+    "people_vaccinated_per_hundred":83.57,
+    "people_fully_vaccinated_per_hundred":78.58
   },
   {
     "location":"Peru",
     "date":"2021-09-12",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":84.37,
-    "people_fully_vaccinated_per_hundred":79.72
+    "people_vaccinated_per_hundred":84.39,
+    "people_fully_vaccinated_per_hundred":79.78
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"0-17",
-    "people_vaccinated_per_hundred":0.78,
+    "people_vaccinated_per_hundred":0.79,
     "people_fully_vaccinated_per_hundred":0.08
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":21.94,
+    "people_vaccinated_per_hundred":21.95,
     "people_fully_vaccinated_per_hundred":5.6
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":64.91,
-    "people_fully_vaccinated_per_hundred":30.41
+    "people_vaccinated_per_hundred":64.94,
+    "people_fully_vaccinated_per_hundred":30.43
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":80.77,
-    "people_fully_vaccinated_per_hundred":71.18
+    "people_vaccinated_per_hundred":80.79,
+    "people_fully_vaccinated_per_hundred":71.22
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":84.0,
-    "people_fully_vaccinated_per_hundred":77.92
+    "people_vaccinated_per_hundred":84.01,
+    "people_fully_vaccinated_per_hundred":77.97
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.15,
-    "people_fully_vaccinated_per_hundred":79.12
+    "people_vaccinated_per_hundred":84.17,
+    "people_fully_vaccinated_per_hundred":79.22
   },
   {
     "location":"Peru",
     "date":"2021-09-19",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":84.82,
-    "people_fully_vaccinated_per_hundred":80.17
+    "people_vaccinated_per_hundred":84.84,
+    "people_fully_vaccinated_per_hundred":80.23
   },
   {
     "location":"Peru",
@@ -64613,43 +64683,43 @@
     "location":"Peru",
     "date":"2021-09-26",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":29.42,
+    "people_vaccinated_per_hundred":29.43,
     "people_fully_vaccinated_per_hundred":5.89
   },
   {
     "location":"Peru",
     "date":"2021-09-26",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":69.17,
-    "people_fully_vaccinated_per_hundred":35.57
+    "people_vaccinated_per_hundred":69.2,
+    "people_fully_vaccinated_per_hundred":35.6
   },
   {
     "location":"Peru",
     "date":"2021-09-26",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":81.64,
-    "people_fully_vaccinated_per_hundred":72.96
+    "people_vaccinated_per_hundred":81.66,
+    "people_fully_vaccinated_per_hundred":72.99
   },
   {
     "location":"Peru",
     "date":"2021-09-26",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":84.54,
-    "people_fully_vaccinated_per_hundred":78.81
+    "people_vaccinated_per_hundred":84.55,
+    "people_fully_vaccinated_per_hundred":78.86
   },
   {
     "location":"Peru",
     "date":"2021-09-26",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.51,
-    "people_fully_vaccinated_per_hundred":79.76
+    "people_vaccinated_per_hundred":84.53,
+    "people_fully_vaccinated_per_hundred":79.85
   },
   {
     "location":"Peru",
     "date":"2021-09-26",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":85.11,
-    "people_fully_vaccinated_per_hundred":80.63
+    "people_vaccinated_per_hundred":85.13,
+    "people_fully_vaccinated_per_hundred":80.69
   },
   {
     "location":"Peru",
@@ -64662,43 +64732,43 @@
     "location":"Peru",
     "date":"2021-10-03",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":39.76,
-    "people_fully_vaccinated_per_hundred":7.87
+    "people_vaccinated_per_hundred":39.78,
+    "people_fully_vaccinated_per_hundred":7.88
   },
   {
     "location":"Peru",
     "date":"2021-10-03",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":72.18,
-    "people_fully_vaccinated_per_hundred":45.91
+    "people_vaccinated_per_hundred":72.21,
+    "people_fully_vaccinated_per_hundred":45.95
   },
   {
     "location":"Peru",
     "date":"2021-10-03",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":82.39,
-    "people_fully_vaccinated_per_hundred":75.06
+    "people_vaccinated_per_hundred":82.41,
+    "people_fully_vaccinated_per_hundred":75.09
   },
   {
     "location":"Peru",
     "date":"2021-10-03",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":85.03,
-    "people_fully_vaccinated_per_hundred":79.99
+    "people_vaccinated_per_hundred":85.04,
+    "people_fully_vaccinated_per_hundred":80.05
   },
   {
     "location":"Peru",
     "date":"2021-10-03",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":84.84,
-    "people_fully_vaccinated_per_hundred":80.52
+    "people_vaccinated_per_hundred":84.86,
+    "people_fully_vaccinated_per_hundred":80.61
   },
   {
     "location":"Peru",
     "date":"2021-10-03",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":85.38,
-    "people_fully_vaccinated_per_hundred":81.19
+    "people_vaccinated_per_hundred":85.4,
+    "people_fully_vaccinated_per_hundred":81.24
   },
   {
     "location":"Peru",
@@ -64711,337 +64781,386 @@
     "location":"Peru",
     "date":"2021-10-10",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":46.45,
-    "people_fully_vaccinated_per_hundred":16.53
+    "people_vaccinated_per_hundred":46.47,
+    "people_fully_vaccinated_per_hundred":16.55
   },
   {
     "location":"Peru",
     "date":"2021-10-10",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":74.73,
-    "people_fully_vaccinated_per_hundred":55.3
+    "people_vaccinated_per_hundred":74.76,
+    "people_fully_vaccinated_per_hundred":55.36
   },
   {
     "location":"Peru",
     "date":"2021-10-10",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":83.02,
-    "people_fully_vaccinated_per_hundred":76.56
+    "people_vaccinated_per_hundred":83.05,
+    "people_fully_vaccinated_per_hundred":76.61
   },
   {
     "location":"Peru",
     "date":"2021-10-10",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":85.44,
-    "people_fully_vaccinated_per_hundred":80.86
+    "people_vaccinated_per_hundred":85.46,
+    "people_fully_vaccinated_per_hundred":80.92
   },
   {
     "location":"Peru",
     "date":"2021-10-10",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.09,
-    "people_fully_vaccinated_per_hundred":81.06
+    "people_vaccinated_per_hundred":85.12,
+    "people_fully_vaccinated_per_hundred":81.15
   },
   {
     "location":"Peru",
     "date":"2021-10-10",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":85.58,
-    "people_fully_vaccinated_per_hundred":81.6
+    "people_vaccinated_per_hundred":85.6,
+    "people_fully_vaccinated_per_hundred":81.66
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"0-17",
     "people_vaccinated_per_hundred":1.13,
-    "people_fully_vaccinated_per_hundred":0.74
+    "people_fully_vaccinated_per_hundred":0.75
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":56.95,
-    "people_fully_vaccinated_per_hundred":22.86
+    "people_vaccinated_per_hundred":57.0,
+    "people_fully_vaccinated_per_hundred":22.88
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":77.27,
-    "people_fully_vaccinated_per_hundred":60.3
+    "people_vaccinated_per_hundred":77.31,
+    "people_fully_vaccinated_per_hundred":60.37
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":83.74,
-    "people_fully_vaccinated_per_hundred":77.56
+    "people_vaccinated_per_hundred":83.77,
+    "people_fully_vaccinated_per_hundred":77.6
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":85.87,
-    "people_fully_vaccinated_per_hundred":81.45
+    "people_vaccinated_per_hundred":85.89,
+    "people_fully_vaccinated_per_hundred":81.51
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.37,
-    "people_fully_vaccinated_per_hundred":81.44
+    "people_vaccinated_per_hundred":85.4,
+    "people_fully_vaccinated_per_hundred":81.53
   },
   {
     "location":"Peru",
     "date":"2021-10-17",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":85.79,
-    "people_fully_vaccinated_per_hundred":81.9
+    "people_vaccinated_per_hundred":85.81,
+    "people_fully_vaccinated_per_hundred":81.96
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"0-17",
     "people_vaccinated_per_hundred":2.16,
-    "people_fully_vaccinated_per_hundred":0.8
+    "people_fully_vaccinated_per_hundred":0.81
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":63.96,
-    "people_fully_vaccinated_per_hundred":30.91
+    "people_vaccinated_per_hundred":64.03,
+    "people_fully_vaccinated_per_hundred":30.95
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":78.97,
-    "people_fully_vaccinated_per_hundred":63.45
+    "people_vaccinated_per_hundred":79.01,
+    "people_fully_vaccinated_per_hundred":63.53
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":84.28,
-    "people_fully_vaccinated_per_hundred":78.36
+    "people_vaccinated_per_hundred":84.31,
+    "people_fully_vaccinated_per_hundred":78.4
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.21,
-    "people_fully_vaccinated_per_hundred":81.94
+    "people_vaccinated_per_hundred":86.23,
+    "people_fully_vaccinated_per_hundred":82.01
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.58,
-    "people_fully_vaccinated_per_hundred":81.77
+    "people_vaccinated_per_hundred":85.61,
+    "people_fully_vaccinated_per_hundred":81.86
   },
   {
     "location":"Peru",
     "date":"2021-10-24",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":85.97,
-    "people_fully_vaccinated_per_hundred":82.16
+    "people_vaccinated_per_hundred":85.99,
+    "people_fully_vaccinated_per_hundred":82.22
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"0-17",
-    "people_vaccinated_per_hundred":4.08,
+    "people_vaccinated_per_hundred":4.09,
     "people_fully_vaccinated_per_hundred":0.85
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":67.78,
-    "people_fully_vaccinated_per_hundred":36.8
+    "people_vaccinated_per_hundred":67.85,
+    "people_fully_vaccinated_per_hundred":36.87
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":80.12,
-    "people_fully_vaccinated_per_hundred":65.94
+    "people_vaccinated_per_hundred":80.18,
+    "people_fully_vaccinated_per_hundred":66.04
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":84.67,
-    "people_fully_vaccinated_per_hundred":79.0
+    "people_vaccinated_per_hundred":84.7,
+    "people_fully_vaccinated_per_hundred":79.05
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.47,
-    "people_fully_vaccinated_per_hundred":82.35
+    "people_vaccinated_per_hundred":86.49,
+    "people_fully_vaccinated_per_hundred":82.42
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.75,
-    "people_fully_vaccinated_per_hundred":82.03
+    "people_vaccinated_per_hundred":85.78,
+    "people_fully_vaccinated_per_hundred":82.13
   },
   {
     "location":"Peru",
     "date":"2021-10-31",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":86.08,
-    "people_fully_vaccinated_per_hundred":82.37
+    "people_vaccinated_per_hundred":86.1,
+    "people_fully_vaccinated_per_hundred":82.43
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"0-17",
-    "people_vaccinated_per_hundred":13.51,
+    "people_vaccinated_per_hundred":13.58,
     "people_fully_vaccinated_per_hundred":0.92
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":70.65,
-    "people_fully_vaccinated_per_hundred":40.47
+    "people_vaccinated_per_hundred":70.75,
+    "people_fully_vaccinated_per_hundred":40.55
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":81.02,
-    "people_fully_vaccinated_per_hundred":67.81
+    "people_vaccinated_per_hundred":81.08,
+    "people_fully_vaccinated_per_hundred":67.91
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":84.98,
-    "people_fully_vaccinated_per_hundred":79.51
+    "people_vaccinated_per_hundred":85.02,
+    "people_fully_vaccinated_per_hundred":79.56
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.66,
-    "people_fully_vaccinated_per_hundred":82.66
+    "people_vaccinated_per_hundred":86.69,
+    "people_fully_vaccinated_per_hundred":82.73
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":85.88,
-    "people_fully_vaccinated_per_hundred":82.23
+    "people_vaccinated_per_hundred":85.91,
+    "people_fully_vaccinated_per_hundred":82.33
   },
   {
     "location":"Peru",
     "date":"2021-11-07",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":86.18,
-    "people_fully_vaccinated_per_hundred":82.53
+    "people_vaccinated_per_hundred":86.2,
+    "people_fully_vaccinated_per_hundred":82.59
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"0-17",
-    "people_vaccinated_per_hundred":19.15,
+    "people_vaccinated_per_hundred":19.3,
     "people_fully_vaccinated_per_hundred":1.8
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":73.72,
-    "people_fully_vaccinated_per_hundred":47.15
+    "people_vaccinated_per_hundred":73.86,
+    "people_fully_vaccinated_per_hundred":47.32
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":82.17,
-    "people_fully_vaccinated_per_hundred":69.77
+    "people_vaccinated_per_hundred":82.24,
+    "people_fully_vaccinated_per_hundred":69.9
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":85.43,
-    "people_fully_vaccinated_per_hundred":80.1
+    "people_vaccinated_per_hundred":85.47,
+    "people_fully_vaccinated_per_hundred":80.17
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":86.92,
-    "people_fully_vaccinated_per_hundred":83.02
+    "people_vaccinated_per_hundred":86.95,
+    "people_fully_vaccinated_per_hundred":83.1
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":86.04,
-    "people_fully_vaccinated_per_hundred":82.46
+    "people_vaccinated_per_hundred":86.08,
+    "people_fully_vaccinated_per_hundred":82.56
   },
   {
     "location":"Peru",
     "date":"2021-11-14",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":86.32,
-    "people_fully_vaccinated_per_hundred":82.72
+    "people_vaccinated_per_hundred":86.34,
+    "people_fully_vaccinated_per_hundred":82.78
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"0-17",
-    "people_vaccinated_per_hundred":21.43,
-    "people_fully_vaccinated_per_hundred":2.53
+    "people_vaccinated_per_hundred":21.99,
+    "people_fully_vaccinated_per_hundred":2.77
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"18-24",
-    "people_vaccinated_per_hundred":77.09,
-    "people_fully_vaccinated_per_hundred":52.5
+    "people_vaccinated_per_hundred":77.93,
+    "people_fully_vaccinated_per_hundred":53.62
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"25-49",
-    "people_vaccinated_per_hundred":83.85,
-    "people_fully_vaccinated_per_hundred":71.35
+    "people_vaccinated_per_hundred":84.29,
+    "people_fully_vaccinated_per_hundred":71.82
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"50-59",
-    "people_vaccinated_per_hundred":86.13,
-    "people_fully_vaccinated_per_hundred":80.61
+    "people_vaccinated_per_hundred":86.33,
+    "people_fully_vaccinated_per_hundred":80.78
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":87.35,
-    "people_fully_vaccinated_per_hundred":83.31
+    "people_vaccinated_per_hundred":87.48,
+    "people_fully_vaccinated_per_hundred":83.44
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":86.31,
-    "people_fully_vaccinated_per_hundred":82.65
+    "people_vaccinated_per_hundred":86.4,
+    "people_fully_vaccinated_per_hundred":82.79
   },
   {
     "location":"Peru",
     "date":"2021-11-21",
     "age_group":"80+",
-    "people_vaccinated_per_hundred":86.52,
-    "people_fully_vaccinated_per_hundred":82.87
+    "people_vaccinated_per_hundred":86.59,
+    "people_fully_vaccinated_per_hundred":82.96
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"0-17",
+    "people_vaccinated_per_hundred":23.51,
+    "people_fully_vaccinated_per_hundred":8.04
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"18-24",
+    "people_vaccinated_per_hundred":80.74,
+    "people_fully_vaccinated_per_hundred":57.11
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"25-49",
+    "people_vaccinated_per_hundred":85.75,
+    "people_fully_vaccinated_per_hundred":73.03
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"50-59",
+    "people_vaccinated_per_hundred":86.96,
+    "people_fully_vaccinated_per_hundred":81.19
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"60-69",
+    "people_vaccinated_per_hundred":87.89,
+    "people_fully_vaccinated_per_hundred":83.69
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"70-79",
+    "people_vaccinated_per_hundred":86.67,
+    "people_fully_vaccinated_per_hundred":82.98
+  },
+  {
+    "location":"Peru",
+    "date":"2021-11-28",
+    "age_group":"80+",
+    "people_vaccinated_per_hundred":86.81,
+    "people_fully_vaccinated_per_hundred":83.11
   },
   {
     "location":"Poland",
