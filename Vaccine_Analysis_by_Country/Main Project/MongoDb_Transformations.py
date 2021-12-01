@@ -39,9 +39,6 @@ except pymongo.errors.PyMongoError as error:
 # Print a value from collection as validation.
 print(list(db.Countries.find({'Country': "Poland"})), '\n')
 
-# Check if collection exists
-print(my_db.list_collection_names(), '\n')
-
 # Creating collection which will be a combination of all three datasets (df_1, df_2 and df_3).
 try:
     if db.Total_Vaccinations_Worldwide.count() > 0:
@@ -80,3 +77,8 @@ try:
 
 except pymongo.errors.PyMongoError as error:
     print('There was an error populating the Countries table:', error)
+
+
+# Check if collection exists
+print('Here are our collections:', '\n', my_db.list_collection_names(), '\n')
+
