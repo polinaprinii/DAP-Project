@@ -99,4 +99,15 @@ restrictions_final.df <- restrictions.df %>%
             MeanStayHome = mean(stay_home_requirements))
 restrictions_final.df
 ```
+```{r}
+ISO <- restrictions.df %>%
+  select(ISO, Country)%>%
+  distinct(ISO,Country)
 
+ISO
+
+```
+```{r}
+restrictions_final1.df <- right_join(ISO,restrictions_final.df, by= c("Country"))
+restrictions_final1.df
+```
