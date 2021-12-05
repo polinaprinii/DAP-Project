@@ -44,3 +44,16 @@ testing_final.df
 testing_final1.df <- aggregate(testing_final.df$total_tests, list(testing_final.df$country),FUN=sum,na.rm=TRUE)
 testing_final1.df
 ```
+```{r}
+ISO <- testing_final.df %>%
+  select(isocode,country)%>%
+  distinct(isocode,country)
+
+ISO
+
+```
+
+```{r}
+
+
+```
