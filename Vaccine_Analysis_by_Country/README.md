@@ -1,8 +1,8 @@
-# Database and Analytics Programming Project:
+# Database and Analytics Programming Project: #
 The aim of this document is to outline the overall theme, chosen dataset, and aim of analysis.
 
 
-## Overall Group Project Theme is COVID-19:
+## Overall Group Project Theme is COVID-19: ##
 The group have mutually agreed to cover the on-going Covid-19 pandemic as an overall theme to the project.
 Each team member have chosen a different aspect to cover under the agreed theme. With an overall goal to perform Multiple Linear Regression to evaluate if the chosen independent (x) variables are good predictors for the chosen dependant (y) variable.
 Please refer to the following [README](https://github.com/polinaprinii/DAP-Project/blob/main/README.md) file for more details.
@@ -10,7 +10,7 @@ Please refer to the following [README](https://github.com/polinaprinii/DAP-Proje
 The dataset under analysis here is Vaccinations by Country.
 
 
-### Aim of Analysis
+### Aim of Analysis: ###
 The following dataset 'vaccinations.csv' found at the following [git repository](https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations) by _Our World in Data_ will be under analysis.
 
 The project aims to perform the following analysis to allow insights into the data as it is prepared for the final analysis:
