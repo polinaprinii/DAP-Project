@@ -111,6 +111,12 @@ ISO
 restrictions_final1.df <- right_join(ISO,restrictions_final.df, by= c("Country"))
 restrictions_final1.df <- restrictions_final1.df %>%
   rename(isocode = ISO, country = Country)
+restrictions_final1.df <- restrictions_final1.df[-c(186:205),]
+```
+
+```{r}
+
+restrictions_final1.df
 ```
 
 ```{r}
