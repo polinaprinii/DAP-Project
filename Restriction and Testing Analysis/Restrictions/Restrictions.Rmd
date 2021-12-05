@@ -6,6 +6,12 @@ output: html_document
 ---
 
 ```{r}
+library(tidyr)
+library(dplyr)
+
+```
+
+```{r}
 stringency.df <- read.csv("covid-stringency-index.csv",fileEncoding = "UTF-8-BOM")
 masks.df <- read.csv("face-covering-policies-covid.csv",fileEncoding = "UTF-8-BOM")
 stayhome.df <- read.csv("stay-at-home-covid.csv",fileEncoding ="UTF-8-BOM")
@@ -85,7 +91,12 @@ restrictions.df
 ```{r}
 restrictions_final.df <- restrictions.df %>%
   group_by(Country)%>%
-  summarise(MaxStringencyIndex = max(stringency_index))
-
+  summarise(MaxStringencyIndex = max(stringency_index),
+            MeanStringencyIndex = mean(stringency_index),
+            MaxFacialCoverings = max(facial_coverings),
+            MeanFacialCoverings = mean(facial_coverings),
+            MaxStayHome = max(stay_home_requirements),
+            MeanStayHome = mean(stay_home_requirements))
 restrictions_final.df
 ```
+
