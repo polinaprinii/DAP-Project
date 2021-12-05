@@ -1,0 +1,67 @@
+---
+title: "Testing"
+author: "Maria Migrova"
+date: "12/5/2021"
+output: html_document
+---
+
+```{r}
+library(tidyr)
+library(dplyr)
+
+```
+
+
+```{r}
+testing.df <- read.csv("testing data.csv",fileEncoding = "UTF-8-BOM")
+
+```
+
+```{r}
+testing.df
+
+```
+
+```{r}
+testing1.df <- testing.df %>%
+  select(iso_code,location,date,total_tests)%>%
+  rename(isocode = iso_code, country = location)
+testing1.df
+
+```
+```{r}
+
+testing1.df$date <- as.Date(testing1.df$date)
+
+testing_final.df <- testing1.df[testing1.df$date > "2020-12-31" & testing1.df$date < "2021-11-24",]
+testing_final.df
+
+
+```
+
+```{r}
+
+testing_final1.df <- aggregate(testing_final.df$total_tests, list(testing_final.df$country),FUN=sum,na.rm=TRUE)
+testing_final1.df <- testing_final1.df%>%
+  rename(country = Group.1,
+         tests = x)
+testing_final1.df
+```
+```{r}
+ISO <- testing_final.df %>%
+  select(isocode,country)%>%
+  distinct(isocode,country)
+
+ISO
+
+```
+
+```{r}
+testing_final1.df <- right_join(ISO,testing_final1.df, by= c("country"))
+testing_final1.df
+```
+
+```{r}
+write.csv(testing_final1.df,"testing.csv")
+
+```
