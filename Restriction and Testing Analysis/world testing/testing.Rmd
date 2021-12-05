@@ -42,6 +42,9 @@ testing_final.df
 ```{r}
 
 testing_final1.df <- aggregate(testing_final.df$total_tests, list(testing_final.df$country),FUN=sum,na.rm=TRUE)
+testing_final1.df%>%
+  rename(country = Group.1,
+         tests = x)
 testing_final1.df
 ```
 ```{r}
@@ -54,6 +57,8 @@ ISO
 ```
 
 ```{r}
-
+testing_final1.df <- right_join(ISO,testing_final1.df, by= c("country"))
+testing_final1.df
+```
 
 ```
