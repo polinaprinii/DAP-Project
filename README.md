@@ -8,8 +8,9 @@
 
 
 ## *Project Aim:* ##
-
-
+(Polina take)
+-The project aims to perform analysis using the data collated by the individual work (outlined below) to estimate and report on a multiple regression model to facilitate the understanding of the criteria that dictate the Covid-19 mortality rates and useful for the prediction of same.
+Taking the following approach of programmatically combining four CSV datasets via Python and using the rpy2 package to allow for the multiple linear regression analysis the project looks to conclude the finding in this report. (insert link to report)-  
 
 ## *Individual Work:* ##
 This area outlines the individual efforts to extract, clean and transform the datasets under analysis with the end goal of combining said datasets into one for Multiple Linear Regression.
