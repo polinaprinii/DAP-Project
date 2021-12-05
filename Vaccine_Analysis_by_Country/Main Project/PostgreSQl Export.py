@@ -26,7 +26,7 @@ finally:
     if (dbConnection):
         dbConnection.close()
 
-# Check to see if PostgreSQL table returns values. 
+# Check to see if PostgreSQL table returns values.
 print(vaccs_df)
 
 # Prepping above SQl query for export.
