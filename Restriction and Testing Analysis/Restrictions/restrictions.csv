@@ -1,4 +1,4 @@
-"","ISO","Country","MaxStringencyIndex","MeanStringencyIndex","MaxFacialCoverings","MeanFacialCoverings","MaxStayHome","MeanStayHome"
+"","isocode","country","MaxStringencyIndex","MeanStringencyIndex","MaxFacialCoverings","MeanFacialCoverings","MaxStayHome","MeanStayHome"
 "1","AFG","Afghanistan",56.02,30.1323692307692,3,2.51076923076923,3,0.135384615384615
 "2","ALB","Albania",63.89,49.1582515337423,4,3.04601226993865,2,2
 "3","DZA","Algeria",85.19,60.1759021406728,3,3,2,1.78593272171254
