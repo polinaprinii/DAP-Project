@@ -1,20 +1,20 @@
 # Database and Analytics Programming Project #
 
-##*Authors:*##
+## *Authors:* ##
 - Alun Price
 - Evan Kelly
 - Maria Migrova
 - Polina Prinii
 
 
-##*Project Aim:*##
+## *Project Aim:* ##
 
 
 
-##*Individual Work:*##
+## *Individual Work:* ##
 This area outlines the individual efforts to extract, clean and transform the datasets under analysis with the end goal of combining said datasets into one for Multiple Linear Regression.
 
-###Total Vaccinations - Polina Prinii ###
+### Total Vaccinations - Polina Prinii ###
 The Total Vaccination dataset aims to look and identify the following totals:
 
 - Total vaccines administered to the population for each country (inclusive of 2 dose protocols).
