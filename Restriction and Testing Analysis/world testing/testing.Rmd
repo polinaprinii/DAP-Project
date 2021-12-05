@@ -39,7 +39,8 @@ testing_final.df
 
 ```
 
-
 ```{r}
 
+testing_final1.df <- aggregate(testing_final.df$total_tests, list(testing_final.df$country),FUN=sum,na.rm=TRUE)
+testing_final1.df
 ```
