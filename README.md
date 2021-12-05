@@ -1,20 +1,20 @@
-# Database and Analytics Programming Project
+# Database and Analytics Programming Project #
 
-##*Authors:*
+##*Authors:*##
 - Alun Price
 - Evan Kelly
 - Maria Migrova
 - Polina Prinii
 
 
-##*Project Aim:*
+##*Project Aim:*##
 
 
 
-##*Individual Work:*
+##*Individual Work:*##
 This area outlines the individual efforts to extract, clean and transform the datasets under analysis with the end goal of combining said datasets into one for Multiple Linear Regression.
 
-###Total Vaccinations - Polina Prinii
+###Total Vaccinations - Polina Prinii ###
 The Total Vaccination dataset aims to look and identify the following totals:
 
 - Total vaccines administered to the population for each country (inclusive of 2 dose protocols).
@@ -30,9 +30,9 @@ Note all scripting is undertaken using the Python programming language.
 
 **Step 1:** Environment setup in PyCharm to store all coding undertaken throughout the process.<br />
 **Step 2:** Extract raw datasets from Git. <br />
-**Step 3:** Import raw dataset to MongoDB.
-**Step 4:** Transform datasets in MongoDB.
-**Step 5:** Import datasets to PostgreSQL.
-**Step 6:** Assign relationships within tables in PostgreSQL.
-**Step 7:** Visualise data in meaningful ways.
-**Step 8:** Export final table aka dataset for groups efforts in CSV format. 
+**Step 3:** Import raw dataset to MongoDB.<br />
+**Step 4:** Transform datasets in MongoDB.<br />
+**Step 5:** Import datasets to PostgreSQL.<br />
+**Step 6:** Assign relationships within tables in PostgreSQL.<br />
+**Step 7:** Visualise data in meaningful ways.<br />
+**Step 8:** Export final table aka dataset for groups efforts in CSV format. <br />
