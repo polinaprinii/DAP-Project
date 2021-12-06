@@ -127,8 +127,11 @@ print("new dataframe = \n", df1.head(), "new dataframe = \n", df2.head())
 
 ########################################################################################################################
 
+df1 = df1.rename(columns={'Country/Region': 'country'})
+df1 = df1.rename(columns={'iso3' : 'isocode'})
+
 # df1.to_json("who_global_confirmed_cases.json", orient='records')
-df1.to_csv("who_global_confirmed_Cases.csv")
+df1.to_csv("A:\College\DAP-Project\Cases_and_Death_Rates\Data\who_global_confirmed_Cases.csv")
 # df2.to_csv("who_global_deaths.csv")
 # df3.to_csv("who_US_Deaths.csv")
 # df4.to_csv("who_US_Confirmed_Cases.csv")
