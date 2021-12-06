@@ -2,6 +2,7 @@
 import pandas as pd
 import pycountry
 import requests.exceptions
+
 pd.options.mode.chained_assignment = None
 
 ########################################################################################################################
@@ -52,6 +53,7 @@ finally:
     for i in all_dfs:
         print(i.head(5))
 
+
 ########################################################################################################################
 
 def CountryISOConverter(dataframe):
@@ -100,16 +102,15 @@ def Null_Count(dataframe):
 
 
 def Province_fill(dataframe):
-
     dataframe['Province/State'].fillna(dataframe['Country/Region'], inplace=True)
 
     return dataframe
+
 
 def Combination_fill(dataframe):
     dataframe['Combination_Key'].fillna(dataframe['Country/Region'] + ", Province not Known", inplace=True)
 
     return dataframe
-
 
 
 print("Null Count of Dataframe 1 = \n", Null_Count(df1))
@@ -120,7 +121,6 @@ df2 = Province_fill(df2)
 
 df1 = Combination_fill(df1)
 
-
 ########################################################################################################################
 
 print("new dataframe = \n", df1.head(), "new dataframe = \n", df2.head())
@@ -128,10 +128,12 @@ print("new dataframe = \n", df1.head(), "new dataframe = \n", df2.head())
 ########################################################################################################################
 
 df1 = df1.rename(columns={'Country/Region': 'country'})
-df1 = df1.rename(columns={'iso3' : 'isocode'})
+df1 = df1.rename(columns={'iso3': 'isocode'})
+df2 = df2.rename(columns={'Country/Region': 'country'})
+df2 = df2.rename(columns={'iso3': 'isocode'})
 
 # df1.to_json("who_global_confirmed_cases.json", orient='records')
 df1.to_csv("A:\College\DAP-Project\Cases_and_Death_Rates\Data\who_global_confirmed_Cases.csv")
-# df2.to_csv("who_global_deaths.csv")
+df2.to_csv("A:\College\DAP-Project\Cases_and_Death_Rates\Data\who_global_deaths.csv")
 # df3.to_csv("who_US_Deaths.csv")
 # df4.to_csv("who_US_Confirmed_Cases.csv")
