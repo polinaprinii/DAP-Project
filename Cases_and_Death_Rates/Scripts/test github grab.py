@@ -132,6 +132,15 @@ df1 = df1.rename(columns={'iso3': 'isocode'})
 df2 = df2.rename(columns={'Country/Region': 'country'})
 df2 = df2.rename(columns={'iso3': 'isocode'})
 
+# Global_dataframes = [df1, df2]
+
+
+
+# Global_Confirmed_Cases_And_Deaths = pd.concat(Global_dataframes)
+
+df.drop(['Lat', 'Long'], axis=1, inplace=True)
+
+
 # df1.to_json("who_global_confirmed_cases.json", orient='records')
 df1.to_csv("A:\College\DAP-Project\Cases_and_Death_Rates\Data\who_global_confirmed_Cases.csv")
 df2.to_csv("A:\College\DAP-Project\Cases_and_Death_Rates\Data\who_global_deaths.csv")
