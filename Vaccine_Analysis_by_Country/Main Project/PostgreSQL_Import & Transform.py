@@ -34,16 +34,16 @@ for record in data:
     totalBoost.append(record['Total_Boosters_Administered'])
     numberFullyVac.append(record['Number_of_People_Fully_Vaccinated'])
 
-# Creating tables in PostgreSQl (Countries & TotalVaccinationsWorldwide):
+# Creating tables in PostgreSQl (Countries & TotalVaccinationsWorldwide) if they dont exist:
 createCountries = """
-CREATE TABLE Countries(
+CREATE TABLE IF NOT EXISTS Countries(
 ISOCode varchar(50) PRIMARY KEY,
 Country varchar(100)
 ) ;
 """
 
 createTotalVacs = """
-CREATE TABLE TotalVaccinationsWorldwide(
+CREATE TABLE IF NOT EXISTS TotalVaccinationsWorldwide (
 Country varchar(100) PRIMARY KEY,
 ISOCode varchar(50), 
 TotalVaccinations numeric(12,1),
@@ -51,15 +51,6 @@ TotalBooster numeric (12,1),
 FullyVaccinated numeric (12,1),
 FOREIGN KEY (ISOCode) REFERENCES Countries(ISOCode)
 );
-"""
-
-# Variables to hold SQL syntax to check if tables exist to avoid table exists errors.
-countryTableExists = """
-SELECT COUNT(*) FROM Countries
-"""
-
-totalVacTableExists = """
-SELECT COUNT(*) FROM TotalVaccinationsWorldwide
 """
 
 # Connection to PostgreSQl Server on VM.
@@ -73,16 +64,8 @@ try:
     dbConnection.set_isolation_level(0)  # AUTOCOMMIT
     dbCursor = dbConnection.cursor()
 
-    # Checking if table exist to not create twice for both Countries and TotalVaccinationsWorldwide.
-    dbCursor.execute(countryTableExists)
-    countryCount = dbCursor.fetchall()
-    if not countryCount[0][0] > 0:
-        dbCursor.execute(createCountries)
-
-    dbCursor.execute(totalVacTableExists)
-    totalVacCount = dbCursor.fetchall()
-    if not totalVacCount[0][0] > 0:
-        dbCursor.execute(createTotalVacs)
+    dbCursor.execute(createCountries)
+    dbCursor.execute(createTotalVacs)
 
     dbCursor.close()
 
@@ -105,9 +88,10 @@ for index, i in enumerate(country):
     s = ""
     """Regex logic to find and replace an instance of a single quote with double single quotes.
     Performed due to PostgreSQL not being able to read ' whilst data is in a string. '' required to resolve issue. 
+    
+    On conflict with the same value do not insert the row, avoids errors from postgres on duplicates.
     """
-    s += "INSERT INTO Countries(ISOCode, Country) VALUES('" + iso[index] + "' , '" + re.sub("'", "''",
-                                                                                            country[index]) + "')"
+    s += "INSERT INTO Countries(ISOCode, Country) VALUES('" + iso[index] + "' , '" + re.sub("'", "''", country[index]) + "') ON CONFLICT (IsoCode) DO NOTHING"
     insertCountryList.append(s)
 
 # TotalVaccinationsWorldwide:
@@ -115,11 +99,19 @@ for index, i in enumerate(countryVac):
     s = ""
     """Additional Regex logic added to replace Null with 0 as TotalVaccinations, TotalBooster, FullyVaccinated 
     columns are numeric type. 
+    
+    On conflict with the same value do not insert the row, avoids errors from postgres on duplicates.
     """
-    s += "INSERT INTO TotalVaccinationsWorldwide(Country, ISOCode, TotalVaccinations, TotalBooster, FullyVaccinated  ) VALUES('" + re.sub(
-        "'", "''", countryVac[index]) + "' , '" + isoVac[index] + "' , '" + re.sub("None", "0", str(
-        totalVac[index])) + "' , '" + re.sub("None", "0", str(totalBoost[index])) + "' , '" + re.sub("None", "0", str(
-        numberFullyVac[index])) + "')"
+    s += "INSERT INTO TotalVaccinationsWorldwide(Country, ISOCode, TotalVaccinations, TotalBooster, FullyVaccinated  ) " \
+        "VALUES('" \
+         + re.sub("'", "''", countryVac[index]) + "' , '" \
+         + isoVac[index] + "' , '" \
+         + re.sub("None", "0", str(totalVac[index])) + "' , '" \
+         + re.sub("None", "0", str(totalBoost[index])) + "' , '" \
+         + re.sub("None", "0", str(numberFullyVac[index])) + "') " \
+         + "ON CONFLICT (Country) DO UPDATE SET TotalVaccinations = '" + re.sub("None", "0", str(totalVac[index])) \
+         + "', TotalBooster ='" + re.sub("None", "0", str(totalBoost[index])) \
+         + "', FullyVaccinated ='" + re.sub("None", "0", str(numberFullyVac[index])) + "'"
     insertVaccinationsList.append(s)
 
 # Populating tables, sending rows to both tables:
@@ -131,8 +123,6 @@ try:
                                     database="postgres")
     dbConnection.set_isolation_level(0)  # AUTOCOMMIT
     dbCursor = dbConnection.cursor()
-    
-    # TODO: Identify the correct method in PostgreSQL to either delete from or truncate table to avoid duplicate error.
 
     # Countries table:
     for i in insertCountryList:
