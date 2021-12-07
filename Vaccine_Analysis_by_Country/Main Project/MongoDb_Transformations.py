@@ -81,6 +81,7 @@ try:
     for data in total_vac_data:
         if data['Total_Vaccinations_Administered'] is None or data['Number_of_People_Fully_Vaccinated'] is None:
             country = data['_id']
+
             newDataForCountry = db.df_1.aggregate([{
                 "$match": {
                     "$and": [
@@ -105,6 +106,7 @@ try:
                     "Total_Vaccinations_Administered": {"$last": "$total_vaccinations"},
                     "Number_of_People_Fully_Vaccinated": {"$last": "$people_fully_vaccinated"},
                 }}])
+
             for newData in newDataForCountry:
                 data['_id'] = data['_id']
                 data['Iso_Code'] = data['Iso_Code']
