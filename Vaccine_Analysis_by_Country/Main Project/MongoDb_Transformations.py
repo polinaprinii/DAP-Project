@@ -53,15 +53,28 @@ except pymongo.errors.PyMongoError as pyerror2:
 try:
     # A for loop to populate Total_Vaccinations_Worldwide collection using the data from df_1 collection.
     total_vac_data = db.df_1.aggregate([
-        {"$match": {
-            "date": "2021-11-24"
-        }},
+        {
+           "$match": {
+            "$and":[
+                    {"date": { "$gte":'2021-01-01',
+                               "$lte":'2021-11-24'}},
+
+                    {"total_vaccinations":{
+                                "$exists": "true",
+                                "$ne": "null" }},
+
+                    {"people_fully_vaccinated":{
+                                "$exists": "true",
+                                "$ne": "null" }}
+            ]
+        }
+    },
         {"$group": {
             "_id": "$location",
-            "Iso_Code": {"$first": "$iso_code"},
-            "Total_Vaccinations_Administered": {"$first": "$total_vaccinations"},
-            "Total_Boosters_Administered": {"$first": "$total_boosters"},
-            "Number_of_People_Fully_Vaccinated": {"$first": "$people_fully_vaccinated"},
+            "Iso_Code": {"$last": "$iso_code"},
+            "Total_Vaccinations_Administered": {"$last": "$total_vaccinations"},
+            "Total_Boosters_Administered": {"$last": "$total_boosters"},
+            "Number_of_People_Fully_Vaccinated": {"$last": "$people_fully_vaccinated"},
         }}])
 
     for data in total_vac_data:

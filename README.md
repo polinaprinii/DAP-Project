@@ -2,7 +2,6 @@
 
 ## *Authors:* ##
 - Alun Price
-- Evan Kelly
 - Maria Migrova
 - Polina Prinii
 
