@@ -7,84 +7,84 @@
 "6","AGO","Angola",0
 "7","AIA","Anguilla",0
 "8","ATG","Antigua and Barbuda",16700
-"9","ARG","Argentina",5092574630
-"10","ARM","Armenia",363643640
+"9","ARG","Argentina",5144722921
+"10","ARM","Armenia",380079043
 "11","ABW","Aruba",0
 "12","OWID_ASI","Asia",0
-"13","AUS","Australia",5176200578
-"14","AUT","Austria",16371365068
-"15","AZE","Azerbaijan",669064747
-"16","BHS","Bahamas",4222896
-"17","BHR","Bahrain",1274989402
-"18","BGD","Bangladesh",2164614701
+"13","AUS","Australia",5366082762
+"14","AUT","Austria",17248306948
+"15","AZE","Azerbaijan",685653599
+"16","BHS","Bahamas",5063656
+"17","BHR","Bahrain",1311759560
+"18","BGD","Bangladesh",2240310051
 "19","BRB","Barbados",0
-"20","BLR","Belarus",674914094
-"21","BEL","Belgium",4848932213
-"22","BLZ","Belize",7446377
+"20","BLR","Belarus",695620893
+"21","BEL","Belgium",4995732505
+"22","BLZ","Belize",7794269
 "23","BEN","Benin",640586
 "24","BMU","Bermuda",0
-"25","BTN","Bhutan",167878749
-"26","BOL","Bolivia",490759446
+"25","BTN","Bhutan",176547092
+"26","BOL","Bolivia",504632403
 "27","BES","Bonaire Sint Eustatius and Saba",0
-"28","BIH","Bosnia and Herzegovina",215419415
-"29","BWA","Botswana",113762132
-"30","BRA","Brazil",9651665876
+"28","BIH","Bosnia and Herzegovina",222357574
+"29","BWA","Botswana",115631491
+"30","BRA","Brazil",9716857322
 "31","VGB","British Virgin Islands",0
 "32","BRN","Brunei",0
-"33","BGR","Bulgaria",577589278
+"33","BGR","Bulgaria",597112256
 "34","BFA","Burkina Faso",0
 "35","BDI","Burundi",0
 "36","KHM","Cambodia",64925980
 "37","CMR","Cameroon",0
-"38","CAN","Canada",11195023526
+"38","CAN","Canada",11534983641
 "39","CPV","Cape Verde",0
 "40","CYM","Cayman Islands",0
 "41","CAF","Central African Republic",0
 "42","TCD","Chad",0
-"43","CHL","Chile",5076521951
+"43","CHL","Chile",5278058590
 "44","CHN","China",0
-"45","COL","Colombia",5978500609
+"45","COL","Colombia",6202046774
 "46","COM","Comoros",0
 "47","COG","Congo",0
 "48","COK","Cook Islands",0
 "49","CRI","Costa Rica",388819633
-"50","CIV","Cote d'Ivoire",211293224
-"51","HRV","Croatia",500982174
+"50","CIV","Cote d'Ivoire",218174424
+"51","HRV","Croatia",511306401
 "52","CUB","Cuba",584281418
 "53","CUW","Curacao",0
-"54","CYP","Cyprus",2526474533
+"54","CYP","Cyprus",2624616420
 "55","CZE","Czechia",0
 "56","COD","Democratic Republic of Congo",0
-"57","DNK","Denmark",9982579728
+"57","DNK","Denmark",10217259118
 "58","DJI","Djibouti",0
 "59","DMA","Dominica",0
 "60","DOM","Dominican Republic",188401519
-"61","ECU","Ecuador",423538630
+"61","ECU","Ecuador",431172513
 "62","EGY","Egypt",0
 "63","SLV","El Salvador",83439357
-"64","GNQ","Equatorial Guinea",9082913
+"64","GNQ","Equatorial Guinea",9858581
 "65","ERI","Eritrea",0
-"66","EST","Estonia",474782152
+"66","EST","Estonia",491108374
 "67","SWZ","Eswatini",0
-"68","ETH","Ethiopia",746571886
+"68","ETH","Ethiopia",750408786
 "69","OWID_EUR","Europe",0
 "70","OWID_EUN","European Union",0
 "71","FRO","Faeroe Islands",0
 "72","FLK","Falkland Islands",0
 "73","FJI","Fiji",17196741
-"74","FIN","Finland",1707824276
+"74","FIN","Finland",1755360835
 "75","FRA","France",0
 "76","PYF","French Polynesia",0
-"77","GAB","Gabon",44068397
+"77","GAB","Gabon",48242298
 "78","GMB","Gambia",5870327
 "79","GEO","Georgia",475893185
 "80","DEU","Germany",2854120708
 "81","GHA","Ghana",280790023
 "82","GIB","Gibraltar",0
-"83","GRC","Greece",3451468679
+"83","GRC","Greece",3699475618
 "84","GRL","Greenland",0
 "85","GRD","Grenada",0
-"86","GTM","Guatemala",277398599
+"86","GTM","Guatemala",287140734
 "87","GGY","Guernsey",0
 "88","GIN","Guinea",0
 "89","GNB","Guinea-Bissau",0
@@ -93,146 +93,146 @@
 "92","OWID_HIC","High income",0
 "93","HND","Honduras",0
 "94","HKG","Hong Kong",207666928
-"95","HUN","Hungary",1360161902
-"96","ISL","Iceland",144129782
-"97","IND","India",124421122027
-"98","IDN","Indonesia",4547470661
+"95","HUN","Hungary",1391527061
+"96","ISL","Iceland",148616910
+"97","IND","India",129530609663
+"98","IDN","Indonesia",4835702971
 "99","OWID_INT","International",0
-"100","IRN","Iran",3790272266
-"101","IRQ","Iraq",2975041188
-"102","IRL","Ireland",1760868126
+"100","IRN","Iran",4059661925
+"101","IRQ","Iraq",3056527254
+"102","IRL","Ireland",1832131819
 "103","IMN","Isle of Man",0
-"104","ISR","Israel",6156177218
-"105","ITA","Italy",21995197962
-"106","JAM","Jamaica",81414969
-"107","JPN","Japan",4908867887
+"104","ISR","Israel",6413767795
+"105","ITA","Italy",22819214855
+"106","JAM","Jamaica",85439727
+"107","JPN","Japan",5094600901
 "108","JEY","Jersey",0
-"109","JOR","Jordan",1461485181
+"109","JOR","Jordan",1497659911
 "110","KAZ","Kazakhstan",1333645988
 "111","KEN","Kenya",24131061
 "112","KIR","Kiribati",0
-"113","OWID_KOS","Kosovo",97666127
-"114","KWT","Kuwait",951458228
+"113","OWID_KOS","Kosovo",100295901
+"114","KWT","Kuwait",983138186
 "115","KGZ","Kyrgyzstan",0
-"116","LAO","Laos",29611906
-"117","LVA","Latvia",909776045
+"116","LAO","Laos",30429426
+"117","LVA","Latvia",951880234
 "118","LBN","Lebanon",112679216
 "119","LSO","Lesotho",0
 "120","LBR","Liberia",0
 "121","LBY","Libya",0
-"122","LIE","Liechtenstein",15795155
-"123","LTU","Lithuania",1194567817
+"122","LIE","Liechtenstein",16191005
+"123","LTU","Lithuania",1239234913
 "124","OWID_LIC","Low income",0
 "125","OWID_LMC","Lower middle income",0
-"126","LUX","Luxembourg",935807056
+"126","LUX","Luxembourg",957891376
 "127","MAC","Macao",0
 "128","MDG","Madagascar",30420998
 "129","MWI","Malawi",8622726
-"130","MYS","Malaysia",5976686924
-"131","MDV","Maldives",322105944
+"130","MYS","Malaysia",6203002854
+"131","MDV","Maldives",334239423
 "132","MLI","Mali",0
-"133","MLT","Malta",318181178
+"133","MLT","Malta",327974281
 "134","MHL","Marshall Islands",0
 "135","MRT","Mauritania",2715696
 "136","MUS","Mauritius",0
-"137","MEX","Mexico",2425578215
+"137","MEX","Mexico",2481914421
 "138","FSM","Micronesia (country)",0
 "139","MDA","Moldova",76938074
 "140","MCO","Monaco",0
-"141","MNG","Mongolia",612784262
+"141","MNG","Mongolia",639244624
 "142","MNE","Montenegro",0
 "143","MSR","Montserrat",0
-"144","MAR","Morocco",2089311450
-"145","MOZ","Mozambique",163034307
+"144","MAR","Morocco",2136598273
+"145","MOZ","Mozambique",164005123
 "146","MMR","Myanmar",674068725
-"147","NAM","Namibia",148597749
+"147","NAM","Namibia",152524876
 "148","NRU","Nauru",0
-"149","NPL","Nepal",997277702
-"150","NLD","Netherlands",481629688
+"149","NPL","Nepal",1029509594
+"150","NLD","Netherlands",497727398
 "151","NCL","New Caledonia",0
-"152","NZL","New Zealand",616790361
+"152","NZL","New Zealand",645825434
 "153","NIC","Nicaragua",0
 "154","NER","Niger",0
-"155","NGA","Nigeria",124869410
+"155","NGA","Nigeria",128449920
 "156","NIU","Niue",0
 "157","OWID_NAM","North America",0
-"158","MKD","North Macedonia",99517459
+"158","MKD","North Macedonia",100967298
 "159","OWID_CYN","Northern Cyprus",0
-"160","NOR","Norway",1887817509
+"160","NOR","Norway",1938599610
 "161","OWID_OCE","Oceania",0
 "162","OMN","Oman",0
-"163","PAK","Pakistan",3837431224
+"163","PAK","Pakistan",3968706525
 "164","PLW","Palau",0
 "165","PSE","Palestine",0
-"166","PAN","Panama",895299620
+"166","PAN","Panama",920595190
 "167","PNG","Papua New Guinea",431741
-"168","PRY","Paraguay",432250149
+"168","PRY","Paraguay",445876845
 "169","PER","Peru",1240502624
-"170","PHL","Philippines",4523302674
+"170","PHL","Philippines",4659585083
 "171","PCN","Pitcairn",0
-"172","POL","Poland",4979379136
-"173","PRT","Portugal",4260496755
+"172","POL","Poland",5148674189
+"173","PRT","Portugal",4387155098
 "174","QAT","Qatar",602282436
-"175","ROU","Romania",1007519846
-"176","RUS","Russia",29306937615
-"177","RWA","Rwanda",416198646
+"175","ROU","Romania",1039456225
+"176","RUS","Russia",29754878977
+"177","RWA","Rwanda",440218734
 "178","SHN","Saint Helena",0
-"179","KNA","Saint Kitts and Nevis",2959084
+"179","KNA","Saint Kitts and Nevis",3297473
 "180","LCA","Saint Lucia",0
-"181","VCT","Saint Vincent and the Grenadines",1308420
+"181","VCT","Saint Vincent and the Grenadines",1579034
 "182","WSM","Samoa",0
 "183","SMR","San Marino",0
 "184","STP","Sao Tome and Principe",0
-"185","SAU","Saudi Arabia",6872449606
-"186","SEN","Senegal",190142590
-"187","SRB","Serbia",1402114356
+"185","SAU","Saudi Arabia",7092279096
+"186","SEN","Senegal",197230696
+"187","SRB","Serbia",1456342693
 "188","SYC","Seychelles",0
 "189","SLE","Sierra Leone",0
 "190","SGP","Singapore",562440583
 "191","SXM","Sint Maarten (Dutch part)",0
-"192","SVK","Slovakia",10462160923
-"193","SVN","Slovenia",414883416
+"192","SVK","Slovakia",10774633579
+"193","SVN","Slovenia",428375293
 "194","SLB","Solomon Islands",0
 "195","SOM","Somalia",0
-"196","ZAF","South Africa",4174396158
+"196","ZAF","South Africa",4329580516
 "197","OWID_SAM","South America",0
 "198","KOR","South Korea",2388892896
 "199","SSD","South Sudan",9594739
-"200","ESP","Spain",2101103976
-"201","LKA","Sri Lanka",1187695448
+"200","ESP","Spain",2165574134
+"201","LKA","Sri Lanka",1232838794
 "202","SDN","Sudan",0
 "203","SUR","Suriname",0
 "204","SWE","Sweden",0
-"205","CHE","Switzerland",2465185053
+"205","CHE","Switzerland",2539016193
 "206","SYR","Syria",0
-"207","TWN","Taiwan",493115175
+"207","TWN","Taiwan",528637839
 "208","TJK","Tajikistan",0
 "209","TZA","Tanzania",0
 "210","THA","Thailand",2567368997
 "211","TLS","Timor",4139601
-"212","TGO","Togo",119014800
+"212","TGO","Togo",123050638
 "213","TKL","Tokelau",0
 "214","TON","Tonga",0
 "215","TTO","Trinidad and Tobago",49182668
-"216","TUN","Tunisia",275890902
-"217","TUR","Turkey",19273315672
+"216","TUN","Tunisia",285396724
+"217","TUR","Turkey",20021608175
 "218","TKM","Turkmenistan",0
 "219","TCA","Turks and Caicos Islands",0
 "220","TUV","Tuvalu",0
-"221","UGA","Uganda",386071155
-"222","UKR","Ukraine",2684447793
+"221","UGA","Uganda",395811835
+"222","UKR","Ukraine",2794955955
 "223","ARE","United Arab Emirates",17560690811
-"224","GBR","United Kingdom",57888844315
-"225","USA","United States",150351174555
+"224","GBR","United Kingdom",60171872501
+"225","USA","United States",153000209986
 "226","OWID_UMC","Upper middle income",0
-"227","URY","Uruguay",772580042
+"227","URY","Uruguay",805239215
 "228","UZB","Uzbekistan",0
 "229","VUT","Vanuatu",0
 "230","VAT","Vatican",0
 "231","VEN","Venezuela",0
-"232","VNM","Vietnam",1518364936
+"232","VNM","Vietnam",1549448162
 "233","WLF","Wallis and Futuna",0
 "234","OWID_WRL","World",0
 "235","YEM","Yemen",0
-"236","ZMB","Zambia",559230229
-"237","ZWE","Zimbabwe",246350739
+"236","ZMB","Zambia",575485104
+"237","ZWE","Zimbabwe",255030147
