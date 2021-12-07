@@ -18,9 +18,11 @@ else:
     print("Connection Made")
 
 finally:
-    print('Your File is now ready, Enjoy!')
+    print('Your File is now ready')
 
 # download = 'CONVENIENT_global_confirmed_cases.csv'
 df = pd.read_csv('CONVENIENT_global_confirmed_cases.csv')
 
-print(df.head())
+print(df.head(10))
+
+
