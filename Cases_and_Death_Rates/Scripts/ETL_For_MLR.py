@@ -3,8 +3,8 @@ import io
 import requests
 import pycountry
 
-url_Global_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/11-24-2021.csv'
-url_US_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports_us/11-24-2021.csv'
+url_Global_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/12-05-2021.csv'
+url_US_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports_us/12-05-2021.csv'
 
 download1 = requests.get(url_Global_Totals_to_Date).content
 download2 = requests.get(url_US_Totals_to_Date).content
@@ -59,7 +59,7 @@ dataframes_to_concat = [df1, df2]
 
 all_cases_and_deaths = pd.concat(dataframes_to_concat, ignore_index=True)
 
-all_cases_and_deaths=all_cases_and_deaths.groupby(['isocode', 'country']).sum().reset_index()
+all_cases_and_deaths=all_cases_and_deaths.groupby(['isocode']).sum().reset_index()
 
 # noinspection PyTypeChecker
 all_cases_and_deaths.to_csv(r'A:\College\DAP-Project\Cases_and_Death_Rates\Data\Data for Multiple Linear '
