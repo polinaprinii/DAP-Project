@@ -61,6 +61,8 @@ all_cases_and_deaths = pd.concat(dataframes_to_concat, ignore_index=True)
 
 all_cases_and_deaths=all_cases_and_deaths.groupby(['isocode', 'country']).sum().reset_index()
 
+all_cases_and_deaths.loc[all_cases_and_deaths['country'] == 'US', ['country']] = 'United States'
+
 # noinspection PyTypeChecker
 all_cases_and_deaths.to_csv(r'A:\College\DAP-Project\Cases_and_Death_Rates\Data\Data for Multiple Linear '
                             r'Regression\Global_and_US_Confirmed_Cases_And_Deaths.csv')
