@@ -4,10 +4,19 @@ import pandas.io.sql as sqlio
 import psycopg2
 import os
 
-query = """
-SELECT * 
-FROM TotalVaccinationsWorldwide
+query = """ 
+SELECT
+  student.first_name,
+  student.last_name,
+  course.name
+FROM student
+JOIN student_course
+  ON student.id = student_course.student_id
+JOIN course
+  ON course.id = student_course.course_id;
 """
+
+
 
 # Connection to PostgreSQl Server on VM.
 try:
