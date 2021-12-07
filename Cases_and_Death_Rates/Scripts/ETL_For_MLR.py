@@ -3,8 +3,8 @@ import io
 import requests
 import pycountry
 
-url_Global_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/11-24-2021.csv'
-url_US_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports_us/11-24-2021.csv'
+url_Global_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/12-05-2021.csv'
+url_US_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports_us/12-05-2021.csv'
 
 download1 = requests.get(url_Global_Totals_to_Date).content
 download2 = requests.get(url_US_Totals_to_Date).content
