@@ -24,6 +24,7 @@ isoVac = []
 totalVac = []
 totalBoost = []
 numberFullyVac = []
+date = []
 
 # For loop to populate above arrays, pulls from Total_Vaccinations_Worldwide collection.
 data = db.Total_Vaccinations_Worldwide.find()
@@ -33,6 +34,7 @@ for record in data:
     totalVac.append(record['Total_Vaccinations_Administered'])
     totalBoost.append(record['Total_Boosters_Administered'])
     numberFullyVac.append(record['Number_of_People_Fully_Vaccinated'])
+    date.append(record['Date_of_Last_Record'])
 
 # Creating tables in PostgreSQl (Countries & TotalVaccinationsWorldwide) if they dont exist:
 createCountries = """
@@ -49,8 +51,13 @@ ISOCode varchar(50),
 TotalVaccinations numeric(12,1),
 TotalBooster numeric (12,1),
 FullyVaccinated numeric (12,1),
+DateTime DATE,
 FOREIGN KEY (ISOCode) REFERENCES Countries(ISOCode)
 );
+"""
+
+alterTotalVac = """
+ALTER TABLE TotalVaccinationsWorldwide ADD COLUMN Timestamp DATE;
 """
 
 # Connection to PostgreSQl Server on VM.
@@ -102,16 +109,18 @@ for index, i in enumerate(countryVac):
     
     On conflict with the same value do not insert the row, avoids errors from postgres on duplicates.
     """
-    s += "INSERT INTO TotalVaccinationsWorldwide(Country, ISOCode, TotalVaccinations, TotalBooster, FullyVaccinated  ) " \
+    s += "INSERT INTO TotalVaccinationsWorldwide(Country, ISOCode, TotalVaccinations, TotalBooster, FullyVaccinated, DateTime) " \
         "VALUES('" \
          + re.sub("'", "''", countryVac[index]) + "' , '" \
          + isoVac[index] + "' , '" \
          + re.sub("None", "0", str(totalVac[index])) + "' , '" \
          + re.sub("None", "0", str(totalBoost[index])) + "' , '" \
-         + re.sub("None", "0", str(numberFullyVac[index])) + "') " \
+         + re.sub("None", "0", str(numberFullyVac[index])) + "' , '" \
+         + date[index] + "')" \
          + "ON CONFLICT (Country) DO UPDATE SET TotalVaccinations = '" + re.sub("None", "0", str(totalVac[index])) \
          + "', TotalBooster ='" + re.sub("None", "0", str(totalBoost[index])) \
-         + "', FullyVaccinated ='" + re.sub("None", "0", str(numberFullyVac[index])) + "'"
+         + "', FullyVaccinated ='" + re.sub("None", "0", str(numberFullyVac[index])) \
+         + "', DateTime ='" + date[index] + "'"
     insertVaccinationsList.append(s)
 
 # Populating tables, sending rows to both tables:
