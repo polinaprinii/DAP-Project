@@ -6,14 +6,16 @@ import os
 
 query = """ 
 SELECT
-  student.first_name,
-  student.last_name,
-  course.name
-FROM student
-JOIN student_course
-  ON student.id = student_course.student_id
-JOIN course
-  ON course.id = student_course.course_id;
+  country.ISOCode,
+  country.Country,
+  totalvac.TotalVaccinations,
+  totalvac.TotalBooster,
+  vaccinations.FullyVacNumber
+FROM country
+JOIN totalvac
+  ON totalvac.ISOCode = country.ISOCode
+JOIN vaccinations
+  ON vaccinations.ISOCode = country.ISOCode;
 """
 
 
