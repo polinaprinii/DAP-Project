@@ -1,9 +1,0 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-*.Rmd	linguist-detectable
-*.R	linguist-detectable
-*.Rproj	linguist-detectable
-*.csv	linguist-detectable
-*.JSON	linguist-detectable
-*.XML	linguist-detectable
-
