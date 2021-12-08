@@ -2,6 +2,8 @@ import pandas as pd
 import io
 import requests
 import pycountry
+import country_converter as coco
+
 
 url_Global_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/12-05-2021.csv'
 url_US_Totals_to_Date = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports_us/12-05-2021.csv'
@@ -27,17 +29,20 @@ df2.drop(['Province_State', 'Last_Update', 'Lat', 'Long_',
           'Hospitalization_Rate'], axis=1, inplace=True)
 
 
-def do_fuzzy_search(country):
-    try:
-        result = pycountry.countries.search_fuzzy(country)
-    except Exception:
-        return 'nan'
-    else:
-        return result[0].alpha_3
+# def do_fuzzy_search(country):
+#     try:
+#         result = pycountry.countries.search_fuzzy(country)
+#     except Exception:
+#         return 'nan'
+#     else:
+#         return result[0].alpha_3
+#
+#
+# iso_map = {country: do_fuzzy_search(country) for country in df1["Country_Region"].unique()}
+# df1["isocode"] = df1["Country_Region"].map(iso_map)
 
+df1['isocode'] = df1.groupby('Country_Region')['Country_Region'].transform(coco.convert)
 
-iso_map = {country: do_fuzzy_search(country) for country in df1["Country_Region"].unique()}
-df1["isocode"] = df1["Country_Region"].map(iso_map)
 
 cols1 = df1.columns.tolist()
 cols1 = cols1[-1:] + cols1[:-1]
@@ -61,7 +66,10 @@ all_cases_and_deaths = pd.concat(dataframes_to_concat, ignore_index=True)
 
 all_cases_and_deaths=all_cases_and_deaths.groupby(['isocode', 'country']).sum().reset_index()
 
-all_cases_and_deaths.loc[all_cases_and_deaths['country'] == 'US', ['country']] = 'United States'
+all_cases_and_deaths.groupby(['country'])
+
+#
+# all_cases_and_deaths.loc[all_cases_and_deaths['country'] == 'US', ['country']] = 'United States'
 
 # noinspection PyTypeChecker
 all_cases_and_deaths.to_csv(r'A:\College\DAP-Project\Cases_and_Death_Rates\Data\Data for Multiple Linear '
