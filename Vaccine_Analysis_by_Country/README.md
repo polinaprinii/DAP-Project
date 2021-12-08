@@ -22,21 +22,10 @@ The project aims to perform the following analysis to allow insights into the da
 	* Total of boosters administered to citizens by Country.
 	* Total of fully vaccinated citizens by Country.
 
-Additionally, the project will look to ingest the following  additional datasets:
 
-		* 'vaccinations-by-manufacturer.csv'
-		* 'vaccinations-by-age-group.csv
+*What question is the dataset under analysis answering?* <br />
+**The chosen dataset is looking to answer the "What is the uptake of the Covid-19 vaccine worldwide as well as by Country?".**
 
-to further expand the grounds for analysis. The above datasets are found at the following [git repository](https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations).
-
-The additional datasets aims to provide the following analysis:
-
-	* Total uptake of vaccinations by age groups by country.
-	* Total uptake of vaccinations by age groups worldwide.
-	* Most popular vaccine worldwide.
-	* Most popular vaccine by country.
-
-*What question is the dataset under analysis answering?* The chosen dataset is looking to answer the "What is the uptake of the Covid-19 vaccine worldwide as well as by Country?".
 ### Data Dictionary
 For a comprehennsive description of the datasets in use please refer to following [README.md](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md) file.
 

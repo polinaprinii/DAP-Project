@@ -1,17 +1,12 @@
 # Database and Analytics Programming Project #
 
-## *Authors:* ##
-- Alun Price
-- Maria Migrova
-- Polina Prinii
-
-
 ## *Project Aim:* ##
-(Polina take)
--The project aims to perform analysis using the data collated by the individual work (outlined below) to estimate and report on a multiple regression model to facilitate the understanding of the criteria that dictate the Covid-19 mortality rates and useful for the prediction of same.
-Taking the following approach of programmatically combining four CSV datasets via Python and using the rpy2 package to allow for the multiple linear regression analysis the project looks to conclude the finding in this report. (insert link to report)-  
+
+The project aims to perform analysis using the data collated by the individual work **outlined below** to estimate and report on a multiple regression model to facilitate the understanding of the criteria that dictates the Covid-19 mortality rates and useful for the prediction of the same.
+Taking the following approach of programmatically combining the three individual CSV datasets via Python 3 in Jupyter Notebook and R Studio to allow for the construction of multiple linear regression analysis the project looks to conclude the finding in this report. (insert link to report) 
 
 ## *Individual Work:* ##
+
 This area outlines the individual efforts to extract, clean and transform the datasets under analysis with the end goal of combining said datasets into one for Multiple Linear Regression.
 
 ### Total Vaccinations - Polina Prinii ###
@@ -26,9 +21,9 @@ The dataset in question looks at the following period of 01/01/2021 to 24/11/202
 ***Programmatic Approach:***
 
 The following programmatic approach is used to extract, transform, load and analyse data in preparation for Multiple Linear Regression.<br />
-Note all scripting is undertaken using the Python programming language.
+Note all scripting is undertaken using the Python programming language, scripts can be found in the following [folder](https://github.com/polinaprinii/DAP-Project/tree/main/Vaccine_Analysis_by_Country).
 
-**Step 1:** Environment setup in PyCharm to store all coding undertaken throughout the process.<br />
+**Step 1:** Environment setup in PyCharm to store all coding undertaken throughout the data ETL process.<br />
 **Step 2:** Extract raw datasets from Git. <br />
 **Step 3:** Import raw dataset to MongoDB.<br />
 **Step 4:** Transform datasets in MongoDB.<br />
@@ -116,6 +111,9 @@ These steps were undertaken:
 7. Analysing and visualising the data. Creating a Random Forest Model, which shows how different age group and gender influance the number of positive tests.
 9. Writing the final dataset into a csv file. This file won't be used for the final linear regression.
 
-
+## *Authors:* ##
+- Alun Price
+- Maria Migrova
+- Polina Prinii
 
 
