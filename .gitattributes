@@ -22,3 +22,10 @@
 # Enable syntax highlighting for files with `.gitattributes` extensions.
 #
 *.gitattributes linguist-language=gitattributes
+#
+#
+*.* linguist-language=R
+*.rmd  linguist-detectable
+*.Rmd  linguist-detectable
+*.[Rr]md  linguist-detectable
+
