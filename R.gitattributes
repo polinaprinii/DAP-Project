@@ -1,3 +1,7 @@
+# Basic .gitattributes for a R repo.
+
+# Source files
+# ============
 *.Rdata binary
 *.RData binary
 *.rda   binary
