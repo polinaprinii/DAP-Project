@@ -2,3 +2,4 @@
 *.rmd  linguist-detectable
 *.[Rr]md  linguist-detectable
 *.R	linguist-detectable	
+*.* linguist-language=R
