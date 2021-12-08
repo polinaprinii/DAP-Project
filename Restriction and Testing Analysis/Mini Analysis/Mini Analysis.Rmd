@@ -15,12 +15,171 @@ cases.df <- read.csv("owid-covid-data (2).csv",fileEncoding = "UTF-8-BOM")
 ```
 
 ```{r}
-stringency.df
-masks.df
+tail(stringency.df,100)
+tail(masks.df,100)
+tail(stayhome.df,100)
+tail(publicevents.df,100)
+tail(publictransport.df,100)
+tail(schools.df,100)
+tail(cases.df,100)
+
+```
+```{r}
 stayhome.df
-publicevents.df
+
+```
+
+```{r}
+stayhome.df$Day <- as.Date(stayhome.df$Day)
+
+
+stayhome1.df <- stayhome.df[stayhome.df$Day > "2020-12-31" & stayhome.df$Day < "2021-12-07",]
+stayhome1.df <- stayhome1.df %>%
+  rename(country = Entity, isocode = Code, Date = Day)%>%
+  select(isocode, country, Date, stay_home_requirements)%>%
+  group_by(isocode,country)%>%
+  summarise(MaxStayHome = max(stay_home_requirements),
+            MeanStayHome = mean(stay_home_requirements))
+
+stayhome1.df
+```
+
+```{r}
+stringency.df$Day <- as.Date(stringency.df$Day)
+
+stringency1.df <- stringency.df[stringency.df$Day > "2020-12-31" & stringency.df$Day < "2021-12-07",]
+stringency1.df <- stringency1.df %>%
+  rename(country = Entity, isocode = Code, Date = Day)%>%
+  select(isocode, country, Date, stringency_index)%>%
+  group_by(isocode,country)%>%
+  summarise(MaxStringency = max(stringency_index),
+            MeanStringency = mean(stringency_index))
+stringency1.df
+
+```
+```{r}
+masks.df$Day <- as.Date(masks.df$Day)
+
+masks1.df <- masks.df[masks.df$Day > "2020-12-31" & masks.df$Day < "2021-12-07",]
+masks1.df <- masks1.df %>%
+  rename(country = Entity, isocode = Code, Date = Day)%>%
+  select(isocode, country, Date, facial_coverings)%>%
+  group_by(isocode,country)%>%
+  summarise(MaxFacialCoverings = max(facial_coverings),
+            MeanFacialCoverings = mean(facial_coverings))
+
+masks1.df
+
+```
+```{r}
+publicevents1.df
+
+```
+
+```{r}
+publicevents.df$Day <- as.Date(publicevents.df$Day)
+
+publicevents1.df <- publicevents.df[publicevents.df$Day > "2020-12-31" & publicevents.df$Day < "2021-12-07",]
+publicevents1.df <- publicevents1.df %>%
+  rename(country = Entity, isocode = Code, Date = Day)%>%
+  select(isocode, country, Date,cancel_public_events)%>%
+  group_by(isocode,country)%>%
+  summarise(MaxCancelPublicEvents = max(cancel_public_events),
+            MeanCancelPublicEvents = mean(cancel_public_events))
+
+publicevents1.df
+```
+```{r}
 publictransport.df
-schools.df
+
+```
+
+```{r}
+publictransport.df$Day <- as.Date(publictransport.df$Day)
+
+publictransport1.df <- publictransport.df[publictransport.df$Day > "2020-12-31" & publictransport.df$Day < "2021-12-07",]
+publictransport1.df <- publictransport.df %>%
+  rename(country = Entity, isocode = Code, Date = Day)%>%
+  select(isocode, country, Date, close_public_transport)%>%
+  group_by(isocode,country)%>%
+  summarise(MaxClosePublicTransport = max(close_public_transport),
+            MeanClosePublicTransport = mean(close_public_transport))
+
+publictransport1.df
+  
+
+```
+
+```{r}
+schools.df$Day <- as.Date(schools.df$Day)
+
+schools1.df <- schools.df[schools.df$Day > "2020-12-31" & schools.df$Day < "2021-12-07",]
+schools1.df <- schools1.df %>%
+  rename(country = Entity, isocode = Code, Date = Day)%>%
+  select(isocode, country, Date,school_closures)%>%
+  group_by(isocode,country)%>%
+  summarise(MaxSchoolClosure = max(school_closures),
+            MeanSchoolClosure = mean(school_closures))
+
+schools1.df
+
+```
+
+```{r}
 cases.df
+
+```
+
+```{r}
+cases.df$date <- as.Date(cases.df$date)
+cases1.df <- cases.df[cases.df$date > "2020-12-31" & cases.df$date < "2021-12-07",]
+
+cases1.df <- cases1.df %>%
+  rename(country = location, isocode = iso_code, Date = date) %>%
+  select(isocode, country, Date, total_cases, new_cases)%>%
+  group_by(isocode,country)%>%
+  summarise(TotalCases = sum(new_cases),
+            MaxCases = max(new_cases))
+
+cases1.df
+
+```
+
+```{r}
+home_stringency.df <- full_join(stayhome1.df,stringency1.df, by= c("isocode","country"))
+home_stringency.df
+
+```
+
+```{r}
+home_stringency_masks.df <- full_join(home_stringency.df, masks1.df, by = c("isocode","country"))
+home_stringency_masks.df
+
+```
+```{r}
+home_stringency_masks_publicevents.df <- full_join(home_stringency_masks.df, publicevents1.df, by = c("isocode","country"))
+
+home_stringency_masks_publicevents.df
+
+```
+
+```{r}
+home_stringency_masks_publicevents_publictransport.df <- full_join(home_stringency_masks_publicevents.df, publictransport1.df, by = c("isocode","country"))
+
+home_stringency_masks_publicevents_publictransport.df
+
+```
+
+```{r}
+home_stringency_masks_publicevents_publictransport_schools.df <- full_join(home_stringency_masks_publicevents_publictransport.df, schools1.df, by = c("isocode","country"))
+
+home_stringency_masks_publicevents_publictransport_schools.df
+
+```
+
+```{r}
+final_dataset.df <- full_join(home_stringency_masks_publicevents_publictransport_schools.df, cases1.df, by = c("isocode","country"))
+
+final_dataset.df
 
 ```
