@@ -4,5 +4,6 @@
 *.R	linguist-detectable
 *.Rproj	linguist-detectable
 *.csv	linguist-detectable
-*.json	linguist-detectable
+*.JSON	linguist-detectable
+*.XML	linguist-detectable
 
