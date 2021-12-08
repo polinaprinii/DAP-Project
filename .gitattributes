@@ -3,5 +3,6 @@
 *.Rmd	linguist-detectable
 *.R	linguist-detectable
 *.Rproj	linguist-detectable
-
+*.csv	linguist-detectable
+*.json	linguist-detectable
 
