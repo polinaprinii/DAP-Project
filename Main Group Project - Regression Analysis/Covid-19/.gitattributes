@@ -28,4 +28,4 @@
 *.rmd  linguist-detectable
 *.Rmd  linguist-detectable
 *.[Rr]md  linguist-detectable
-
+*.py linguist-detectable
