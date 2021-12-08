@@ -1,0 +1,26 @@
+---
+title: "Mini Analysis7"
+author: "Maria Migrova"
+date: "12/8/2021"
+output: html_document
+---
+```{r}
+stringency.df <- read.csv("covid-stringency-index (3).csv",fileEncoding = "UTF-8-BOM")
+masks.df <- read.csv("face-covering-policies-covid (1).csv",fileEncoding = "UTF-8-BOM")
+stayhome.df <- read.csv("stay-at-home-covid (1).csv",fileEncoding = "UTF-8-BOM")
+publicevents.df <- read.csv("public-events-covid (1).csv",fileEncoding = "UTF-8-BOM")
+publictransport.df <- read.csv("public-transport-covid.csv",fileEncoding = "UTF-8-BOM")
+schools.df <- read.csv("school-closures-covid (1).csv",fileEncoding = "UTF-8-BOM")
+cases.df <- read.csv("owid-covid-data (2).csv",fileEncoding = "UTF-8-BOM")
+```
+
+```{r}
+stringency.df
+masks.df
+stayhome.df
+publicevents.df
+publictransport.df
+schools.df
+cases.df
+
+```
