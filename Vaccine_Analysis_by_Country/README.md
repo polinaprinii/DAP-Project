@@ -24,7 +24,7 @@ The project aims to perform the following analysis to allow insights into the da
 
 
 *What question is the dataset under analysis answering?* <br />
-The chosen dataset is looking to answer the "What is the uptake of the Covid-19 vaccine worldwide as well as by Country?".
+**The chosen dataset is looking to answer the "What is the uptake of the Covid-19 vaccine worldwide as well as by Country?".**
 
 ### Data Dictionary
 For a comprehennsive description of the datasets in use please refer to following [README.md](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md) file.
