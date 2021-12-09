@@ -1,0 +1,85 @@
+---
+title: "Covid 19"
+author: "Maria Migrova"
+date: "12/9/2021"
+output:
+  word_document: default
+  html_document: default
+---
+```{r}
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(modelr)
+library(Metrics)
+library(MLmetrics)
+library(lmtest)
+library(robust)
+
+```
+
+```{r}
+covid_data <- read.csv(url("https://raw.githubusercontent.com/polinaprinii/DAP-Project/main/Linear%20Regression%20Final%20Dataset/finaldataset.csv?token=ASV4RS53A5KFKKQPPSB66ADBXOW7C"))
+```
+
+```{r}
+head(covid_data)
+
+```
+
+```{r}
+lm_model <- lm(Deaths ~ Confirmed + tests + MaxStringencyIndex + MeanStringencyIndex + MaxFacialCoverings + MeanFacialCoverings + MaxStayHome + MeanStayHome + totalvaccinations + totalbooster + fullyvacnumber, data = covid_data)
+
+```
+
+```{r}
+broom::glance(lm_model)
+
+```
+
+```{r}
+lm_model1 <- covid_data %>%
+  add_predictions(lm_model)%>%
+  add_residuals(lm_model)
+
+head(lm_model1)
+
+```
+
+```{r}
+ggplot(lm_model1)+
+  geom_line(aes(MaxStringencyIndex, pred), col = "red")+
+  geom_line(aes(MaxStringencyIndex,Deaths ))
+```
+
+
+```{r}
+#plot residuals
+ggplot(lm_model1,aes(MaxStringencyIndex, resid))+
+  geom_ref_line(h=0)+
+  geom_line()+
+  labs(title="Residuals of the linear model")
+
+```
+```{r}
+plot(lm_model)
+
+```
+
+ASSUMPTIONS:
+
+1. Residuals vs Fitted - this graph is showing heteroscedasticity.To correct this data. (POLINA TO CONTINUE THE VIOLATION)
+
+2. At the second graph (Normal Q-Q) we can check the normality assumption. Our points follow a straight
+line with some outliers around. This assumption is justified.The outliers are on line 36,110 and 77.
+
+3. At the third graph (Scale – Location) we can check the constant variance assumption. We can notice heteroskedasticity in our model as the points are not located around a horizontal line but they follow a 'V' shape.
+
+4. THe third graph shows us our outliers. The outliers are on line 24,36,77 (ALUN TO CONTINUE ON OUTLIERS)
+
+```{r}
+bptest(lm_model)
+
+```
+
+
