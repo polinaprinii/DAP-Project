@@ -36,3 +36,65 @@ boosters <- covid_data$totalbooster
 people <- covid_data$fullyvacnumber
 
 ```
+
+Plotting all histograms:
+
+- Confirmed Cases Histo:
+```{r}
+hist(confirmed)
+```
+The above shows intense skewness to the right, a good candidate for log of nature function. 
+
+- Deaths Cases Histo:
+```{r}
+hist(deaths)
+```
+The above shows intense skewness to the right, a good candidate for log of nature function.
+
+- Tests  Histo:
+```{r}
+hist(tests)
+```
+The above shows intense skewness to the right, a good candidate for log of nature function.
+
+- Stringency Histo:
+```{r}
+hist(stringecy)
+```
+The above shows slight skewness to the left, may not be a good candidate for log of nature function.
+
+- Facial coverings Histo:
+```{r}
+hist(facialCov)
+```
+The above shows slight skewness to the left, may not be a good candidate for log of nature function.
+
+- Max Stay Home Histo:
+```{r}
+hist(MaxstayHome)
+```
+Overall a good distribution between left and right.
+
+- Mean Stay Home Histo:
+```{r}
+hist(MeanstayHome)
+```
+The above shows weak skewness to the left, may not be a good candidate for log of nature function.
+
+- Vaccines Histo:
+```{r}
+hist(vaccines)
+```
+The above shows intense skewness to the right, a good candidate for log of nature function.
+
+- Boosters Histo:
+```{r}
+hist(boosters)
+```
+The above shows intense skewness to the right, a good candidate for log of nature function.
+
+- People fully vaccinated Histo:
+```{r}
+hist(people)
+```
+The above shows intense skewness to the right, a good candidate for log of nature function.
