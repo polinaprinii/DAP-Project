@@ -123,7 +123,7 @@ hist(covid_data$logofDeaths)
 
 ```
 
-A somewhat perfect distribtuion. 
+A somewhat perfect distribution. 
 
 - Tests Cases Log & Histo:
 ```{r}
@@ -157,7 +157,7 @@ write.csv(covid_data,"C:/Users/Rober/Documents/R/test.csv", row.names=TRUE)
 ```
 An improvement in the distribution.
 
-First we replace all instances of 'NA', 'Nan' and 'Inf' as the lm fucntion can't read them, we will replace them with 0 using excel.
+First we replace all instances of 'NA', 'Nan' and 'Inf' as the lm function can't read them, we will replace them with 0 using excel.
 ```{r}
 write.csv(covid_data,"D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysis/Data/Transformation.csv", row.names=TRUE)
 ```
@@ -175,3 +175,11 @@ regressionmodel <- lm(logofDeaths ~ logofConfirmed + tests + MaxStringencyIndex 
 ```{r}
 plot(regressionmodel)
 ```
+
+Evaluating r squared value:
+
+```{r}
+broom::glance(regressionmodel)
+
+```
+Improvement from yesterday by 8% by addressing heteroscedasticity. 
