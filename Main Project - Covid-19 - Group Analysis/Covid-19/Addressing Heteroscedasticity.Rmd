@@ -161,6 +161,8 @@ First we replace all instances of 'NA', 'Nan' and 'Inf' as the lm function can't
 ```{r}
 write.csv(covid_data,"D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysis/Data/Transformation.csv", row.names=TRUE)
 ```
+1. Maria to address the correct procedure to changing 'NA', 'Nan' and 'Inf' instances to 0 via R and not excel.
+
 Read csv file 
 ```{r}
 coviddata2 <- read.csv("D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysis/Data/Transformation.csv", header=TRUE)
