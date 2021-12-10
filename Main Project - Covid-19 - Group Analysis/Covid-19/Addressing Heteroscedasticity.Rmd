@@ -7,6 +7,10 @@ output: html_document
 
 This docuemnt is for the purpose of resolving heteroscedasticity showing in our regresssion analyis. -->
 
+```{r}
+library(dplyr)
+```
+
 We start by plotting Histograms of all variables involved within the dataset.
 This will determine which variables are showing skewness. 
 
@@ -98,3 +102,76 @@ The above shows intense skewness to the right, a good candidate for log of natur
 hist(people)
 ```
 The above shows intense skewness to the right, a good candidate for log of nature function.
+
+Out of the 10 variables, six will be transformed using the log of nature function and re-evaluated.
+The 6 variables being (confirmed, deaths, tests, vaccines, boosters, people)
+
+Transforming the columns, additionally we plot the Histo of the log() function immediately:
+
+- Confirmed Cases Log & Histo:
+```{r}
+covid_data$logofConfirmed = log(covid_data$Confirmed)
+hist(covid_data$logofConfirmed)
+
+```
+A bit of a better distribution with a slight skew to the left which could be interpreted as outliers. 
+
+- Deaths Cases Log & Histo:
+```{r}
+covid_data$logofDeaths = log(covid_data$Deaths)
+hist(covid_data$logofDeaths)
+
+```
+
+A somewhat perfect distribtuion. 
+
+- Tests Cases Log & Histo:
+```{r}
+covid_data$logofTests = log(covid_data$tests)
+hist(covid_data$logofTests)
+
+```
+An improvement in the distribution. 
+
+- Vaccines  Log & Histo:
+```{r}
+covid_data$logofTotalVaccines = log(covid_data$totalvaccinations)
+hist(covid_data$logofTotalVaccines)
+
+```
+An improvement in the distribution. 
+
+- Boosters Log & Histo:
+```{r}
+covid_data$logofTotalBoosters = log(covid_data$totalbooster)
+hist(covid_data$logofTotalBoosters)
+```
+An improvement in the distribution.
+
+- People  Log & Histo:
+```{r}
+covid_data$logofFullyVaccinated = log(covid_data$fullyvacnumber)
+hist(covid_data$logofFullyVaccinated)
+head(covid_data)
+write.csv(covid_data,"C:/Users/Rober/Documents/R/test.csv", row.names=TRUE)
+```
+An improvement in the distribution.
+
+First we replace all instances of 'NA', 'Nan' and 'Inf' as the lm fucntion can't read them, we will replace them with 0 using excel.
+```{r}
+write.csv(covid_data,"D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysis/Data/Transformation.csv", row.names=TRUE)
+```
+Read csv file 
+```{r}
+coviddata2 <- read.csv("D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysis/Data/Transformation.csv", header=TRUE)
+head(coviddata2)
+```
+
+```{r}
+attach(coviddata2)
+regressionmodel <- lm(logofDeaths ~ logofConfirmed + tests + MaxStringencyIndex + MeanStringencyIndex + MaxFacialCoverings + MeanFacialCoverings + MaxStayHome + MeanStayHome + logofTotalVaccines + logofFullyVacci0ted+ logofTotalBoosters)
+```
+
+```{r}
+plot(regressionmodel)
+```
