@@ -1,0 +1,38 @@
+---
+title: "Addressing Heteroscedasticity"
+author: "Polina Prinii"
+date: "12/10/2021"
+output: html_document
+---
+
+This docuemnt is for the purpose of resolving heteroscedasticity showing in our regresssion analyis. -->
+
+We start by plotting Histograms of all variables involved within the dataset.
+This will determine which variables are showing skewness. 
+
+Reading the csv file from git source.
+```{r}
+covid_data <- read.csv(url("https://raw.githubusercontent.com/polinaprinii/DAP-Project/main/Linear%20Regression%20Final%20Dataset/finaldataset.csv?token=ASV4RS53A5KFKKQPPSB66ADBXOW7C"))
+```
+
+Display first 6 rows of said csv file. 
+```{r}
+head(covid_data)
+
+```
+
+Setting varibales for all x and y variables within the dataset under analysis. 
+```{r}
+
+confirmed <- covid_data$Confirmed
+deaths <- covid_data$Deaths
+tests <- covid_data$tests
+stringecy <- covid_data$MaxStringencyIndex
+facialCov <- covid_data$MeanFacialCoverings
+MaxstayHome <- covid_data$MaxStayHome
+MeanstayHome <- covid_data$MeanStayHome
+vaccines <- covid_data$totalvaccinations
+boosters <- covid_data$totalbooster
+people <- covid_data$fullyvacnumber
+
+```
