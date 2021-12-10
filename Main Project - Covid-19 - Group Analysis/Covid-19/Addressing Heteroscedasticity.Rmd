@@ -5,7 +5,7 @@ date: "12/10/2021"
 output: html_document
 ---
 
-This docuemnt is for the purpose of resolving heteroscedasticity showing in our regresssion analyis. -->
+This docuemnt is for the purpose of resolving heteroscedasticity showing in our regression analyis. -->
 
 ```{r}
 library(dplyr)
