@@ -13,3 +13,5 @@ print(df.head())
 plot = px.data.tips()
 fig = px.bar(df, x="totalvaccinations", y="country", orientation='h')
 fig.show()
+
+# TODO: Clean up bar chart to make it easier on the eye to read.
