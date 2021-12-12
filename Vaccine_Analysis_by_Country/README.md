@@ -14,7 +14,7 @@ The dataset under analysis here is Vaccinations by Country.
 The following dataset 'vaccinations.csv' found at the following [git repository](https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations) by _Our World in Data_ will be under analysis.
 
 The project aims to perform the following analysis to allow insights into the data as it is prepared for the final analysis:
-This is achieved through the use of bar charts, histograms and a heatmap
+This is achieved through the use of bar charts, histograms and a world map.
 
 	* Top country uptake of vaccinations for 2021.
 	* Poorest uptake of vaccinations for 2021.
