@@ -4,6 +4,7 @@ import json  # JSON package as we are importing JSON files into MongoDB
 
 import pymongo.errors
 from pymongo import MongoClient  # Pymongo package which provides tools for working with MongoDB
+import pymongo
 
 MONGODB_IP = 'mongodb://192.168.56.30:27017'
 
@@ -36,7 +37,7 @@ filePaths = [filePath_1, filePath_2, filePath_3]
 # A function to ensure we only get one import of the JSON file into our declared collections.
 def clear_collections(collections):
     for collection in collections:
-        if collection.count() > 0:
+        if bool(collection.find_one()):
             collection.drop()
 
 clear_collections(collections)
