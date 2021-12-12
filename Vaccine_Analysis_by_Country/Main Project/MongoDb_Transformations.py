@@ -12,7 +12,7 @@ my_db = my_client['Vaccinations_DB']
 # Creating collection which wil hold country name and code.
 try:
     # Dropping collection to avoid duplicates.
-    if db.Countries.count() > 0:
+    if bool(db.Countries.find_one()):
         db.Countries.drop()
 
     db.create_collection('Countries')
@@ -41,7 +41,7 @@ print(list(db.Countries.find({'Country': "Poland"})), '\n')
 
 # Creating collection which will be a combination of all three datasets (df_1, df_2 and df_3).
 try:
-    if db.Total_Vaccinations_Worldwide.count() > 0:
+    if bool(db.Total_Vaccinations_Worldwide.find_one()):
         db.Total_Vaccinations_Worldwide.drop()
 
     db.create_collection('Total_Vaccinations_Worldwide')
@@ -56,7 +56,7 @@ try:
     [{
         '$match': {
            '$and': [{"date": {
-                    '$gte': '2021-01-01'
+                    '$lte': '2021-12-05'
                           }},
 
                 {"total_vaccinations": {
@@ -67,6 +67,7 @@ try:
     {'$group': {
         "_id": "$location",
         "Iso_Code": {"$last": "$iso_code"},
+        "Date_of_Last_Record": {"$last": "$date"},
         "Total_Vaccinations_Administered": {"$last": "$total_vaccinations"},
         "Total_Boosters_Administered": {"$last": "$total_boosters"}
     }}])
@@ -76,6 +77,7 @@ try:
             {
                 'Country': data['_id'],
                 'ISO_Code': data['Iso_Code'],
+                'Date_of_Last_Record': data['Date_of_Last_Record'],
                 'Total_Vaccinations_Administered': data['Total_Vaccinations_Administered'],
                 'Total_Boosters_Administered': data['Total_Boosters_Administered']
             }
@@ -86,7 +88,7 @@ except pymongo.errors.PyMongoError as error:
 # Creating collection which wil hold number of people fully vaccinated per country.
 try:
     # Dropping collection to avoid duplicates.
-    if db.People_Fully_Vaccinated.count() > 0:
+    if bool(db.People_Fully_Vaccinated.find_one()):
         db.People_Fully_Vaccinated.drop()
 
     db.create_collection('People_Fully_Vaccinated')
@@ -101,7 +103,7 @@ try:
     [{
         '$match': {
            '$and': [{"date": {
-                    '$gte': '2021-01-01'
+                    '$lte': '2021-12-05'
                           }},
 
                 {"people_fully_vaccinated": {
