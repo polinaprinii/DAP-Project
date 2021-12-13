@@ -11,5 +11,10 @@ print(df.head())
 
 # Plot horizontalbar chart
 plot = px.data.tips()
-fig = px.bar(df, x="totalvaccinations", y="country", orientation='h')
+fig = px.bar(df, x="totalvaccinations", y="country", title="Total Vaccinations by Country", color="totalvaccinations", orientation='h')
+fig.update_layout(yaxis={'categoryorder':'category descending'})
+fig.update_xaxes(type="log")
+#fig.update_xaxes(tick0=1000000, dtick=1500000)
 fig.show()
+
+# TODO: Figure out why not all country display on the y axis and make easier to read.

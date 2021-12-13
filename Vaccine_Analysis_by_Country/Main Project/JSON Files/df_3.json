@@ -53563,8 +53563,8 @@
     "location":"Israel",
     "date":"2021-12-12",
     "age_group":"12-15",
-    "people_vaccinated_per_hundred":60.2,
-    "people_fully_vaccinated_per_hundred":48.1,
+    "people_vaccinated_per_hundred":60.3,
+    "people_fully_vaccinated_per_hundred":48.2,
     "people_with_booster_per_hundred":null
   },
   {
@@ -53579,8 +53579,8 @@
     "location":"Israel",
     "date":"2021-12-12",
     "age_group":"20-29",
-    "people_vaccinated_per_hundred":84.4,
-    "people_fully_vaccinated_per_hundred":75.4,
+    "people_vaccinated_per_hundred":84.5,
+    "people_fully_vaccinated_per_hundred":75.5,
     "people_with_booster_per_hundred":null
   },
   {
@@ -53596,14 +53596,14 @@
     "date":"2021-12-12",
     "age_group":"40-49",
     "people_vaccinated_per_hundred":89.8,
-    "people_fully_vaccinated_per_hundred":83.4,
+    "people_fully_vaccinated_per_hundred":83.5,
     "people_with_booster_per_hundred":null
   },
   {
     "location":"Israel",
     "date":"2021-12-12",
     "age_group":"5-11",
-    "people_vaccinated_per_hundred":8.1,
+    "people_vaccinated_per_hundred":8.5,
     "people_fully_vaccinated_per_hundred":0.0,
     "people_with_booster_per_hundred":null
   },
@@ -53619,15 +53619,15 @@
     "location":"Israel",
     "date":"2021-12-12",
     "age_group":"60-69",
-    "people_vaccinated_per_hundred":92.3,
-    "people_fully_vaccinated_per_hundred":88.8,
+    "people_vaccinated_per_hundred":92.4,
+    "people_fully_vaccinated_per_hundred":88.9,
     "people_with_booster_per_hundred":null
   },
   {
     "location":"Israel",
     "date":"2021-12-12",
     "age_group":"70-79",
-    "people_vaccinated_per_hundred":90.5,
+    "people_vaccinated_per_hundred":90.6,
     "people_fully_vaccinated_per_hundred":88.6,
     "people_with_booster_per_hundred":null
   },
@@ -53642,6 +53642,94 @@
   {
     "location":"Israel",
     "date":"2021-12-12",
+    "age_group":"90-99",
+    "people_vaccinated_per_hundred":83.7,
+    "people_fully_vaccinated_per_hundred":80.7,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"12-15",
+    "people_vaccinated_per_hundred":60.3,
+    "people_fully_vaccinated_per_hundred":48.2,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"16-19",
+    "people_vaccinated_per_hundred":87.8,
+    "people_fully_vaccinated_per_hundred":76.4,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"20-29",
+    "people_vaccinated_per_hundred":84.5,
+    "people_fully_vaccinated_per_hundred":75.5,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"30-39",
+    "people_vaccinated_per_hundred":88.0,
+    "people_fully_vaccinated_per_hundred":80.7,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"40-49",
+    "people_vaccinated_per_hundred":89.8,
+    "people_fully_vaccinated_per_hundred":83.5,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"5-11",
+    "people_vaccinated_per_hundred":8.5,
+    "people_fully_vaccinated_per_hundred":0.0,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"50-59",
+    "people_vaccinated_per_hundred":90.5,
+    "people_fully_vaccinated_per_hundred":85.3,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"60-69",
+    "people_vaccinated_per_hundred":92.4,
+    "people_fully_vaccinated_per_hundred":88.9,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"70-79",
+    "people_vaccinated_per_hundred":90.6,
+    "people_fully_vaccinated_per_hundred":88.6,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
+    "age_group":"80-89",
+    "people_vaccinated_per_hundred":90.4,
+    "people_fully_vaccinated_per_hundred":88.2,
+    "people_with_booster_per_hundred":null
+  },
+  {
+    "location":"Israel",
+    "date":"2021-12-13",
     "age_group":"90-99",
     "people_vaccinated_per_hundred":83.7,
     "people_fully_vaccinated_per_hundred":80.7,
