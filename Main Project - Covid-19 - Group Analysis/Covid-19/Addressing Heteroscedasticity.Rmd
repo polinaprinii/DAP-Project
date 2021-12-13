@@ -182,7 +182,9 @@ coviddata2
 ```{r}
 attach(coviddata2)
 regressionmodel <- lm(logofDeaths ~ logofConfirmed + logofTests + MaxStringencyIndex + MeanStringencyIndex + MaxFacialCoverings + MeanFacialCoverings + MaxStayHome + MeanStayHome + logofTotalVaccines + logofFullyVaccinated+ logofTotalBoosters)
+
 ```
+
 ```{r}
 lm_model2 <- coviddata2 %>%
   add_predictions(regressionmodel)%>%
@@ -223,7 +225,6 @@ EVALUATION OF THE LINEAR REGRESSION MODEL
 ```{r}
 broom::glance(regressionmodel)
 MAPE(lm_model2$pred,lm_model2$Deaths)
-RMSE(lm_model2$pred,lm_model2$Deaths)
 MAE(lm_model2$pred,lm_model2$Deaths)
 
 ```
@@ -232,7 +233,6 @@ R-squared is a goodness-of-fit measure for linear regression models. R-squared m
 The MAPE values is defined as actual to observed value minus the forecasted value. Value of 0.99 means
 that our model’s predictions are, on average 1% off from the actual values.
 
-Root Mean Square Error(RMSE) is the square root of MSE, which is a square root of the sum of square of predicted error (which is a real ouput minus predicted output and then divided by the number of data points). It gives us an absolute value on how much our predicted results deviate from the actual number.In our case it is 112 564.
-
 The MAE value means that on average the forecasted distance from the true value is 50 403, which is OK as our values range from 35 to 615 636.
+
 
