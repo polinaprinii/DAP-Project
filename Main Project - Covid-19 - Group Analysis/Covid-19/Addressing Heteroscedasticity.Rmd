@@ -163,10 +163,20 @@ write.csv(covid_data,"D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysi
 ```
 1. Maria to address the correct procedure to changing 'NA', 'Nan' and 'Inf' instances to 0 via R and not excel.
 
+```{r}
+covid_data
+
+```
+
 Read csv file 
 ```{r}
 coviddata2 <- read.csv("D:/Git/DAP-Project/Main Project - Covid-19 - Group Analysis/Data/Transformation.csv", header=TRUE)
-head(coviddata2)
+coviddata2 <- coviddata2 %>%
+  drop_na(logofConfirmed,logofDeaths,logofTests,logofTotalVaccines,logofTotalBoosters,logofFullyVaccinated)
+coviddata2 <- coviddata2 %>%
+  filter_all(all_vars(!is.infinite(.)))
+
+coviddata2
 ```
 
 ```{r}
