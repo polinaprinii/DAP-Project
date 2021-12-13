@@ -181,17 +181,58 @@ coviddata2
 
 ```{r}
 attach(coviddata2)
-regressionmodel <- lm(logofDeaths ~ logofConfirmed + tests + MaxStringencyIndex + MeanStringencyIndex + MaxFacialCoverings + MeanFacialCoverings + MaxStayHome + MeanStayHome + logofTotalVaccines + logofFullyVacci0ted+ logofTotalBoosters)
+regressionmodel <- lm(logofDeaths ~ logofConfirmed + logofTests + MaxStringencyIndex + MeanStringencyIndex + MaxFacialCoverings + MeanFacialCoverings + MaxStayHome + MeanStayHome + logofTotalVaccines + logofFullyVaccinated+ logofTotalBoosters)
+```
+```{r}
+lm_model2 <- coviddata2 %>%
+  add_predictions(regressionmodel)%>%
+  add_residuals(regressionmodel)
+
+head(lm_model2)
+
+
+```
+
+```{r}
+#Predicted deaths using linear model
+ggplot(lm_model2)+
+  geom_line(aes(MaxStringencyIndex, pred), col = "red")+
+  geom_line(aes(MaxStringencyIndex,Deaths ))
+
+```
+```{r}
+#plot residuals
+ggplot(lm_model2,aes(MaxStringencyIndex, resid))+
+  geom_ref_line(h=0)+
+  geom_line()+
+  labs(title="Residuals of the linear model")
+
 ```
 
 ```{r}
 plot(regressionmodel)
 ```
 
-Evaluating r squared value:
+```{r}
+write.csv(coviddata2,"transformeddata.csv")
+
+```
+
+EVALUATION OF THE LINEAR REGRESSION MODEL 
 
 ```{r}
 broom::glance(regressionmodel)
+MAPE(lm_model2$pred,lm_model2$Deaths)
+RMSE(lm_model2$pred,lm_model2$Deaths)
+MAE(lm_model2$pred,lm_model2$Deaths)
 
 ```
-Improvement from yesterday by 8% by addressing heteroscedasticity. 
+R-squared is a goodness-of-fit measure for linear regression models. R-squared measures the strength of the relationship between our model and the dependent variables on a convenient 0 – 100% scale. In our case it is 95%, which is very good. There is an improvement from yesterday by 8% by addressing heteroscedasticity.  The p-value is tiny which indicates that we can reject the null hypothesis stating thet the coefficient is equal to 0 (have no effect).
+
+The MAPE values is defined as actual to observed value minus the forecasted value. Value of 0.99 means
+that our model’s predictions are, on average 1% off from the actual values.
+
+Root Mean Square Error(RMSE) is the square root of MSE, which is a square root of the sum of square of predicted error (which is a real ouput minus predicted output and then divided by the number of data points). It gives us an absolute value on how much our predicted results deviate from the actual number.In our case it is 112 564.
+
+The MAE value means that on average the forecasted distance from the true value is 50 403, which is OK as our values range from 35 to 615 636.
+
