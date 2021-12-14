@@ -47,6 +47,7 @@ head(lm_model1)
 ```
 
 ```{r}
+#Predicted Deaths using linear model
 ggplot(lm_model1)+
   geom_line(aes(MaxStringencyIndex, pred), col = "red")+
   geom_line(aes(MaxStringencyIndex,Deaths ))

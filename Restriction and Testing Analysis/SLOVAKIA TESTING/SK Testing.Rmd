@@ -107,8 +107,7 @@ write.csv(testing_final1.df,"SlovakiaTesting2021.csv")
 ```{r}
 #Creating Random Forest Model
 model1 <- ctree(Status ~ Gender + AgeGroup, data=testing_final1.df)
+plot(model1)
 #Saving the plot
 jpeg('plot1.jpg',width=1000)
-plot(model2)
-dev.off()
 ```
