@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Reading csv file.
-df = pd.read_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
+df = pd.read_csv("/Users/polinaprinii/Documents/GitHub/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
 
 # Checking if read was successful.
 print(df.head())
