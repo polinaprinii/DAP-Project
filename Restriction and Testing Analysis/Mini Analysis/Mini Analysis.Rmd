@@ -4,6 +4,15 @@ author: "Maria Migrova"
 date: "12/8/2021"
 output: html_document
 ---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(e1071)
+library(modelr)
+library(Metrics)
+```
+
 ```{r}
 stringency.df <- read.csv("covid-stringency-index (3).csv",fileEncoding = "UTF-8-BOM")
 masks.df <- read.csv("face-covering-policies-covid (1).csv",fileEncoding = "UTF-8-BOM")
@@ -69,10 +78,6 @@ masks1.df <- masks1.df %>%
             MeanFacialCoverings = mean(facial_coverings))
 
 masks1.df
-
-```
-```{r}
-publicevents1.df
 
 ```
 
@@ -183,3 +188,84 @@ final_dataset.df <- full_join(home_stringency_masks_publicevents_publictransport
 final_dataset.df
 
 ```
+```{r}
+#There is 734 NA values in our dataset
+sum(is.na(final_dataset.df))
+final_dataset1.df <- na.omit(final_dataset.df)
+final_dataset1.df
+```
+
+
+```{r}
+modelsvm <- svm(TotalCases ~ MaxStayHome + MeanStayHome + MaxStringency + MeanStringency + MaxFacialCoverings +  MeanFacialCoverings +  MaxClosePublicTransport + MeanClosePublicTransport +MaxCancelPublicEvents + MeanCancelPublicEvents + MaxSchoolClosure + MeanSchoolClosure + MaxCases,data = final_dataset1.df)
+
+covid.svm <- final_dataset1.df %>%
+  add_predictions(modelsvm)%>%
+  add_residuals(modelsvm)
+
+covid.svm
+
+
+```
+
+```{r}
+ggplot(covid.svm)+
+  geom_line(aes(MaxStringency, pred), col = "red")+
+  geom_line(aes(MaxStringency,TotalCases ))+
+  labs(title="SVM model")
+
+```
+
+```{r}
+
+ggplot(covid.svm,aes(MaxStringency, resid))+
+  geom_ref_line(h=0)+
+  geom_line()+
+  labs(title="Residuals of the SVM model")
+
+```
+```{r}
+set.seed(1)
+row.number <- sample(1:nrow(final_dataset1.df), 0.8*nrow(final_dataset1.df))
+train = final_dataset1.df[row.number,]
+test = final_dataset1.df[-row.number,]
+dim(train)
+dim(test)
+
+```
+
+```{r}
+train <- train %>%
+  add_predictions(modelsvm)
+
+test <- test %>%
+  add_predictions(modelsvm)
+
+
+```
+
+```{r}
+paste("MAE Train: ",round(mae(train$pred, train$TotalCases),2))
+paste("MAE Test: ", round(mae(test$pred, test$TotalCases),2))
+paste("MSE Train: ", round(mse(train$pred, train$TotalCases),2))
+paste("MSE Test: ", round(mse(test$pred, test$TotalCases),2))
+paste("MAPE Train: ", round(mape(train$pred, train$TotalCases),2))
+paste("MAPE Test: ",round(mape(test$pred, test$TotalCases),2))
+paste("RMSE Train: ",round(rmse(train$pred, train$TotalCases),2))
+paste("RMSE Test: ",round(rmse(test$pred, test$TotalCases),2))
+
+
+```
+```{r}
+summary(final_dataset1.df$TotalCases)
+
+```
+From these results we can see that there are some differences between some of the training and testing scores, mostly for MAPE and RMSE, which means that we could actually overfit the data. The MAPE (mean absolute percentage error) value is equal to 0.73 for training data and 0.65 for testing data. This MAPE score is excellent, and it is defined as actual to observed value minus the forecasted value.This means that our model’s predictions are, on average less than 1% off from the actual values.
+
+The MAE (mean absolute error) is equal to 435 814 for training set and 1 220 891 for testing set. It discribes the average forecasted distance from the true value. It might seem a little high, but our values ranges from 2 to 23 114 239, which means this value is not too bad. 
+
+The MSE (mean square error) refers to the mean of the squared difference between the predicted parameter and the observed parameter. The RMSE differes from MAE scores, which is telling us that there are probably many outlier residuals.
+
+RMSE means the squared value of the MSE. For example, for the training set the RMSE is equal 1 725 433 which means that model's predicted actual value is around 1 725 433 units off. Which is not a bad number. 
+
+In general, this model did very well. 
