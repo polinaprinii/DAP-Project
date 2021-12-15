@@ -47,61 +47,44 @@ df['continent'] = df.country_code_alpha2.apply(pc.country_alpha2_to_continent_co
 print(df.head())
 
 # Split the data into smaller sub dataframes to allow for easier graph plotting.
-africa = df[df["continent"] == 'AF']
-# print(africa) - Uncomment to verify.
-
-asia = df[df["continent"] == 'AS']
-# print(asia) - Uncomment to verify.
-
-oceania = df[df["continent"] == 'OC']
-# print(oceania) - Uncomment to verify.
 
 europe = df[df["continent"] == 'EU']
 # print(europe) - Uncomment to verify.
 
-northam = df[df["continent"] == 'NA']
-# print(northam) - Uncomment to verify.
-
-southam = df[df["continent"] == 'SA']
-# print(southam) - Uncomment to verify.
-
 
 # Plot horizontal bar chart
 plot = px.data.tips()
-fig = px.bar(asia, x="totalvaccinations", y="country", title="Total Vaccinations Administered in Africa",
-             color="fullyvacnumber", text="totalvaccinations", labels=dict(totalvaccinations="Total Vaccinations (2 dose)", country="Country",
-                                                 fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
+fig = px.bar(europe, x="totalvaccinations", y="country", title="Total Vaccinations Administered in Africa",
+             color="fullyvacnumber", text="totalvaccinations",
+             labels=dict(totalvaccinations="Total Vaccinations (2 dose)", country="Country",
+                         fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
 fig.update_layout(barmode='group', yaxis={'categoryorder':'total ascending'})
 fig.update_xaxes(type="log")
 
 fig.show()
 
+# first_line = go.Bar(x=asia["totalvaccinations"], y=asia["country"], name="Total Vaccinations in Asia",
+#                     orientation='h', width=1.5)
+# second_line = go.Bar(x=africa["totalvaccinations"], y=africa["country"], name="Total Vaccinations in Africa",
+#                      orientation='h', width=1.5)
+# third_line = go.Bar(x=oceania["totalvaccinations"], y=oceania["country"], name="Total Vaccinations in Oceania",
+#                     orientation='h', width=1.5)
+#
+# fig = make_subplots(rows=1, cols=3, shared_yaxes=True)
+# fig.add_trace(first_line, row=1, col=1)
+# fig.add_trace(second_line, row=1, col=2)
+# fig.add_trace(third_line, row=1, col=3)
+# fig.show()
 
-first_line = go.Bar(x=asia["totalvaccinations"], y=asia["country"], name="Total Vaccinations in Asia",
-                    orientation='h', width=1.5)
-second_line = go.Bar(x=africa["totalvaccinations"], y=africa["country"], name="Total Vaccinations in Africa",
-                     orientation='h', width=1.5)
-third_line = go.Bar(x=oceania["totalvaccinations"], y=oceania["country"], name="Total Vaccinations in Oceania",
-                    orientation='h', width=1.5)
-
-fig = make_subplots(rows=1, cols=3, shared_yaxes=True)
-fig.add_trace(first_line, row=1, col=1)
-fig.add_trace(second_line, row=1, col=2)
-fig.add_trace(third_line, row=1, col=3)
-fig.show()
-# TODO: Group other sub dataframes into the bar chart.
 
 # Built a Choropleth Map:
-
-worldMap = px.choropleth(asia,
+worldMap = px.choropleth(df,
                 title="World Map of Fully Vaccinated",
                 locations ="isocode",
                 color="fullyvacnumber",
-                hover_name="country", # column to add to hover information
                 color_continuous_scale=px.colors.sequential.Viridis,)
 worldMap.update_layout(
     coloraxis_colorbar=dict(
         title="Number of Fully Vaccinated"))
 worldMap.show()
 
-# TODO: Group all  sub datasets into one aka, multiple pages of same graph outlining a different continent.
