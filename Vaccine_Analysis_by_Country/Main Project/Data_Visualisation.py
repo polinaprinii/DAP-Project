@@ -2,41 +2,89 @@
 
 import pandas as pd
 import plotly.express as px
+import pycountry_convert as pc
+import pycountry
 
+#print(list(pycountry.countries))
 
 # Reading csv file.
-df = pd.read_csv("/Users/polinaprinii/Documents/GitHub/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
+df = pd.read_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
 
-# Checking if read was successful.
+# Drop all OWID ISO instances.
+index_names = df[ df['isocode'].str.contains("OWID") ].index
+df.drop(index_names, inplace = True)
+
+"""Replace country names to follow pycountry country name standards. 
+This is due to human error when naming countries pulled from the raw dataset.
+"""
+df['country'] = df['country'].str.replace('Bonaire Sint Eustatius and Saba','Bonaire, Sint Eustatius and Saba')
+df['country'] = df['country'].str.replace('Faeroe Islands','Faroe Islands')
+df['country'] = df['country'].str.replace("Cote d'Ivoire","Côte d'Ivoire")
+df['country'] = df['country'].str.replace("Saint Helena","Saint Helena, Ascension and Tristan da Cunha")
+df['country'] = df['country'].str.replace("Curacao","Curaçao")
+df['country'] = df['country'].str.replace("Democratic Republic of Congo","Democratic Republic of the Congo")
+df['country'] = df['country'].str.replace("Timor","Timor-Leste")
+
+# Converting country name to country code alpha 2 to allow for the extraction of continent using pycountry.
+df['country_code_alpha2'] = df['country'].apply(pc.country_name_to_country_alpha2)
+
+# Exporting dataset.
+df.to_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/FinalExport2.csv")
+
+"""
+Dropping a few rows due to the following error:
+KeyError: Invalid Country Alpha-2 code: 
+Error remains unresolved as the correct alpha 2 code was assigned by the pc.country_name_to_country_alpha2 function.
+This can be verified using print(list(pycountry.countries))
+"""
+df.drop(df.loc[df['country_code_alpha2'] == 'SX'].index, inplace=True)
+df.drop(df.loc[df['country_code_alpha2'] == 'PN'].index, inplace=True)
+df.drop(df.loc[df['country_code_alpha2'] == 'TL'].index, inplace=True)
+
+# Converting country code to continent using pycountry.
+df['continent'] = df.country_code_alpha2.apply(pc.country_alpha2_to_continent_code)
+
+# Checking if read was successful and new collumns added to the df.
 print(df.head())
 
-# Split the data into smaller sub dataframes to
-lowsub = df[df["totalvaccinations"] < 10000000]
+# Split the data into smaller sub dataframes to allow for easier graph plotting.
+africa = df[df["continent"] == 'AF']
+# print(africa) - Uncomment to verify.
 
-midsub = df[(df["totalvaccinations"] > 10000000) & (df["totalvaccinations"] < 100000000)]
+asia = df[df["continent"] == 'AS']
+# print(asia) - Uncomment to verify.
 
-highsub = df[df["totalvaccinations"] > 100000000]
+oceania = df[df["continent"] == 'OC']
+# print(oceania) - Uncomment to verify.
+
+europe = df[df["continent"] == 'EU']
+# print(europe) - Uncomment to verify.
+
+northam = df[df["continent"] == 'NA']
+# print(northam) - Uncomment to verify.
+
+southam = df[df["continent"] == 'SA']
+# print(southam) - Uncomment to verify.
 
 
 # Plot horizontal bar chart
 plot = px.data.tips()
-fig = px.bar(lowsub, x="totalvaccinations", y="country", title="Total Vaccinations Administered by Country",
+fig = px.bar(asia, x="totalvaccinations", y="country", title="Total Vaccinations Administered by Country",
              color="fullyvacnumber", text="totalvaccinations", labels=dict(totalvaccinations="Total Vaccinations (2 dose)", country="Country",
                                                  fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
 fig.update_layout(barmode='stack', yaxis={'categoryorder':'total ascending'})
 fig.update_xaxes(type="log")
 #fig.update_layout(yaxis = dict(tickfont = dict(size=7)))
-fig.update_traces(width=5, textposition='inside', textfont_size=14)
 fig.show()
 
-# TODO: Increase font of the text feature in the bar chart as well as group other sub dataframes into the bar chart.
+# TODO: Group other sub dataframes into the bar chart.
 
 
 # Attempting to built a Choropleth Map:
 
 import plotly.express as px
 
-worldMap = px.choropleth(lowsub,
+worldMap = px.choropleth(asia,
                 title="World Map of Fully Vaccinated",
                 locations ="isocode",
                 color="fullyvacnumber",
@@ -47,4 +95,4 @@ worldMap.update_layout(
         title="Number of Fully Vaccinated"))
 worldMap.show()
 
-# TODO: Group all three sub datasets into one aka, 3 pages of same graph.
+# TODO: Group all  sub datasets into one aka, multiple pages of same graph outlining a different continent.
