@@ -25,6 +25,8 @@ fig = px.bar(lowsub, x="totalvaccinations", y="country", title="Total Vaccinatio
                                                  fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
 fig.update_layout(barmode='stack', yaxis={'categoryorder':'total ascending'})
 fig.update_xaxes(type="log")
+#fig.update_layout(yaxis = dict(tickfont = dict(size=7)))
+fig.update_traces(width=5, textposition='inside', textfont_size=14)
 fig.show()
 
 # TODO: Increase font of the text feature in the bar chart as well as group other sub dataframes into the bar chart.
