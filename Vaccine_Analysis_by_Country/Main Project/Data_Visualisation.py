@@ -1,14 +1,13 @@
 # Importing needed packages to visualise our data.
-
+import dcc as dcc
 import pandas as pd
 import plotly.express as px
 import pycountry_convert as pc
-import pycountry
-
-#print(list(pycountry.countries))
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 # Reading csv file.
-df = pd.read_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
+df = pd.read_csv("/Users/polinaprinii/Documents/GitHub/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
 
 # Drop all OWID ISO instances.
 index_names = df[ df['isocode'].str.contains("OWID") ].index
@@ -29,7 +28,7 @@ df['country'] = df['country'].str.replace("Timor","Timor-Leste")
 df['country_code_alpha2'] = df['country'].apply(pc.country_name_to_country_alpha2)
 
 # Exporting dataset.
-df.to_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/FinalExport2.csv")
+#df.to_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/FinalExport2.csv")
 
 """
 Dropping a few rows due to the following error:
@@ -69,20 +68,30 @@ southam = df[df["continent"] == 'SA']
 
 # Plot horizontal bar chart
 plot = px.data.tips()
-fig = px.bar(asia, x="totalvaccinations", y="country", title="Total Vaccinations Administered by Country",
+fig = px.bar(asia, x="totalvaccinations", y="country", title="Total Vaccinations Administered in Africa",
              color="fullyvacnumber", text="totalvaccinations", labels=dict(totalvaccinations="Total Vaccinations (2 dose)", country="Country",
                                                  fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
-fig.update_layout(barmode='stack', yaxis={'categoryorder':'total ascending'})
+fig.update_layout(barmode='group', yaxis={'categoryorder':'total ascending'})
 fig.update_xaxes(type="log")
-#fig.update_layout(yaxis = dict(tickfont = dict(size=7)))
+
 fig.show()
 
+
+first_line = go.Bar(x=asia["totalvaccinations"], y=asia["country"], name="Total Vaccinations in Asia",
+                    orientation='h', width=1.5)
+second_line = go.Bar(x=africa["totalvaccinations"], y=africa["country"], name="Total Vaccinations in Africa",
+                     orientation='h', width=1.5)
+third_line = go.Bar(x=oceania["totalvaccinations"], y=oceania["country"], name="Total Vaccinations in Oceania",
+                    orientation='h', width=1.5)
+
+fig = make_subplots(rows=1, cols=3, shared_yaxes=True)
+fig.add_trace(first_line, row=1, col=1)
+fig.add_trace(second_line, row=1, col=2)
+fig.add_trace(third_line, row=1, col=3)
+fig.show()
 # TODO: Group other sub dataframes into the bar chart.
 
-
-# Attempting to built a Choropleth Map:
-
-import plotly.express as px
+# Built a Choropleth Map:
 
 worldMap = px.choropleth(asia,
                 title="World Map of Fully Vaccinated",
