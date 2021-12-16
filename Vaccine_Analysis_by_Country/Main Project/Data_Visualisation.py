@@ -51,10 +51,16 @@ print(df.head())
 europe = df[df["continent"] == 'EU']
 # print(europe) - Uncomment to verify.
 
+northam = df[df["continent"] == 'NA']
+# print(northam) - Uncomment to verify.
 
-# Plot horizontal bar chart
+southam = df[df["continent"] == 'SA']
+# print(southam) - Uncomment to verify.
+
+
+# Plot horizontal bar chart for Europe.
 plot = px.data.tips()
-fig = px.bar(europe, x="totalvaccinations", y="country", title="Total Vaccinations Administered in Africa",
+fig = px.bar(europe, x="totalvaccinations", y="country", title="Total Vaccinations Administered in Europe",
              color="fullyvacnumber", text="totalvaccinations",
              labels=dict(totalvaccinations="Total Vaccinations (2 dose)", country="Country",
                          fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
@@ -63,18 +69,24 @@ fig.update_xaxes(type="log")
 
 fig.show()
 
-# first_line = go.Bar(x=asia["totalvaccinations"], y=asia["country"], name="Total Vaccinations in Asia",
-#                     orientation='h', width=1.5)
-# second_line = go.Bar(x=africa["totalvaccinations"], y=africa["country"], name="Total Vaccinations in Africa",
-#                      orientation='h', width=1.5)
-# third_line = go.Bar(x=oceania["totalvaccinations"], y=oceania["country"], name="Total Vaccinations in Oceania",
-#                     orientation='h', width=1.5)
-#
-# fig = make_subplots(rows=1, cols=3, shared_yaxes=True)
-# fig.add_trace(first_line, row=1, col=1)
-# fig.add_trace(second_line, row=1, col=2)
-# fig.add_trace(third_line, row=1, col=3)
-# fig.show()
+# Plot two scatter plots side by side for North and South America:
+
+first_line = go.Bar(x=northam["country"], y=northam["totalvaccinations"], name="Total Vaccinations in North America",
+                    width=1.5)
+second_line = go.Bar(x=southam["country"], y=southam["totalvaccinations"], name="Total Vaccinations in South America",
+                    width=1.5)
+
+fig2 = make_subplots(rows=1, cols=2, shared_yaxes=True, column_widths=[0.6, 0.6])
+fig2.add_trace(first_line, row=1, col=1)
+fig2.add_trace(second_line, row=1, col=2)
+fig2.update_layout(
+    yaxis = dict(
+        tickmode = 'linear',
+        tick0 = 10000000,
+        dtick = 25000000
+    )
+)
+fig2.show()
 
 
 # Built a Choropleth Map:
