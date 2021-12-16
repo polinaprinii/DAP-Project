@@ -69,14 +69,14 @@ dates_deaths = df2.columns.tolist()[11:]
 countries_cases = list(df1['Country/Region'])
 totalcases = list(df1.iloc[0:, -1])
 
-list1 = [[countries_cases[i], totalcases[i]] for i in range(len(countries_cases))]
-map_1 = Map(init_opts=opts.InitOpts(width="1000px", height="460px"))
-map_1.add('Total Confirmed Cases',
-          list1,
-          maptype='world',
-          is_map_symbol_show=False)
-map_1.set_series_opts(label_opts=opts.LabelOpts(is_show=False))
-map_1.set_global_opts(
+covid_data = [[countries_cases[i], totalcases[i]] for i in range(len(countries_cases))]
+covid_map = Map(init_opts=opts.InitOpts(width="1000px", height="460px"))
+covid_map.add('Total Confirmed Cases',
+              covid_data,
+              maptype='world',
+              is_map_symbol_show=False)
+covid_map.set_series_opts(label_opts=opts.LabelOpts(is_show=False))
+covid_map.set_global_opts(
     visualmap_opts=opts.VisualMapOpts(max_=1100000, is_piecewise=True, pieces=[
         {"min": 500000},
         {"min": 200000, "max": 499999},
@@ -85,7 +85,7 @@ map_1.set_global_opts(
         {"min": 10000, "max": 49999},
         {"max": 9999}, ]),
     title_opts=opts.TitleOpts(
-        title='Covid-19 Total Global Confirmed Cases',
+        title='Total Global Confirmed Covid-19 Cases',
         subtitle='As Of ' + most_recent_date,
         pos_left='center',
         padding=0,
@@ -99,14 +99,15 @@ map_1.set_global_opts(
                                                    font_family='Courier New',
                                                    font_size=13)),
     legend_opts=opts.LegendOpts(is_show=False))
-map_1.render('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
+covid_map.render('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
 
 # Automatically opens the html file containing the interactive map
 webbrowser.open_new_tab('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
 
-
 # Bar Graph Showing top 20 Countries in Deaths
-top_20_deaths = df2.groupby("Country/Region")[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],ascending=False).head(20)
+top_20_deaths = df2.groupby("Country/Region")[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],
+                                                                                                   ascending=False).head(
+    20)
 top_20_deaths.plot(kind='barh', log=True, figsize=(8, 6))
 plt.gca().invert_yaxis()
 plt.ylabel("Country/Region", labelpad=14)
@@ -116,7 +117,9 @@ plt.savefig('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\Countri
 plt.show()
 
 # Bar Graph Showing top 20 Countries in Confirmed Cases
-top_20_cases = df1.groupby('Country/Region')[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],ascending=False).head(20)
+top_20_cases = df1.groupby('Country/Region')[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],
+                                                                                                  ascending=False).head(
+    20)
 top_20_cases.plot(kind='barh', log=True, figsize=(8, 6))
 plt.gca().invert_yaxis()
 plt.ylabel("Country/Region", labelpad=14)
