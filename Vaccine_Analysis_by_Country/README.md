@@ -18,8 +18,7 @@ This is achieved through the use of bar charts, histograms and a world map.
 
 	* Top country uptake of vaccinations for 2021.
 	* Poorest uptake of vaccinations for 2021.
-	* Total of vaccinated citizens by Country.
-	* Total of fully vaccinated citizens by Country.
+	* Total of fully vaccinated citizens by continent.
 	* Total of boosters administered to citizens by Country.
 
 
