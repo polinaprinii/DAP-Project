@@ -5,7 +5,10 @@ import matplotlib.pyplot as plt
 import time
 from IPython.display import clear_output
 import pymongo
-from arcgis.gis import GIS
+from pyecharts.charts import Map, Geo
+from pyecharts import options as opts
+from pyecharts.globals import ThemeType
+import webbrowser
 
 # This file will handle the exploratory data analysis of the two global cases and death files from mongoDB
 
@@ -27,6 +30,11 @@ df2 = pd.DataFrame(list(covid_deaths_clean.find()))
 # Removing _id Column added by MongoDB
 df1.drop(['_id'], axis=1, inplace=True)
 df2.drop(['_id'], axis=1, inplace=True)
+
+# Changing Country/Region value from "US" To "United States" for interaction with world map graph
+
+df1['Country/Region'] = df1['Country/Region'].replace(['US'], 'United States')
+df2['Country/Region'] = df2['Country/Region'].replace(['US'], 'United States')
 
 # Plot global cases in a bar chart
 # Create List of date Values
@@ -50,58 +58,69 @@ most_recent_date = df1.columns[-1]
 dates_cases = df1.columns.tolist()[11:]
 dates_deaths = df2.columns.tolist()[11:]
 
-df1 = df1.append(df1.sum(numeric_only=True), ignore_index=True)
-total_cases = df1.iloc[-1, 11:]
+# df1 = df1.append(df1.sum(numeric_only=True), ignore_index=True)
+# total_cases = df1.iloc[-1, 11:]
+#
+# df2 = df2.append(df2.sum(numeric_only=True), ignore_index=True)
+# total_deaths = df2.iloc[-1, 11:]
 
-df2 = df2.append(df2.sum(numeric_only=True), ignore_index=True)
-total_deaths = df2.iloc[-1, 11:]
+# Making world map
 
-cases_to_date_US = df1.iloc[255, 11:]
-plt.bar(dates_cases, cases_to_date_US, color='red')
-plt.xticks(dates_cases, size=8)
-plt.locator_params(axis='x', nbins=9)
-plt.xlabel('Dates (01/29/20 -' + most_recent_date + ')')
-plt.ylabel('Confirmed Cases to Date')
-plt.title('Cases To Date for United States')
+countries_cases = list(df1['Country/Region'])
+totalcases = list(df1.iloc[0:, -1])
 
+list1 = [[countries_cases[i], totalcases[i]] for i in range(len(countries_cases))]
+map_1 = Map(init_opts=opts.InitOpts(width="1000px", height="460px"))
+map_1.add('Total Confirmed Cases',
+          list1,
+          maptype='world',
+          is_map_symbol_show=False)
+map_1.set_series_opts(label_opts=opts.LabelOpts(is_show=False))
+map_1.set_global_opts(
+    visualmap_opts=opts.VisualMapOpts(max_=1100000, is_piecewise=True, pieces=[
+        {"min": 500000},
+        {"min": 200000, "max": 499999},
+        {"min": 100000, "max": 199999},
+        {"min": 50000, "max": 99999},
+        {"min": 10000, "max": 49999},
+        {"max": 9999}, ]),
+    title_opts=opts.TitleOpts(
+        title='Covid-19 Total Global Confirmed Cases',
+        subtitle='As Of ' + most_recent_date,
+        pos_left='center',
+        padding=0,
+        item_gap=2,  # gap between title and subtitle
+        title_textstyle_opts=opts.TextStyleOpts(color='darkblue',
+                                                font_weight='bold',
+                                                font_family='Courier New',
+                                                font_size=30),
+        subtitle_textstyle_opts=opts.TextStyleOpts(color='grey',
+                                                   font_weight='bold',
+                                                   font_family='Courier New',
+                                                   font_size=13)),
+    legend_opts=opts.LegendOpts(is_show=False))
+map_1.render('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
+
+# Automatically opens the html file containing the interactive map
+webbrowser.open_new_tab('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
+
+
+# Bar Graph Showing top 20 Countries in Deaths
+top_20_deaths = df2.groupby("Country/Region")[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],ascending=False).head(20)
+top_20_deaths.plot(kind='barh', log=True, figsize=(8, 6))
+plt.gca().invert_yaxis()
+plt.ylabel("Country/Region", labelpad=14)
+plt.xlabel("Number of Deaths to Date (log=True)", labelpad=14)
+plt.title("Countries with The Highest Number of Deaths to Date", y=1.02)
+plt.savefig('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\Countries_with_highest_deaths_to_date.png')
 plt.show()
 
-# Bar Graph to show total Confirmed Cases Worldwide by Date, To Date
-# Adding a row to sum daily global values.
-
-
-plt.bar(dates_cases, total_cases)
-plt.xticks(dates_cases, size=8)
-plt.locator_params(axis='x', nbins=9)
-plt.xlabel('Dates (01/29/20 -' + most_recent_date + ')')
-plt.ylabel('Total Global Confirmed Cases to Date')
-plt.title('Total Global Confirmed Cases By Date')
+# Bar Graph Showing top 20 Countries in Confirmed Cases
+top_20_cases = df1.groupby('Country/Region')[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],ascending=False).head(20)
+top_20_cases.plot(kind='barh', log=True, figsize=(8, 6))
+plt.gca().invert_yaxis()
+plt.ylabel("Country/Region", labelpad=14)
+plt.xlabel("Number of Confirmed Cases to Date (log=True)", labelpad=14)
+plt.title("Countries with The Highest Number of Confirmed Cases to Date", y=1.02)
+plt.savefig('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\Countries_with_highest_cases_to_date.png')
 plt.show()
-
-plt.bar(dates_deaths, total_deaths, color='red')
-plt.xticks(dates_deaths, size=8)
-plt.locator_params(axis='x', nbins=9)
-plt.xlabel('Dates (01/29/20 -' + most_recent_date + ')')
-plt.ylabel('Confirmed Deaths to Date')
-plt.title('Deaths To Date for United States')
-
-plt.show()
-
-plt.plot(dates_cases, total_deaths, label='total Deaths', marker='o', linewidth=3)
-plt.xlabel('Dates')
-plt.ylabel('Number of People')
-plt.legend(loc='upper left')
-plt.xticks(dates_cases)
-plt.title('Deaths Over TIme')
-plt.show()
-
-
-plt.plot(dates_cases, total_cases, label='Total Cases', marker='o', linewidth=3)
-plt.xlabel('Dates')
-plt.ylabel('Number of People')
-plt.legend(loc='upper left')
-plt.xticks(dates_cases)
-plt.title('Cases over time')
-plt.show()
-
-
