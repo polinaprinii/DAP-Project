@@ -57,6 +57,14 @@ northam = df[df["continent"] == 'NA']
 southam = df[df["continent"] == 'SA']
 # print(southam) - Uncomment to verify.
 
+africa = df[df["continent"] == 'AF']
+# print(africa) - Uncomment to verify.
+
+asia = df[df["continent"] == 'AS']
+# print(asia) - Uncomment to verify.
+
+oceania = df[df["continent"] == 'OC']
+# print(oceania) - Uncomment to verify.
 
 # Plot horizontal bar chart for Europe.
 plot = px.data.tips()
@@ -66,19 +74,26 @@ fig = px.bar(europe, x="totalvaccinations", y="country", title="Total Vaccinatio
                          fullyvacnumber="Number of Fully Vaccinated", ), orientation='h')
 fig.update_layout(barmode='group', yaxis={'categoryorder':'total ascending'})
 fig.update_xaxes(type="log")
-
 fig.show()
 
-# Plot two scatter plots side by side for North and South America:
+# Plot scatter plots side by side for all continents:
 
-first_line = go.Bar(x=northam["country"], y=northam["totalvaccinations"], name="Total Vaccinations in North America",
-                    width=1.5)
-second_line = go.Bar(x=southam["country"], y=southam["totalvaccinations"], name="Total Vaccinations in South America",
-                    width=1.5)
+first_line = go.Scatter(x=northam["country"], y=northam["totalbooster"], name="Total Boosters Administered in North America")
+second_line = go.Scatter(x=southam["country"], y=southam["totalbooster"], name="Total Boosters Administered in South America")
+third_line = go.Scatter(x=europe["country"], y=europe["totalbooster"], name="Total Boosters Administered in Europe")
+fourth_line = go.Scatter(x=africa["country"], y=africa["totalbooster"], name="Total Boosters Administered in Africa")
+fifth_line = go.Scatter(x=asia["country"], y=asia["totalbooster"], name="Total Boosters Administered in Asia")
+sixth_line = go.Scatter(x=oceania["country"], y=oceania["totalbooster"], name="Total Boosters Administered in Oceania")
 
-fig2 = make_subplots(rows=1, cols=2, shared_yaxes=True, column_widths=[0.6, 0.6])
-fig2.add_trace(first_line, row=1, col=1)
-fig2.add_trace(second_line, row=1, col=2)
+
+fig2 = make_subplots(rows=3, cols=2, shared_yaxes=True, column_widths=[0.6, 0.6])
+fig2.add_trace(third_line, row=1, col=1)
+fig2.add_trace(fourth_line, row=1, col=2)
+fig2.add_trace(first_line, row=2, col=1)
+fig2.add_trace(second_line, row=2, col=2)
+fig2.add_trace(fifth_line, row=3, col=1)
+fig2.add_trace(sixth_line, row=3, col=2)
+
 fig2.update_layout(
     yaxis = dict(
         tickmode = 'linear',
@@ -88,13 +103,13 @@ fig2.update_layout(
 )
 fig2.show()
 
-
-# Built a Choropleth Map:
+# Choropleth Map for fully vaccinated:
 worldMap = px.choropleth(df,
                 title="World Map of Fully Vaccinated",
                 locations ="isocode",
                 color="fullyvacnumber",
-                color_continuous_scale=px.colors.sequential.Viridis,)
+                color_continuous_scale=px.colors.sequential.Viridis,
+                hover_name="country")
 worldMap.update_layout(
     coloraxis_colorbar=dict(
         title="Number of Fully Vaccinated"))
