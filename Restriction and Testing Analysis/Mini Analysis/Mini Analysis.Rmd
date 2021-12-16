@@ -11,6 +11,9 @@ library(ggplot2)
 library(e1071)
 library(modelr)
 library(Metrics)
+library(plotly)
+library(hrbrthemes)
+library(processx)
 ```
 
 ```{r}
@@ -274,6 +277,7 @@ In general, this model did very well.
 stringency.df
 ```
 
+
 ```{r}
 central_europe <- stringency.df %>%
   filter(Day == "2021-01-01" | Day == "2021-11-15")%>%
@@ -299,7 +303,50 @@ central_europe %>%
   geom_line(aes(group = paired))+
     geom_point(aes(color=Date), size=4) +
     theme(legend.position="top")+
-  ggtitle("Change in Stringency index from 01/01/2021 to 15/11/2021")+
-  theme_minimal()
+  
+ggtitle("Change in Stringency index from 01/01/2021 to 15/11/2021")+
+  theme_minimal()+
+  theme(axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        legend.title = element_blank())
+
+ggsave("dumbbellplot.jpg",plot=last_plot())
 
 ```
+```{r}
+
+Ireland <- stringency.df %>%
+  filter(Entity == "Ireland")
+
+Ireland
+
+```
+```{r}
+
+IrelandSlovakia <- stringency.df %>%
+  filter(Entity == "Ireland" | Entity == "Slovakia")
+
+IrelandSlovakia
+
+
+```
+
+```{r}
+
+p <- IrelandSlovakia %>%
+  ggplot( aes(x=Day, y=stringency_index,fill=Entity)) +
+    geom_area(alpha = 0.5) +
+    ylab("Stringency Index") +
+    theme_ipsum()+
+    ggtitle("Stringency Index for Ireland and Slovakia")+
+  theme(axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        legend.title = element_blank())
+
+
+p
+
+ggsave(p, filename = "IrelandSlovakia.png")
+```
+
+
