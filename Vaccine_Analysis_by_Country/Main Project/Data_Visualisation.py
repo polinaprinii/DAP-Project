@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Reading csv file.
-df = pd.read_csv("/Users/polinaprinii/Documents/GitHub/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
+df = pd.read_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv")
 
 # Drop all OWID ISO instances.
 index_names = df[ df['isocode'].str.contains("OWID") ].index
@@ -28,7 +28,7 @@ df['country'] = df['country'].str.replace("Timor","Timor-Leste")
 df['country_code_alpha2'] = df['country'].apply(pc.country_name_to_country_alpha2)
 
 # Exporting dataset.
-#df.to_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/FinalExport2.csv")
+df.to_csv("D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/FinalExport2.csv")
 
 """
 Dropping a few rows due to the following error:
@@ -108,7 +108,7 @@ worldMap = px.choropleth(df,
                 title="World Map of Fully Vaccinated",
                 locations ="isocode",
                 color="fullyvacnumber",
-                color_continuous_scale=px.colors.sequential.Viridis,
+                color_continuous_scale=px.colors.sequential.Plasma,
                 hover_name="country")
 worldMap.update_layout(
     coloraxis_colorbar=dict(
