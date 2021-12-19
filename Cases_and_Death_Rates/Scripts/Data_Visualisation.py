@@ -159,4 +159,3 @@ plt.ylabel('Number of Cases')
 
 plt.savefig(r'A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\Average_vs_Maximum_Daily_Cases.png')
 plt.show()
-
