@@ -45,14 +45,10 @@ Our dataset was loaded, cleaned and analysed using R Studio.
 
 These steps were undertaken:
 1. Downloading the csv dataset from GitHub.
-2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file encoding.
-3. Transforming the dataset into Json Format (WILL BE DONE)
-4. Importing RAW dataset to MongoDB (WILL BE DONE)
-5. Extracting the dataset from MongoDB as a csv file
-6. Reading the csv file in R Studio again.
-7. Aggregating the dataset using aggregate() function to get a summary of all tests performed by each country.
-8. Analysing and visualising the data.
-9. Writing the final dataset into a csv file which will be later used for the multiple linear regression.
+2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file.
+3. Analysing and visualising the data.
+4. Writing the final dataset into a csv file which will be later used for the multiple linear regression.
+5. Uploading the final dataset into MongoDB using mongo() function.
 
 
 ### Restrictions Dataset - Maria Migrova ###
@@ -72,16 +68,12 @@ The dataset consists of:
 ***Programmatic Approach:***
 Our dataset was loaded, cleaned and analysed using R Studio.
 
-These steps were undertaken: 
-1. Downloading the csv datasets from GitHub.
-2. Reading the csv datasets in R Studio using read.csv() function and UTF-8-BOM file encoding.
-3. Joining the datasets into 1 using join() functions.
-4. Transforming the dataset into Json Format (WILL BE DONE)
-5. Importing RAW dataset to MongoDB (WILL BE DONE)
-6. Extracting the dataset from MongoDB as a csv file
-7. Reading the csv file in R Studio again.
-8. Analysing and visualising the data.
-9. Writing the final dataset into a csv file which will be later used in the multiple linear regression.
+These steps were undertaken:
+1. Downloading the csv dataset from GitHub.
+2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file.
+3. Analysing and visualising the data.
+4. Writing the final dataset into a csv file which will be later used for the multiple linear regression.
+5. Uploading the final dataset into MongoDB using mongo() function.
 
 
 ### Slovakia Testing Dataset - Maria Migrova ###
@@ -104,12 +96,9 @@ Our dataset was loaded, cleaned and analysed using R Studio.
 These steps were undertaken: 
 1. Downloading the csv dataset from GitHub.
 2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file encoding.
-3. Transforming the dataset into Json Format (WILL BE DONE)
-4. Importing RAW dataset to MongoDB (WILL BE DONE)
-5. Extracting the dataset from MongoDB as a csv file
-6. Reading the csv file in R Studio again.
-7. Analysing and visualising the data. Creating a Random Forest Model, which shows how different age group and gender influance the number of positive tests.
-9. Writing the final dataset into a csv file. This file won't be used for the final linear regression.
+3. Analysing and visualising the data. Creating a Random Forest Model, which shows how different age group and gender influance the number of positive tests.
+4. Writing the final dataset into a csv file. This file won't be used for the final linear regression.
+5. Uploading the final dataset into MongoDB using mongo() function.
 
 ## *Authors:* ##
 - Alun Price
