@@ -18,6 +18,10 @@ library(lubridate)
 library(party)
 library(ggplot2)
 ```
+```{r}
+library(stringi)
+
+```
 
 ```{r}
 #Reading data
@@ -99,10 +103,7 @@ class(testing2.df)
 testing_final1.df <- testing2.df[testing2.df$Date > "2021-01-01" & testing2.df$Date < "2021-12-01",]
 testing_final1.df
 ```
-```{r}
-write.csv(testing_final1.df,"SlovakiaTesting2021.csv")
 
-```
 
 ```{r}
 #Creating Random Forest Model
@@ -110,4 +111,49 @@ model1 <- ctree(Status ~ Gender + AgeGroup, data=testing_final1.df)
 plot(model1)
 #Saving the plot
 jpeg('plot1.jpg',width=1000)
+```
+
+```{r}
+
+testing_final2.df <- testing1.df
+
+```
+
+```{r}
+
+testing_final2.df$Region <- stri_trans_general(testing_final2.df$Region, "Latin-ASCII")
+testing_final2.df$District <- stri_trans_general(testing_final2.df$District, "Latin-ASCII")
+testing_final2.df$AgeGroup <- stri_trans_general(testing_final2.df$AgeGroup,"Latin-ASCII")
+
+```
+
+```{r}
+testing_final2.df
+
+```
+```{r}
+testing_final2.df[testing_final2.df == "\"00\""] <- "0-1"
+testing_final2.df[testing_final2.df == "\"01-04\""] <- "1-4"
+testing_final2.df[testing_final2.df == "\"05-09\""] <-"5-9"
+testing_final2.df[testing_final2.df == "\"10-14\""] <- "10-14"
+testing_final2.df[testing_final2.df == "\"15-19\""] <- "15-19"
+testing_final2.df[testing_final2.df == "\"20-24\""] <- "20-24"
+testing_final2.df[testing_final2.df == "\"25-34\""] <- "25-34"
+testing_final2.df[testing_final2.df == "\"35-44\""] <- "35-44"
+testing_final2.df[testing_final2.df == "\"45-54\""] <- "45-54"
+testing_final2.df[testing_final2.df == "\"55-64\""] <- "55-64"
+testing_final2.df[testing_final2.df == "\"65_v\""] <- "65-99"
+testing_final2.df[testing_final2.df == "\"nezname\""] <- "unknown"
+testing_final2.df[testing_final2.df == "\"999\""] <- "99-more"
+
+```
+
+```{r}
+write.csv(testing_final2.df,"SlovakiaTesting.csv")
+
+```
+
+```{r}
+g=mongo(collection="publictransport",url="mongodb://127.0.0.1:27017/SlovakiaTesting")
+g$insert(testing_final2.df)
 ```
