@@ -4,6 +4,8 @@
     - Vaccine_Analysis_by_Country
     - Cases_and_Death_Rates
     - Restriction_and_Testing_Analysis
+    - Linear Regression Final Dataset
+    - Main Project - Covid-19 - Group Analysis
 
     There is no right or wrong order of importing the files as long as the above sub-folders and their contents prior
     to calling the "Linear Regression Final Dataset" folder, specifically the Final_Dataset.ipynb file.
@@ -99,3 +101,4 @@ Thus please run the "Restriction_and_Testing_Analysis" folder and it's respectiv
 file.
 Please note that there may be a requirement to change file paths as well as provide credentials and ip information.
 """
+
