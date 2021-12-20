@@ -1,4 +1,4 @@
-# Importing all files into one Master.py file to allows for seamless running pf the code in one go.
+# Importing all files into one Master.py file to allows for seamless running of the code in one go.
 
 import Extract_Raw_Data
 
