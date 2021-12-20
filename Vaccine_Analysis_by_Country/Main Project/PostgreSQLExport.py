@@ -44,7 +44,7 @@ print(vaccs_df)
 df = vaccs_df
 
 # Setting path for csv file.
-filePath = 'D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main Project/CSV Files/finalexport.csv'
+filePath = 'D:/Git/DAP-Project/Vaccine_Analysis_by_Country/Main_Project/CSV Files/finalexport.csv'
 
 # If statement to drop or remove file if exists to avoid any errors.
 if os.path.exists(filePath):

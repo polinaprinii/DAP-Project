@@ -28,9 +28,9 @@ collections = [db['df_1'], db['df_2'], db['df_3']]  # List of collections in Mon
 
 # Loading the JSON files into the declared collections.
 # Loading df_1
-filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_1.json'
-filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_2.json'
-filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_3.json'
+filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main_Project\JSON Files\df_1.json'
+filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main_Project\JSON Files\df_2.json'
+filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main_Project\JSON Files\df_3.json'
 
 filePaths = [filePath_1, filePath_2, filePath_3]
 

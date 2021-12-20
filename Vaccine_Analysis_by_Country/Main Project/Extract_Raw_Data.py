@@ -62,9 +62,9 @@ if not dataPopulated:  # Code jumps to pulling the file from local in the case t
 # Create function to convert from CSV to JSON, function applies to all 3 CSV datasets.
 def convertCsvToJson(file1, file2, file3):
     # Storing the 3 file-paths in variables.
-    filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_1.json'
-    filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_2.json'
-    filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main Project\JSON Files\df_3.json'
+    filePath_1 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main_Project\JSON Files\df_1.json'
+    filePath_2 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main_Project\JSON Files\df_2.json'
+    filePath_3 = 'D:\Git\DAP-Project\Vaccine_Analysis_by_Country\Main_Project\JSON Files\df_3.json'
 
 
     filePaths = [filePath_1, filePath_2, filePath_3]    # List of paths to all JSON  files.
