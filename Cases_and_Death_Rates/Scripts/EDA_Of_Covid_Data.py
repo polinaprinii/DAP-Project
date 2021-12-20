@@ -2,6 +2,8 @@ import io
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import rcParams
+import plotly.graph_objects as go
 import time
 from IPython.display import clear_output
 import pymongo
@@ -10,7 +12,7 @@ from pyecharts import options as opts
 from pyecharts.globals import ThemeType
 import webbrowser
 
-# This file will handle the exploratory data analysis of the two global cases and death files from mongoDB
+# This file will handle the exploratory data analysis of the two cleaned files from mongoDB of cases and death
 
 # Read in from MONGODB
 # Connecting to MongoDB
@@ -57,73 +59,52 @@ most_recent_date = df1.columns[-1]
 # Bar Graph showing total Confirmed Cases By Date, to date For The United States
 dates_cases = df1.columns.tolist()[11:]
 dates_deaths = df2.columns.tolist()[11:]
-
-# df1 = df1.append(df1.sum(numeric_only=True), ignore_index=True)
-# total_cases = df1.iloc[-1, 11:]
 #
-# df2 = df2.append(df2.sum(numeric_only=True), ignore_index=True)
-# total_deaths = df2.iloc[-1, 11:]
+df1 = df1.append(df1.sum(numeric_only=True), ignore_index=True)
+total_cases = df1.iloc[-1, 11:]
 
-# Making world map
+df2 = df2.append(df2.sum(numeric_only=True), ignore_index=True)
+total_deaths = df2.iloc[-1, 11:]
 
-countries_cases = list(df1['Country/Region'])
-totalcases = list(df1.iloc[0:, -1])
+# Find maximum infection rate for all of the countries
+df1.set_index('Country/Region')
+df1_aggregated = df1.groupby('Country/Region').sum().sort_values(by=date_list[-1], ascending=False)
+print(df1_aggregated.head())
+print(df1_aggregated.index)
 
-covid_data = [[countries_cases[i], totalcases[i]] for i in range(len(countries_cases))]
-covid_map = Map(init_opts=opts.InitOpts(width="1000px", height="460px"))
-covid_map.add('Total Confirmed Cases',
-              covid_data,
-              maptype='world',
-              is_map_symbol_show=False)
-covid_map.set_series_opts(label_opts=opts.LabelOpts(is_show=False))
-covid_map.set_global_opts(
-    visualmap_opts=opts.VisualMapOpts(max_=1100000, is_piecewise=True, pieces=[
-        {"min": 500000},
-        {"min": 200000, "max": 499999},
-        {"min": 100000, "max": 199999},
-        {"min": 50000, "max": 99999},
-        {"min": 10000, "max": 49999},
-        {"max": 9999}, ]),
-    title_opts=opts.TitleOpts(
-        title='Total Global Confirmed Covid-19 Cases',
-        subtitle='As Of ' + most_recent_date,
-        pos_left='center',
-        padding=0,
-        item_gap=2,  # gap between title and subtitle
-        title_textstyle_opts=opts.TextStyleOpts(color='darkblue',
-                                                font_weight='bold',
-                                                font_family='Courier New',
-                                                font_size=30),
-        subtitle_textstyle_opts=opts.TextStyleOpts(color='grey',
-                                                   font_weight='bold',
-                                                   font_family='Courier New',
-                                                   font_size=13)),
-    legend_opts=opts.LegendOpts(is_show=False))
-covid_map.render('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
+countries = list(df1_aggregated.index)
+max_case_rates = []
+for c in countries:
+    max_case_rates.append(df1_aggregated.loc[c].diff().max())
 
-# Automatically opens the html file containing the interactive map
-webbrowser.open_new_tab('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\covid_today_world_map.html')
+avg_case_rates = []
+for d in countries:
+    avg_case_rates.append(df1_aggregated.loc[d].diff().mean())
 
-# Bar Graph Showing top 20 Countries in Deaths
-top_20_deaths = df2.groupby("Country/Region")[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],
-                                                                                                   ascending=False).head(
-    20)
-top_20_deaths.plot(kind='barh', log=True, figsize=(8, 6))
-plt.gca().invert_yaxis()
-plt.ylabel("Country/Region", labelpad=14)
-plt.xlabel("Number of Deaths to Date (log=True)", labelpad=14)
-plt.title("Countries with The Highest Number of Deaths to Date", y=1.02)
-plt.savefig('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\Countries_with_highest_deaths_to_date.png')
-plt.show()
+df1_aggregated['max_case_rates'] = max_case_rates
+df1_aggregated['avg_case_rates'] = avg_case_rates
+print(df1_aggregated.head())
 
-# Bar Graph Showing top 20 Countries in Confirmed Cases
-top_20_cases = df1.groupby('Country/Region')[['Country/Region', date_list[-1]]].sum().sort_values(by=date_list[-1],
-                                                                                                  ascending=False).head(
-    20)
-top_20_cases.plot(kind='barh', log=True, figsize=(8, 6))
-plt.gca().invert_yaxis()
-plt.ylabel("Country/Region", labelpad=14)
-plt.xlabel("Number of Confirmed Cases to Date (log=True)", labelpad=14)
-plt.title("Countries with The Highest Number of Confirmed Cases to Date", y=1.02)
-plt.savefig('A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\Countries_with_highest_cases_to_date.png')
-plt.show()
+# Isolate max case rate and average case rate
+target_data = ['max_case_rates', 'avg_case_rates']
+max_and_avg_case_data = pd.DataFrame(df1_aggregated[target_data])
+max_and_avg_case_data.reset_index(inplace=True)
+
+# Writing to local CSV
+# noinspection PyTypeChecker
+
+max_and_avg_case_data.to_csv(r"A:\College\DAP-Project\Cases_and_Death_Rates\Data\RAW Data for "
+                             r"EDA\AVG_MAX_COVID_CASES.csv")
+
+
+# Creating a new collection in MongoBD for the new dataframe
+covid_cases_max_and_avg = db.covid_cases_max_and_avg
+
+# Turning Dataframe into a dict for storage
+max_and_avg_case_data = max_and_avg_case_data.to_dict('records')
+
+# Sending file to Collections
+Cases_max_avg = covid_cases_max_and_avg.insert_many(max_and_avg_case_data)
+
+
+
