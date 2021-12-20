@@ -100,5 +100,14 @@ actions as Python and R are two different languages.
 Thus please run the "Restriction_and_Testing_Analysis" folder and it's respective script files outside of this python
 file.
 Please note that there may be a requirement to change file paths as well as provide credentials and ip information.
+
+The "final Dataset.ipynb" file is where all relevant data sets produced by the group were complied. 
+This was completed in Jupyter Notebook
+Integration into python was deemed superfluous following research into methods of doing so.
+Please run within Jupyter Notebook.
+
+"Main Project - Covid-19 - Group Analysis" is the folder containing all associated files conducted in R-Studio
+as well as the necessary data sets needed for the analysis.
+
 """
 
