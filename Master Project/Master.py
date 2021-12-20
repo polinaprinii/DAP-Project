@@ -31,3 +31,8 @@ import Vaccine_Analysis_by_Country.Main_Project.PostgreSQLExport
 
 # Drafting supporting data visualisations for the understanding of the data.
 import Vaccine_Analysis_by_Country.Main_Project.Data_Visualisation
+
+
+"""
+    Importing the python files from Cases_and_Death_Rates
+"""
