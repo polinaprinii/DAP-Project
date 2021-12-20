@@ -14,6 +14,7 @@ library(Metrics)
 library(plotly)
 library(hrbrthemes)
 library(processx)
+library(mongolite)
 ```
 
 ```{r}
@@ -348,5 +349,28 @@ p
 
 ggsave(p, filename = "IrelandSlovakia.png")
 ```
+
+```{r}
+a=mongo(collection="stringency",url="mongodb://127.0.0.1:27017/stringency")
+a$insert(stringency1.df)
+
+b=mongo(collection="masks",url="mongodb://127.0.0.1:27017/masks")
+b$insert(masks1.df)
+
+c=mongo(collection="stayhome",url="mongodb://127.0.0.1:27017/stayhome")
+c$insert(stayhome1.df)
+
+d=mongo(collection="publicevents",url="mongodb://127.0.0.1:27017/publicevents")
+d$insert(publicevents1.df)
+
+e=mongo(collection="publictransport",url="mongodb://127.0.0.1:27017/publictransport")
+e$insert(publictransport1.df)
+
+f=mongo(collection="schools",url="mongodb://127.0.0.1:27017/schools")
+f$insert(schools1.df)
+
+```
+
+
 
 
