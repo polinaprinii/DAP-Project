@@ -11,23 +11,35 @@ from pyecharts.charts import Map, Geo
 from pyecharts import options as opts
 from pyecharts.globals import ThemeType
 import webbrowser
+import pymongo.errors
+
 
 # This file will handle the exploratory data analysis of the two cleaned files from mongoDB of cases and death
 
 # Read in from MONGODB
-# Connecting to MongoDB
-client = pymongo.MongoClient('192.168.56.30', 27017)
+try:
+    # Connecting to MongoDB
+    client = pymongo.MongoClient('192.168.56.30', 27017)
 
-# Mongo Database where the cleaned data is stored
-db = client.covid_data
+    # Mongo Database where the cleaned data is stored
+    db = client.covid_data
 
-# Database Collection Names
-covid_cases_clean = db.covid_cases_clean
-covid_deaths_clean = db.covid_deaths_clean
+    # Database Collection Names
+    covid_cases_clean = db.covid_cases_clean
+    covid_deaths_clean = db.covid_deaths_clean
 
-# Pulling records from Mongodb to dataframes
-df1 = pd.DataFrame(list(covid_cases_clean.find()))
-df2 = pd.DataFrame(list(covid_deaths_clean.find()))
+    # Pulling records from Mongodb to dataframes
+    df1 = pd.DataFrame(list(covid_cases_clean.find()))
+    df2 = pd.DataFrame(list(covid_deaths_clean.find()))
+
+except pymongo.errors.ConnectionFailure as ConError:
+    print("Error while attempting connection to Database")
+except pymongo.errors.NetworkTimeout as NetworkTimeoutError:
+    print("The Network has Timed out")
+else:
+    print("Connection Made")
+finally:
+    print("Data Read Successful")
 
 # Removing _id Column added by MongoDB
 df1.drop(['_id'], axis=1, inplace=True)
@@ -96,15 +108,24 @@ max_and_avg_case_data.reset_index(inplace=True)
 max_and_avg_case_data.to_csv(r"A:\College\DAP-Project\Cases_and_Death_Rates\Data\RAW Data for "
                              r"EDA\AVG_MAX_COVID_CASES.csv")
 
+try:
+    # Creating a new collection in MongoBD for the new dataframe
+    covid_cases_max_and_avg = db.covid_cases_max_and_avg
 
-# Creating a new collection in MongoBD for the new dataframe
-covid_cases_max_and_avg = db.covid_cases_max_and_avg
+    # Turning Dataframe into a dict for storage
+    max_and_avg_case_data = max_and_avg_case_data.to_dict('records')
 
-# Turning Dataframe into a dict for storage
-max_and_avg_case_data = max_and_avg_case_data.to_dict('records')
-
-# Sending file to Collections
-Cases_max_avg = covid_cases_max_and_avg.insert_many(max_and_avg_case_data)
-
+    # Sending file to Collections
+    Cases_max_avg = covid_cases_max_and_avg.insert_many(max_and_avg_case_data)
+except pymongo.errors.CollectionInvalid as invalidColError:
+    print("collection invalid")
+except pymongo.errors.ConnectionFailure as ConError:
+    print("Error while trying to connect to the Database.")
+except pymongo.errors.WriteError as writeError:
+    print("error while trying to write to Database")
+else:
+    print("Write to Database successful")
+finally:
+    print("Files written to Database successfully")
 
 

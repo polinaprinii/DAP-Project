@@ -2,6 +2,8 @@ import webbrowser
 import matplotlib.pyplot as plt
 import pandas as pd
 import pymongo
+import pymongo.errors
+
 from matplotlib import rcParams
 from pyecharts import options as opts
 from pyecharts.charts import Map
@@ -9,23 +11,31 @@ from pyecharts.charts import Map
 # This file will handle the data Visualisations of the two cleaned files from mongoDB of cases and death
 
 # Read in from MONGODB
+try:
+    # Connecting to MongoDB
+    client = pymongo.MongoClient('192.168.56.30', 27017)
 
-# Connecting to MongoDB
-client = pymongo.MongoClient('192.168.56.30', 27017)
+    # Mongo Database where the cleaned data is stored
+    db = client.covid_data
 
-# Mongo Database where the cleaned data is stored
-db = client.covid_data
+    # Database Collection Names
+    covid_cases_clean = db.covid_cases_clean
+    covid_deaths_clean = db.covid_deaths_clean
+    covid_cases_max_and_avg = db.covid_cases_max_and_avg
 
-# Database Collection Names
-covid_cases_clean = db.covid_cases_clean
-covid_deaths_clean = db.covid_deaths_clean
-covid_cases_max_and_avg = db.covid_cases_max_and_avg
+    # Pulling records from Mongodb to dataframes
+    df1 = pd.DataFrame(list(covid_cases_clean.find()))
+    df2 = pd.DataFrame(list(covid_deaths_clean.find()))
+    df3 = pd.DataFrame(list(covid_cases_max_and_avg.find()))
 
-
-# Pulling records from Mongodb to dataframes
-df1 = pd.DataFrame(list(covid_cases_clean.find()))
-df2 = pd.DataFrame(list(covid_deaths_clean.find()))
-df3 = pd.DataFrame(list(covid_cases_max_and_avg.find()))
+except pymongo.errors.ConnectionFailure as ConError:
+    print("Error while attempting connection to Database")
+except pymongo.errors.NetworkTimeout as NetworkTimeoutError:
+    print("The Network has Timed out")
+else:
+    print("Connection Made")
+finally:
+    print("Data Read Successful")
 
 # Removing _id Column added by MongoDB
 df1.drop(['_id'], axis=1, inplace=True)

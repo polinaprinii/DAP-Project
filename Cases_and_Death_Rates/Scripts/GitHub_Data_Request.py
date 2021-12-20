@@ -6,7 +6,7 @@ import country_converter as coco
 
 pd.options.mode.chained_assignment = None
 
-########################################################################################################################
+
 # This script will download all RAW CSV files from
 # https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
 #I will then Save Them Locally
@@ -23,7 +23,7 @@ url4 = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_co
 all_urls = [url1, url2, url3, url4]
 # Reading the content of the URL
 
-########################################################################################################################
+
 
 try:
     download1 = requests.get(url1).content
