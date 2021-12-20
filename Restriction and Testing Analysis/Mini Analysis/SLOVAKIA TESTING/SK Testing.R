@@ -1,12 +1,3 @@
----
-title: "DB project"
-author: "Maria Migrova"
-date: "12/4/2021"
-output: html_document
----
-
-
-```{r}
 #libraries
 library(stringr)
 library(tidyr)
@@ -17,26 +8,18 @@ library(openair)
 library(lubridate)
 library(party)
 library(ggplot2)
-```
-```{r}
 library(stringi)
 
-```
 
-```{r}
 #Reading data
 testing.df <- read.csv("SLOVAKIA TESTING.csv",fileEncoding = "UTF-8-BOM")
 testing.df
 
-```
 
-```{r}
 #Separating columns
 testing1.df <- testing.df %>%
   separate(X.Date...Region...District...District_code...Gender...AgeGroup...PCR_Pos...PCR_Neg...PCR_Total.,sep=";",c("Date","Region","District","DistrictCode","Gender","AgeGroup","PCRPos","PCRNeg","PCRTotal"))
-```
 
-```{r}
 #Creating age categories
 testing1.df[testing1.df == "\"00\""] <- 1
 testing1.df[testing1.df == "\"01-04\""] <- 1
@@ -51,9 +34,7 @@ testing1.df[testing1.df == "\"55-64\""] <- 4
 testing1.df[testing1.df == "\"65_v\""] <- 4
 testing1.df[testing1.df == "\"neznáme\""] <- 4
 testing1.df[testing1.df == "\"999\""] <- 4
-```
 
-```{r}
 #Creating categories where Pos is bigger or smaller than Neg
 testing2.df <- testing1.df %>%
   mutate(Status = case_when(
@@ -61,8 +42,8 @@ testing2.df <- testing1.df %>%
     PCRPos < PCRNeg ~ "2"
   ))
 testing2.df
-```
-```{r}
+
+
 
 #Removing NA values
 testing2.df$Status[is.na(testing2.df$Status)] <-0
@@ -71,15 +52,6 @@ testing2.df <- subset(testing2.df,Gender != "NA")
 testing2.df
 
 
-```
-
-```{r}
-testing2.df
-```
-
-
-
-```{r}
 #CHanging data types
 testing2.df$Date <- as.Date(testing2.df$Date)
 testing2.df$AgeGroup <- as.numeric(testing2.df$AgeGroup)
@@ -90,48 +62,32 @@ testing2.df$Status <- as.numeric(testing2.df$Status)
 testing2.df$Gender <- as.factor(testing2.df$Gender)
 testing2.df$Status <- as.factor(testing2.df$Status)
 
-```
-
-```{r}
 testing2.df
 class(testing2.df)
 
-```
 
-```{r}
 #Picking data from till
 testing_final1.df <- testing2.df[testing2.df$Date > "2021-01-01" & testing2.df$Date < "2021-12-01",]
 testing_final1.df
-```
 
-
-```{r}
 #Creating Random Forest Model
 model1 <- ctree(Status ~ Gender + AgeGroup, data=testing_final1.df)
 plot(model1)
 #Saving the plot
 jpeg('plot1.jpg',width=1000)
-```
 
-```{r}
 
 testing_final2.df <- testing1.df
 
-```
-
-```{r}
 
 testing_final2.df$Region <- stri_trans_general(testing_final2.df$Region, "Latin-ASCII")
 testing_final2.df$District <- stri_trans_general(testing_final2.df$District, "Latin-ASCII")
 testing_final2.df$AgeGroup <- stri_trans_general(testing_final2.df$AgeGroup,"Latin-ASCII")
 
-```
 
-```{r}
 testing_final2.df
 
-```
-```{r}
+
 testing_final2.df[testing_final2.df == "\"00\""] <- "0-1"
 testing_final2.df[testing_final2.df == "\"01-04\""] <- "1-4"
 testing_final2.df[testing_final2.df == "\"05-09\""] <-"5-9"
@@ -146,14 +102,8 @@ testing_final2.df[testing_final2.df == "\"65_v\""] <- "65-99"
 testing_final2.df[testing_final2.df == "\"nezname\""] <- "unknown"
 testing_final2.df[testing_final2.df == "\"999\""] <- "99-more"
 
-```
-
-```{r}
 write.csv(testing_final2.df,"SlovakiaTesting.csv")
 
-```
-
-```{r}
 g=mongo(collection="publictransport",url="mongodb://127.0.0.1:27017/SlovakiaTesting")
 g$insert(testing_final2.df)
 ```
