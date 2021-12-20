@@ -3,7 +3,6 @@ title: "Covid 19"
 author: "Maria Migrova"
 date: "12/9/2021"
 output:
-  word_document: default
   html_document: default
 ---
 ```{r}
