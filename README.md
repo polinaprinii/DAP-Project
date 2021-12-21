@@ -35,11 +35,11 @@ Note all scripting is undertaken using the Python programming language, scripts 
 ### Testing Dataset, Restrictions Dataset, Slovakia Testing Dataset - Maria Migrova ###
 The goal of this datasets is to summarise the number of tested people by each country and different restriction levels.
 
-This datasets consists of: <br/>
+This datasets consists of: <br/><br/>
 TESTING DATASET:
 - isocode of each country
 - country name
-- tests = the total number of tests performed by each country in total from 01/01/2021 - 24/11/2021 <br/>
+- tests = the total number of tests performed by each country in total from 01/01/2021 - 24/11/2021 <br/><br/>
 RESTRICTIONS DATASET:
 - isocode of each country
 - country name
@@ -48,7 +48,7 @@ RESTRICTIONS DATASET:
 - MaxFacialCoverings - This is the maximal facial coverings restriction level for each country. It ranges from 0 - 4 (strictest). NA - No data, 0- No policy, 1 -Recommended, 2 - Required in some public spaces, 3 - Required in all public spaces, 4 -Required outside-the-home at all times 
 - MeanFacialCoverings - This is the avereage facial coverings restriction level for each country.
 - MaxStayHome - This is the maximal stay at home restriction level for each country which ranges from 0 - 3 (strictest) . NA - No data, 0 - No measures, 1 - Recommended, 2 - Required (except essentials) , 3 - Required (few exceptions).
-- MeanStayHome - This is the average stay at home restriction level for each country.<br/>
+- MeanStayHome - This is the average stay at home restriction level for each country. <br/><br/>
 SLOVAKIA TESTING DATASET:
 - Date
 - Region 
