@@ -3,7 +3,7 @@
 ## *Project Aim:* ##
 
 The project aims to perform analysis using the data collated by the individual work **outlined below** to estimate and report on a multiple regression model to facilitate the understanding of the criteria that dictates the Covid-19 mortality rates and useful for the prediction of the same.
-Taking the following approach of programmatically combining the three individual CSV datasets via Python 3 in Jupyter Notebook and R Studio to allow for the construction of multiple linear regression analysis the project looks to conclude the finding in this [report](https://github.com/polinaprinii/DAP-Project/blob/main/Report/Group-K-Database-and-Analytics-Programming-CA-2-Project-Report.pdf)
+Taking the following approach of programmatically combining the three individual CSV datasets via Python 3 in Jupyter Notebook and R Studio to allow for the construction of multiple linear regression analysis the project looks to conclude the finding in this [report](https://github.com/polinaprinii/DAP-Project/blob/main/Report/Group-K-Database-and-Analytics-Programming-CA-2-Project-Report.pdf).
 
 ## *Individual Work:* ##
 
