@@ -21,7 +21,7 @@ The dataset in question looks at the following period of 01/01/2021 to 24/11/202
 ***Programmatic Approach:***
 
 The following programmatic approach is used to extract, transform, load and analyse data in preparation for Multiple Linear Regression.<br />
-Note all scripting is undertaken using the Python programming language, scripts can be found in the following [folder](https://github.com/polinaprinii/DAP-Project/tree/main/Vaccine_Analysis_by_Country).
+Note all scripting is undertaken using the Python programming language, scripts can be found in the following [folder](https://github.com/polinaprinii/DAP-Project/tree/main/Master%20Project/Vaccine_Analysis_by_Country).
 
 **Step 1:** Environment setup in PyCharm to store all coding undertaken throughout the data ETL process.<br />
 **Step 2:** Extract raw datasets from Git. <br />

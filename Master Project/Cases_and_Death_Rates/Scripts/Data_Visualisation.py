@@ -130,9 +130,9 @@ for i in df1_aggregated.index:
     df1_aggregated.loc[i].plot()
 
 plt.legend()
-plt.title('Infection Cases of COVID-19')
+plt.title("Number of Confirmed Cases to Date (" + most_recent_date + ")")
 plt.ylabel('Cumulative Number of Confirmed Cases')
-plt.xlabel("Number of Confirmed Cases to Date (" + most_recent_date + ") (log=True)")
+plt.xlabel('Dates')
 plt.savefig(r'A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\10_highest_countries_Cases_to_date.png')
 plt.show()
 
@@ -146,9 +146,9 @@ for i in df2_aggregated.index:
     df2_aggregated.loc[i].plot()
 
 plt.legend()
-plt.title('Deaths Due to COVID-19')
+plt.title("Number of Deaths to Date (" + most_recent_date + ")")
 plt.ylabel('Cumulative Number of Deaths')
-plt.xlabel("Number of Confirmed Cases to Date (" + most_recent_date + ") (log=True)")
+plt.xlabel(Dates)
 plt.savefig(r'A:\College\DAP-Project\Cases_and_Death_Rates\Visualizations\10_Highest_countries_deaths_to_date.png')
 
 plt.show()
