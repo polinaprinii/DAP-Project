@@ -66,7 +66,7 @@ testing2.df
 class(testing2.df)
 
 
-#Picking data from till
+#Filtering data by date
 testing_final1.df <- testing2.df[testing2.df$Date > "2021-01-01" & testing2.df$Date < "2021-12-01",]
 testing_final1.df
 
@@ -79,7 +79,7 @@ jpeg('plot1.jpg',width=1000)
 
 testing_final2.df <- testing1.df
 
-
+#Changing to ASCII
 testing_final2.df$Region <- stri_trans_general(testing_final2.df$Region, "Latin-ASCII")
 testing_final2.df$District <- stri_trans_general(testing_final2.df$District, "Latin-ASCII")
 testing_final2.df$AgeGroup <- stri_trans_general(testing_final2.df$AgeGroup,"Latin-ASCII")
@@ -87,7 +87,7 @@ testing_final2.df$AgeGroup <- stri_trans_general(testing_final2.df$AgeGroup,"Lat
 
 testing_final2.df
 
-
+#CHanging the age categories again
 testing_final2.df[testing_final2.df == "\"00\""] <- "0-1"
 testing_final2.df[testing_final2.df == "\"01-04\""] <- "1-4"
 testing_final2.df[testing_final2.df == "\"05-09\""] <-"5-9"
@@ -102,8 +102,10 @@ testing_final2.df[testing_final2.df == "\"65_v\""] <- "65-99"
 testing_final2.df[testing_final2.df == "\"nezname\""] <- "unknown"
 testing_final2.df[testing_final2.df == "\"999\""] <- "99-more"
 
+#Writing the csv
 write.csv(testing_final2.df,"SlovakiaTesting.csv")
 
+#Saving to mongo
 g=mongo(collection="publictransport",url="mongodb://127.0.0.1:27017/SlovakiaTesting")
 g$insert(testing_final2.df)
 ```
