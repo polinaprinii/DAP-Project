@@ -32,29 +32,15 @@ Note all scripting is undertaken using the Python programming language, scripts 
 **Step 7:** Visualise data in meaningful ways.<br />
 **Step 8:** Export final table aka dataset for groups efforts in CSV format. <br />
 
-### Testing Dataset - Maria Migrova ###
-The goal of this dataset is to summarise the number of tested people by each country in the world.
+### Testing Dataset, Restrictions Dataset, Slovakia Testing Dataset - Maria Migrova ###
+The goal of this datasets is to summarise the number of tested people by each country and different restriction levels.
 
-This dataset consists of: 
+This datasets consists of: 
+TESTING DATASET:
 - isocode of each country
 - country name
 - tests = the total number of tests performed by each country in total from 01/01/2021 - 24/11/2021
-
-***Programmatic Approach:***
-Our dataset was loaded, cleaned and analysed using R Studio. 
-
-These steps were undertaken:
-1. Downloading the csv dataset from GitHub.
-2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file.
-3. Analysing and visualising the data.
-4. Writing the final dataset into a csv file which will be later used for the multiple linear regression.
-5. Uploading the final dataset into MongoDB using mongo() function.
-
-
-### Restrictions Dataset - Maria Migrova ###
-This dataset consists of a data about different restriction level in each country.
-
-The dataset consists of: 
+RESTRICTIONS DATASET:
 - isocode of each country
 - country name
 - MaxStringencyIndex - This is the maximal stringency index for each country which ranges from 0 - 100 (strictest). It is based on nine response indicators including school closures, workplace closures and travel bans.
@@ -63,23 +49,7 @@ The dataset consists of:
 - MeanFacialCoverings - This is the avereage facial coverings restriction level for each country.
 - MaxStayHome - This is the maximal stay at home restriction level for each country which ranges from 0 - 3 (strictest) . NA - No data, 0 - No measures, 1 - Recommended, 2 - Required (except essentials) , 3 - Required (few exceptions).
 - MeanStayHome - This is the average stay at home restriction level for each country.
-
-
-***Programmatic Approach:***
-Our dataset was loaded, cleaned and analysed using R Studio.
-
-These steps were undertaken:
-1. Downloading the csv dataset from GitHub.
-2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file.
-3. Analysing and visualising the data.
-4. Writing the final dataset into a csv file which will be later used for the multiple linear regression.
-5. Uploading the final dataset into MongoDB using mongo() function.
-
-
-### Slovakia Testing Dataset - Maria Migrova ###
-This dataset consists of a data about number of tests performed in Slovakia by different gender and age group.
-
-This dataset consists of: 
+SLOVAKIA TESTING DATASET:
 - Date
 - Region 
 - District
@@ -91,14 +61,15 @@ This dataset consists of:
 - PCR Total - total number of tests performed
 
 ***Programmatic Approach:***
-Our dataset was loaded, cleaned and analysed using R Studio.
+Our datasets were loaded, cleaned and analysed using R Studio. 
 
-These steps were undertaken: 
+These steps were undertaken:
 1. Downloading the csv dataset from GitHub.
-2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file encoding.
-3. Analysing and visualising the data. Creating a Random Forest Model, which shows how different age group and gender influance the number of positive tests.
-4. Writing the final dataset into a csv file. This file won't be used for the final linear regression.
+2. Reading the csv dataset in R Studio using read.csv() function and UTF-8-BOM file.
+3. Analysing and visualising the data.
+4. Writing the final dataset into a csv file which will be later used for the multiple linear regression.
 5. Uploading the final dataset into MongoDB using mongo() function.
+
 
 ### Global Confirmed Cases and Death Rates - Alun Price ###
 This section of the project aims to utilise a data pipeline to extract, transform and load the cumulative data available from COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
